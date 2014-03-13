@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Updated logistic regression analyses</title>
+		<meta charset='utf-8'> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="https://dl.dropbox.com/s/yl7czy341uuf20x/rss.xml" />
+		
+		<!-- useBootstrap -->
+	<link href="http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css" rel="stylesheet" />
+	<script src="http://static.smallpicture.com/bootstrap/js/jquery-1.9.1.min.js"></script>
+	<script src="http://static.smallpicture.com/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.0.3/css/font-awesome.min.css">
+		<!-- useSmallPictStyles -->
+	<link href="http://fargo.io/cms/platform.css?v=0.48" rel="stylesheet">
+	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
+	<script>
+		var pagetable = {
+    "opmlUrl": "",
+    "opmlTitle": "Andy DeSoto's Outline",
+    "opmlLink": "http://desoto.smallpict.com/",
+    "opmlLinkHosting": "https://dl.dropbox.com/s/hesck461g3cjusj/andyDesotosOutline.pack",
+    "opmlOwnerProfile": "http://www.andydesoto.com",
+    "opmlOwnerName": "Andy DeSoto",
+    "opmlOwnerEmail": "desoto@wustl.edu",
+    "opmlDateModified": "Thu, 13 Mar 2014 04:24:21 GMT",
+    "opmlExpansionState": "1,9",
+    "opmlFeed": "https://dl.dropbox.com/s/yl7czy341uuf20x/rss.xml",
+    "opmlFlEncrypted": "false",
+    "opmlLongTitle": "Andy's Research Notes",
+    "opmlFont": "",
+    "opmlFontSize": "",
+    "opmlLineHeight": "",
+    "opmlFlCmsRender": "true",
+    "opmlFlCmsRenderInBackground": "false",
+    "opmlDescription": "Andy is a memory researcher in the Washington University in St. Louis Memory Lab. These are his research notes and other recordings.",
+    "opmlTypeInsertedNode": "",
+    "opmlDateCreated": "",
+    "opmlOwnerId": "",
+    "menuname": "andyMenu",
+    "googleAnalyticsID": "",
+    "domain": "",
+    "bootstrapTheme": "spruce",
+    "type": "outline",
+    "slogan": "Don't slam the door on the way out.",
+    "disqusGroupName": "kadesoto",
+    "siteTimeZone": "-6",
+    "dateFormat": "%A, %B %e, %Y at %l:%M %p",
+    "flIndexPage": false,
+    "flDisqusComments": "true",
+    "flStoryTextOnIndexPage": false,
+    "flNonDocHeadsOnIndexPage": true,
+    "flStoryDateOnIndexPage": false,
+    "storyDateFormat": "%D; %r",
+    "maxStoriesOnIndexPage": 25,
+    "maxStoryList": 25,
+    "authorTwitterAccount": "kadesoto",
+    "authorFacebookAccount": "kadesoto",
+    "authorProfileUrl": "http://www.andydesoto.com",
+    "titleColor": "white",
+    "siteFolder": "kadesoto.github.io/",
+    "flProfile": false,
+    "ctLevelsOnIndexPage": 1,
+    "blogHomeItemCount": "10",
+    "flPgfPermaLinks": false,
+    "text": "Updated logistic regression analyses",
+    "created": "Mon, 03 Mar 2014 21:48:59 GMT",
+    "description": "Andy is a memory researcher in the Washington University in St. Louis Memory Lab. These are his research notes and other recordings.",
+    "path": "2014/03/03/updatedLogisticRegressionAnalyses",
+    "subheadColor": "white",
+    "flMapHeader": "false",
+    "mapLatitude": "40.774295",
+    "mapLongitude": "-73.970833",
+    "mapType": "roadmap",
+    "mapZoom": "14",
+    "flSnapEnabled": "true",
+    "flHideByline": "false",
+    "flFixedMenu": "false",
+    "googleAnalyticsID1": "UA-3970063-10",
+    "domain1": "beta.fargo.io/users/desoto/",
+    "name": "updatedLogisticRegressionAnalyses",
+    "icon": "calendar",
+    "isFeedItem": "true",
+    "cssUrl": "http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css",
+    "menuTitle": "Andy's Research Notes",
+    "now": "Wed Mar 12 2014 23:24:22 GMT-0500 (CDT)",
+    "url": "http://desoto.smallpict.com/2014/03/03/updatedLogisticRegressionAnalyses.html"
+}; //12/12/13 by DW
+		</script>
+		<style>
+			@media only screen 
+			and (min-device-width : 320px) 
+			and (max-device-width : 480px) {
+				.navbar .nav>li {
+					display: none;
+					height: 0;
+					}
+				.divFargoSocialMediaLinks {
+					display: none;
+					}
+				.container {
+					margin-top: 10px;
+					width: 90%;
+					}
+				.divFargoMarkdown p {
+					font-size: 17px;
+					line-height: 140%;
+					}
+				h2 {
+					font-size: 24px;
+					line-height: 140%;
+					}
+				.divHeadlineUnit {
+					margin-bottom: 5px;
+					}
+				.divPrevNext {
+					font-size: 1.2em;
+					}
+				.divBreadcrumbs {
+					display: none;
+					font-size: 15px;
+					}
+				.breadcrumb>li>.divider {
+					padding: 0;
+					padding-left: 1px;
+					}
+				.spSlogan {
+					display: none;
+					}
+				}
+			</style>
+		<!-- customStylesScripts -->
+		
+		</head>
+	<body>
+		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kadesoto" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/kadesoto" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="https://dl.dropbox.com/s/yl7czy341uuf20x/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
+		
+<div class="navbar navbar-static-top">
+	<div class="navbar-inner">
+		<div class="navbar-container">
+			<a class="brand" href="http://desoto.smallpict.com/">Andy DeSoto</a>
+			<ul class="nav">
+				<li><a href="http://beta.fargo.io/users/desoto/biographicalSketch.html" target="_blank">Bio</a></li>
+				<li><a href="http://beta.fargo.io/users/desoto/curriculumVitae.html" target="_blank">Vita</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Publications&nbsp;<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://pss.sagepub.com/content/early/2014/01/21/0956797613516149" target="_blank">DeSoto & Roediger (2014)</a></li>
+						<li><a href="http://www.tandfonline.com/doi/abs/10.1080/09658211.2013.795974#.UufrHGTnbHQ" target="_blank">Roediger & DeSoto (2014)</a></li>
+						<li><a href="http://srmo.sagepub.com/view/methods-case-studies-2013/n66.xml?rskey=QMQzIE&row=20" target="_blank">DeSoto (2013)</a></li>
+						<li><a href="http://www.oxfordscholarship.com/view/10.1093/acprof:oso/9780199920754.001.0001/acprof-9780199920754-chapter-4" target="_blank">Roediger, Wixted, & DeSoto (2012)</a></li>
+						</ul>
+					</li>
+				<li><a href="http://psych.wustl.edu/memory" target="_blank">Memory Lab</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Projects&nbsp;<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://beta.fargo.io/users/desoto/personalAnalytics/" target="_blank">Personal Analytics</a></li>
+						<li><a href="https://medium.com/@kadesoto" target="_blank">Other Writing</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+		<div class="divFargoOutlineBody">
+			<div id="idOutlineContainer" class="container">
+				<div class="divHeadlineUnit" id="idHeadlineUnit">
+					<div class="divPrevNext">
+						<div class="divPrevNextLinks"><a href="http://desoto.smallpict.com/2014/03/03/1983201160MinutesOnEyewitnessIdentification.html" title="1983/2011 <i>60 Minutes</i> on eyewitness identification" ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<a href="http://desoto.smallpict.com/2014/02/28/investigatingConfidenceaccuracyCorrelations.html" title="Investigating confidence-accuracy correlations" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
+						</div>
+					<div class="divBreadcrumbs" id="idBreadcrumbs">
+						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://desoto.smallpict.com">Home</a><span class="divider">/</span><li><a href="http://desoto.smallpict.com/2014">2014</a><span class="divider">/</span><li><a href="http://desoto.smallpict.com/2014/03">March 2014</a><span class="divider">/</span><li><a href="http://desoto.smallpict.com/2014/03/03">March 3</a></li></ul>
+						</div>
+					<h2>Updated logistic regression analyses</h2>
+					</div>
+				<div class="divFargoMarkdown" id="idFargoMarkdown"><p>Now that I have my full complement of subjects (<i>N </i>= 64), I'm able to re-run logistic regression analyses and investigate the degree to which confidence is predictive of accuracy as a function of <i>remember</i>, <i>know</i>, or <i>guess</i>. I'll present two regression models. The first is just the effects of confidence on accuracy as a function of <i>remember</i>, <i>know</i>, or <i>guess</i>:</p>
+
+<p><img src="https://dl.dropbox.com/s/uytebax3asruo3s/Screenshot%202014-03-03%2015.48.26.png"></p>
+
+<p>The regression equations for the figure above (Model 1) are:</p>
+
+<ul>
+<li><p>For <i>remember</i>, log odds = -1.125 + .031<i>c</i>, where <i>c</i> is confidence (0-100)</p></li>
+<li><p>For <i>know</i>, log odds = -1.999 + .031<i>c</i></p></li>
+<li><p>For <i>guess</i>, log odds =  -2.104 + .031<i>c</i></p></li>
+</ul>
+
+<p>And here's what the prediction curves look like when we through in the interaction term (i.e., confidence <i>x</i> remember/know/guess). Let's call this Model 2.</p>
+
+<p><img src="https://dl.dropbox.com/s/q1n9lqnxmnoppxz/Screenshot%202014-03-03%2015.48.15.png"></p>
+
+<ul>
+<li><p>For <i>remember</i>, log odds = -2.946 + .053<i>c</i></p></li>
+<li><p>For <i>know</i>, log odds = -1.895<i> </i>+ .029<i>c</i></p></li>
+<li><p>For <i>guess</i>, log odds = -1.043 + .005<i>c</i></p></li>
+</ul>
+
+<p>Because logistic regression is not my strong suit, I am researching the best way to evaluate these global models. Right now I am not convinced that the model with the interaction term is doing that much better predicting accuracy. <a href="http://www.medicine.mcgill.ca/epidemiology/joseph/courses/epib-621/logfit.pdf">One thing I'm reading about is how we can use signal detection theory to compare models</a>. Here's one way of taking a look:</p>
+
+<ul>
+<li><p>Model 1: <i>HR</i> = .805, <i>FAR</i> = .402, <i>d'</i> =  1.11</p></li>
+<li><p>Model 2: <i>HR</i> = .778, <i>FAR</i> = .337, <i>d'</i> =  1.19</p></li>
+</ul>
+
+<p>So as you can see, not a huge improvement in discrimination (prediction) going from Model 1 to Model 2.</p>
+
+<p>Now, this is the global analysis. I suppose the next step is getting the subject-level equations.</p>
+
+<p>What can we draw from all of this? A possible observation, which we get from Model 2, is that there really perhaps <i>is </i>a difference in the predictiveness of confidence as a function of <i>remember/know/guess</i>. This is helpful because <a href="http://desoto.smallpict.com/2014/02/28/investigatingConfidenceaccuracyCorrelations.html">some of the analyses I presented last week suggested that there wasn't one</a>. But what we show here is that one increase in a point of confidence is worth twice as much, in terms of log odds, when one is <i>remembering </i>as opposed to when one is <i>knowing</i>. And when people say they're guessing, they really are, regardless of confidence rating. They hover around what I think is chance (i.e., 33% accuracy). This is really neat.</p>
+
+<p>Of course, these analyses are leaving out something rather important: "new" responses, because we never collect <i>remember/know/guess</i> judgments for "new" responses. We need to characterize those responses another day, but you could always turn to <a href="http://pss.sagepub.com/content/early/2014/01/21/0956797613516149">DeSoto and Roediger (2014)</a> <a href="https://dl.dropboxusercontent.com/u/3695301/articles/DeSoto%20%26%20Roediger%20%282014%29.pdf"><i class="fa fa-file-o"></i></a> for one look at this issue.</p>
+
+<p><a href="https://dl.dropbox.com/s/wrwndf5ili4rat3/Logistic%20Figure%20-%20Full%20Data.xlsx">Here's the data (and the formulae) used to make the figures above, if you're interested</a>.</p></div>
+				<div class="divFooterText">
+					<hr>
+					<p style="float: right;">Last built: Wed, Mar 12, 2014 at 10:24 PM</p>
+					<script>var disqus_identifier = "Mon, 03 Mar 2014 21:48:59 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
+					<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Monday, March  3, 2014 at  3:48 PM</span>.  <span class="spSlogan" style="float: right;"><i>Everything's an interaction.</i></span></div>
+					</div>
+				</div>
+			</div>
+		<script>
+			startupFargoPlatform ();
+			</script>
+		</body>
+	</html>
