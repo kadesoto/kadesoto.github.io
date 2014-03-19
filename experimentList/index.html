@@ -4,7 +4,7 @@
 		<title>Experiment List</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="alternate" type="application/rss+xml" title="RSS" href="https://dl.dropbox.com/s/yl7czy341uuf20x/rss.xml" />
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://technimentis.com/rss.xml" />
 		<script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-3970063-10']); _gaq.push(['_setDomainName', 'technimentis.com']); _gaq.push(['_trackPageview']); (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
 		<!-- useBootstrap -->
 	<link href="http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css" rel="stylesheet" />
@@ -23,9 +23,9 @@
     "opmlOwnerProfile": "http://www.andydesoto.com",
     "opmlOwnerName": "Andy DeSoto",
     "opmlOwnerEmail": "desoto@wustl.edu",
-    "opmlDateModified": "Mon, 17 Mar 2014 18:44:16 GMT",
-    "opmlExpansionState": "5,6,11,23,31,32,33",
-    "opmlFeed": "https://dl.dropbox.com/s/yl7czy341uuf20x/rss.xml",
+    "opmlDateModified": "Wed, 19 Mar 2014 18:59:00 GMT",
+    "opmlExpansionState": "5,10,20,36,41,43",
+    "opmlFeed": "http://technimentis.com/rss.xml",
     "opmlFlEncrypted": "false",
     "opmlLongTitle": "Andy's Research Notes",
     "opmlFont": "",
@@ -42,7 +42,7 @@
     "domain": "technimentis.com",
     "bootstrapTheme": "spruce",
     "type": "index",
-    "slogan": "We don't need no stinkin rock stars.",
+    "slogan": "Ask not what the Internet can do for you.",
     "disqusGroupName": "kadesoto",
     "siteTimeZone": "-6",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -63,6 +63,7 @@
     "ctLevelsOnIndexPage": 1,
     "blogHomeItemCount": "10",
     "flPgfPermaLinks": false,
+    "flFixedMenu": "false",
     "text": "Experiment List",
     "created": "Tue, 25 Jun 2013 21:20:11 GMT",
     "description": "Andy is a memory researcher in the Washington University in St. Louis Memory Lab. These are his research notes and other recordings.",
@@ -75,13 +76,13 @@
     "mapZoom": "14",
     "flSnapEnabled": "true",
     "flHideByline": "false",
-    "flFixedMenu": "false",
     "name": "experimentList",
     "icon": "cogs",
     "menuName": "andyMenu",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css",
     "menuTitle": "Andy's Research Notes",
-    "now": "Mon Mar 17 2014 13:44:17 GMT-0500 (CDT)",
+    "now": "Wed Mar 19 2014 13:59:07 GMT-0500 (CDT)",
+    "copyright": "&copy; 2014 Andy DeSoto.",
     "url": "http://technimentis.com/experimentList.html"
 }; //12/12/13 by DW
 		</script>
@@ -127,13 +128,52 @@
 					}
 				}
 			</style>
+		<style>
+			.divOutlineImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divTextInFrontOfImage {
+				background-color: white; 
+				opacity: .90;
+				padding: 1.5em;
+				border:2px solid whitesmoke;
+				}
+			.spSlogan {
+				display: none;
+				}
+			</style>
 		<!-- customStylesScripts -->
 		
+		<script>
+			function startupOutlineTemplate () {
+				if (pagetable.backgroundImage != undefined) {
+					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
+					textInFront.className = "divTextInFrontOfImage";
+					
+					var outlineImage = document.getElementById ("idOutlineImage"); 
+					outlineImage.className = "divOutlineImage";
+					outlineImage.style.backgroundImage = "url(\"" + pagetable.backgroundImage + "\")";
+					}
+				}
+			</script>
 		</head>
 	<body>
 		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kadesoto" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
 <a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/kadesoto" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="https://dl.dropbox.com/s/yl7czy341uuf20x/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://technimentis.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
 </div>
 		
 <div class="navbar navbar-static-top">
@@ -142,20 +182,14 @@
 			<a class="brand" href="http://technimentis.com/">Technimentis</a>
 			<ul class="nav">
 				<li><a href="http://technimentis.com/biographicalSketch.html" target="_blank">Andy</a></li>
+				<li><a href="http://technimentis.com/researchOverview.html" target="_blank">Research</a></li>
 				<li><a href="http://technimentis.com/curriculumVitae.html" target="_blank">Vita</a></li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Publications&nbsp;<b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="http://pss.sagepub.com/content/early/2014/01/21/0956797613516149" target="_blank">DeSoto & Roediger (2014)</a></li>
-						<li><a href="http://www.tandfonline.com/doi/abs/10.1080/09658211.2013.795974#.UufrHGTnbHQ" target="_blank">Roediger & DeSoto (2014)</a></li>
-						<li><a href="http://srmo.sagepub.com/view/methods-case-studies-2013/n66.xml?rskey=QMQzIE&row=20" target="_blank">DeSoto (2013)</a></li>
-						<li><a href="http://www.oxfordscholarship.com/view/10.1093/acprof:oso/9780199920754.001.0001/acprof-9780199920754-chapter-4" target="_blank">Roediger, Wixted, & DeSoto (2012)</a></li>
-						</ul>
-					</li>
 				<li><a href="http://psych.wustl.edu/memory" target="_blank">Memory Lab</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Projects&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
 						<li><a href="http://technimentis.com/personalAnalytics/" target="_blank">Personal Analytics</a></li>
 						<li><a href="https://medium.com/@kadesoto" target="_blank">Other Writing</a></li>
+						<li><a href="http://fargo.io/docs/whatIsFargo.html" target="_blank">About This Site</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -164,33 +198,38 @@
 	</div>
 
 		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit">
-					<div class="divPrevNext">
-						<div class="divPrevNextLinks"><a href="http://technimentis.com/biographicalSketch.html" title="Biographical Sketch" ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<a href="http://technimentis.com/meetingNotes.html" title="Meeting Notes" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
-						</div>
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a></li></ul>
-						</div>
-					<h2>Experiment List</h2>
-					</div>
-				<div class="divFargoIndex">
+			<div id="idOutlineImage">
+				<div id="idOutlineContainer" class="container">
+					<div id="idTextInFrontOfImage">
+						<div class="divHeadlineUnit" id="idHeadlineUnit">
+							<div class="divPrevNext">
+								<div class="divPrevNextLinks"><a href="http://technimentis.com/researchOverview.html" title="Research Overview" ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<a href="http://technimentis.com/meetingNotes.html" title="Meeting Notes" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
+								</div>
+							<div class="divBreadcrumbs" id="idBreadcrumbs">
+								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a></li></ul>
+								</div>
+							<h2>Experiment List</h2>
+							</div>
+						<div class="divFargoIndex">
 	<ul>
 		<li class="liSmallTitleOnIndexPage" ><a  class="aDocSmallTitleOnIndexPage"  href="currentResearchLines/">Current Research Lines</a></li>
 		<li class="liSmallTitleOnIndexPage" ><a  class="aDocSmallTitleOnIndexPage"  href="archive/">Archive</a></li>
 		</ul>
 	</div>
 
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Mon, Mar 17, 2014 at 12:44 PM</p>
-					
-					<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Tuesday, June 25, 2013 at  3:20 PM</span>.  <span class="spSlogan" style="float: right;"><i>Everything's an interaction.</i></span></div>
-					</div>
+						<div class="divFooterText">
+							<hr>
+							<p style="float: right;">Last built: Wed, Mar 19, 2014 at 12:59 PM</p>
+							
+							<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Tuesday, June 25, 2013 at  3:20 PM</span>.  <span class="spSlogan" style="float: right;"><i>Everything's an interaction.</i></span></div>
+							</div>
+						</div>
+						</div>
 				</div>
 			</div>
 		<script>
 			startupFargoPlatform ();
+			startupOutlineTemplate ();
 			</script>
 		</body>
 	</html>

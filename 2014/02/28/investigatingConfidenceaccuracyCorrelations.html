@@ -4,7 +4,7 @@
 		<title>Investigating confidence-accuracy correlations</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="alternate" type="application/rss+xml" title="RSS" href="https://dl.dropbox.com/s/yl7czy341uuf20x/rss.xml" />
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://technimentis.com/rss.xml" />
 		<script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-3970063-10']); _gaq.push(['_setDomainName', 'technimentis.com']); _gaq.push(['_trackPageview']); (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
 		<!-- useBootstrap -->
 	<link href="http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css" rel="stylesheet" />
@@ -23,9 +23,9 @@
     "opmlOwnerProfile": "http://www.andydesoto.com",
     "opmlOwnerName": "Andy DeSoto",
     "opmlOwnerEmail": "desoto@wustl.edu",
-    "opmlDateModified": "Thu, 13 Mar 2014 21:42:46 GMT",
-    "opmlExpansionState": "1,2,3",
-    "opmlFeed": "https://dl.dropbox.com/s/yl7czy341uuf20x/rss.xml",
+    "opmlDateModified": "Wed, 19 Mar 2014 18:59:00 GMT",
+    "opmlExpansionState": "5,10,20,36,41,43",
+    "opmlFeed": "http://technimentis.com/rss.xml",
     "opmlFlEncrypted": "false",
     "opmlLongTitle": "Andy's Research Notes",
     "opmlFont": "",
@@ -42,7 +42,7 @@
     "domain": "technimentis.com",
     "bootstrapTheme": "spruce",
     "type": "outline",
-    "slogan": "What a long strange trip it's been.",
+    "slogan": "Reallll soooon now...",
     "disqusGroupName": "kadesoto",
     "siteTimeZone": "-6",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -63,6 +63,7 @@
     "ctLevelsOnIndexPage": 1,
     "blogHomeItemCount": "10",
     "flPgfPermaLinks": false,
+    "flFixedMenu": "false",
     "text": "Investigating confidence-accuracy correlations",
     "created": "Fri, 28 Feb 2014 17:36:34 GMT",
     "description": "Andy is a memory researcher in the Washington University in St. Louis Memory Lab. These are his research notes and other recordings.",
@@ -75,13 +76,13 @@
     "mapZoom": "14",
     "flSnapEnabled": "true",
     "flHideByline": "false",
-    "flFixedMenu": "false",
     "name": "investigatingConfidenceaccuracyCorrelations",
     "icon": "calendar",
     "isFeedItem": "true",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css",
     "menuTitle": "Andy's Research Notes",
-    "now": "Thu Mar 13 2014 16:42:47 GMT-0500 (CDT)",
+    "now": "Wed Mar 19 2014 13:59:01 GMT-0500 (CDT)",
+    "copyright": "&copy; 2014 Andy DeSoto.",
     "url": "http://technimentis.com/2014/02/28/investigatingConfidenceaccuracyCorrelations.html"
 }; //12/12/13 by DW
 		</script>
@@ -127,35 +128,68 @@
 					}
 				}
 			</style>
+		<style>
+			.divOutlineImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divTextInFrontOfImage {
+				background-color: white; 
+				opacity: .90;
+				padding: 1.5em;
+				border:2px solid whitesmoke;
+				}
+			.spSlogan {
+				display: none;
+				}
+			</style>
 		<!-- customStylesScripts -->
 		
+		<script>
+			function startupOutlineTemplate () {
+				if (pagetable.backgroundImage != undefined) {
+					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
+					textInFront.className = "divTextInFrontOfImage";
+					
+					var outlineImage = document.getElementById ("idOutlineImage"); 
+					outlineImage.className = "divOutlineImage";
+					outlineImage.style.backgroundImage = "url(\"" + pagetable.backgroundImage + "\")";
+					}
+				}
+			</script>
 		</head>
 	<body>
 		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kadesoto" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
 <a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/kadesoto" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="https://dl.dropbox.com/s/yl7czy341uuf20x/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://technimentis.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
 </div>
 		
 <div class="navbar navbar-static-top">
 	<div class="navbar-inner">
 		<div class="navbar-container">
-			<a class="brand" href="http://technimentis.com/">Andy DeSoto</a>
+			<a class="brand" href="http://technimentis.com/">Technimentis</a>
 			<ul class="nav">
-				<li><a href="http://technimentis.com/biographicalSketch.html" target="_blank">Bio</a></li>
+				<li><a href="http://technimentis.com/biographicalSketch.html" target="_blank">Andy</a></li>
+				<li><a href="http://technimentis.com/researchOverview.html" target="_blank">Research</a></li>
 				<li><a href="http://technimentis.com/curriculumVitae.html" target="_blank">Vita</a></li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Publications&nbsp;<b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="http://pss.sagepub.com/content/early/2014/01/21/0956797613516149" target="_blank">DeSoto & Roediger (2014)</a></li>
-						<li><a href="http://www.tandfonline.com/doi/abs/10.1080/09658211.2013.795974#.UufrHGTnbHQ" target="_blank">Roediger & DeSoto (2014)</a></li>
-						<li><a href="http://srmo.sagepub.com/view/methods-case-studies-2013/n66.xml?rskey=QMQzIE&row=20" target="_blank">DeSoto (2013)</a></li>
-						<li><a href="http://www.oxfordscholarship.com/view/10.1093/acprof:oso/9780199920754.001.0001/acprof-9780199920754-chapter-4" target="_blank">Roediger, Wixted, & DeSoto (2012)</a></li>
-						</ul>
-					</li>
 				<li><a href="http://psych.wustl.edu/memory" target="_blank">Memory Lab</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Projects&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
 						<li><a href="http://technimentis.com/personalAnalytics/" target="_blank">Personal Analytics</a></li>
 						<li><a href="https://medium.com/@kadesoto" target="_blank">Other Writing</a></li>
+						<li><a href="http://fargo.io/docs/whatIsFargo.html" target="_blank">About This Site</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -164,17 +198,19 @@
 	</div>
 
 		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit">
-					<div class="divPrevNext">
-						<div class="divPrevNextLinks"><a href="http://technimentis.com/2014/03/03/updatedLogisticRegressionAnalyses.html" title="Updated logistic regression analyses" ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<a href="http://technimentis.com/2014/02/27/fargoForOpenScienceDocumentation.html" title="Fargo for open science documentation" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
-						</div>
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a><span class="divider">/</span><li><a href="http://technimentis.com/2014">2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/02">February 2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/02/28">February 28</a></li></ul>
-						</div>
-					<h2>Investigating confidence-accuracy correlations</h2>
-					</div>
-				<div class="divFargoMarkdown" id="idFargoMarkdown"><p>Like I mentioned a few days ago, Experiment 2 of my dissertation project -- Project 15 -- is finished with data collection. I've been slowly working my way through the data (have been busy with some other projects) and I like how things are looking. </p>
+			<div id="idOutlineImage">
+				<div id="idOutlineContainer" class="container">
+					<div id="idTextInFrontOfImage">
+						<div class="divHeadlineUnit" id="idHeadlineUnit">
+							<div class="divPrevNext">
+								<div class="divPrevNextLinks"><a href="http://technimentis.com/2014/03/03/updatedLogisticRegressionAnalyses.html" title="Updated logistic regression analyses" ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<a href="http://technimentis.com/2014/02/27/fargoForOpenScienceDocumentation.html" title="Fargo for open science documentation" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
+								</div>
+							<div class="divBreadcrumbs" id="idBreadcrumbs">
+								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a><span class="divider">/</span><li><a href="http://technimentis.com/2014">2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/02">February 2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/02/28">February 28</a></li></ul>
+								</div>
+							<h2>Investigating confidence-accuracy correlations</h2>
+							</div>
+						<div class="divFargoMarkdown" id="idFargoMarkdown"><p>Like I mentioned a few days ago, Experiment 2 of my dissertation project -- Project 15 -- is finished with data collection. I've been slowly working my way through the data (have been busy with some other projects) and I like how things are looking. </p>
 
 <p>Just to summarize, we have people come into the lab and ask them to learn 100 words from semantic categories. After a distractor task, we give them a test on 300 items: the 100 targets (words they studied), 100 related lures (unstudied words from studied categories), and 100 unrelated lures (unstudied words from unstudied categories). On this recognition test, one of the 300 words is displayed and subjects respond "old" or "new." Following this judgment, a 0-100 confidence rating is provided. Last, for words to which subjects responded "old," they make a <i>remember/know/guess </i>judgment. A <i>remember</i> judgment is provided when subjects can recollect the episode of the word's prior presentation. A <i>know</i> judgment is provided when subjects can't recollect the episode, but know that the word was presented. Last, subjects respond <i>guess</i> when they were just guessing the word is old.</p>
 
@@ -193,16 +229,19 @@
 <p><img src="https://dl.dropbox.com/s/figbk7wralihk8y/Screenshot%202014-02-28%2011.36.07.png"></p>
 
 <p>Again using prior terminology (i.e., <a href="http://pss.sagepub.com/content/early/2014/01/21/0956797613516149">DeSoto &amp; Roediger, 2014</a> <a href="https://dl.dropboxusercontent.com/u/3695301/articles/DeSoto%20%26%20Roediger%20%282014%29.pdf"><i class="fa fa-file-o"></i></a>), these scatterplots depict the <i>between-events </i>correlation, which indicates the degree to which items responded to with greater confidence are also responded to with greater accuracy. These data, like the prior one, show that increases in <i>remembering </i>are not substantially more predictive than increases in <i>knowing</i>. (But, like before, guesses are guesses.)</p></div>
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Thu, Mar 13, 2014 at  3:42 PM</p>
-					<script>var disqus_identifier = "https://dl.dropbox.com/s/ngji6xlo30bssbo/andyDesotosOutline.opmlFri, 28 Feb 2014 17:36:34 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Friday, February 28, 2014 at 11:36 AM</span>.  <span class="spSlogan" style="float: right;"><i>Everything's an interaction.</i></span></div>
-					</div>
+						<div class="divFooterText">
+							<hr>
+							<p style="float: right;">Last built: Wed, Mar 19, 2014 at 12:59 PM</p>
+							<script>var disqus_identifier = "https://dl.dropbox.com/s/ngji6xlo30bssbo/andyDesotosOutline.opmlFri, 28 Feb 2014 17:36:34 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
+							<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Friday, February 28, 2014 at 11:36 AM</span>.  <span class="spSlogan" style="float: right;"><i>Everything's an interaction.</i></span></div>
+							</div>
+						</div>
+						</div>
 				</div>
 			</div>
 		<script>
 			startupFargoPlatform ();
+			startupOutlineTemplate ();
 			</script>
 		</body>
 	</html>
