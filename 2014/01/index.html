@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>January 2014</title>
-		<meta charset="utf-8"> 
+		<meta charset='utf-8'> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://technimentis.com/rss.xml" />
 		<script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-3970063-10']); _gaq.push(['_setDomainName', 'technimentis.com']); _gaq.push(['_trackPageview']); (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
 		<!-- useBootstrap -->
@@ -22,7 +23,7 @@
     "opmlOwnerProfile": "http://www.andydesoto.com",
     "opmlOwnerName": "Andy DeSoto",
     "opmlOwnerEmail": "desoto@wustl.edu",
-    "opmlDateModified": "Thu, 20 Mar 2014 20:22:40 GMT",
+    "opmlDateModified": "Thu, 20 Mar 2014 20:24:31 GMT",
     "opmlExpansionState": "7,17,33",
     "opmlFeed": "http://technimentis.com/rss.xml",
     "opmlFlEncrypted": "false",
@@ -40,8 +41,8 @@
     "googleAnalyticsID": "UA-3970063-10",
     "domain": "technimentis.com",
     "bootstrapTheme": "spruce",
-    "type": "stream",
-    "slogan": "Reallll soooon now...",
+    "type": "bloghome",
+    "slogan": "Greetings, citizen of Planet Earth. We are your overlords. :-)",
     "disqusGroupName": "kadesoto",
     "siteTimeZone": "-6",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -79,343 +80,61 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css",
     "menuTitle": "Andy's Research Notes",
-    "now": "Thu Mar 20 2014 15:22:43 GMT-0500 (CDT)",
+    "now": "Thu Mar 20 2014 15:24:36 GMT-0500 (CDT)",
     "copyright": "&copy; 2014 Andy DeSoto.",
     "url": "http://technimentis.com/2014/01.html"
 }; //12/12/13 by DW
 		</script>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<link href="http://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Average" rel="stylesheet" type="text/css">
-		
 		<style>
-			.navbar {
-				font-family: "Average";
-				background-color: white;
-				font-size: 20px;
-				}
-			.divFargoStreamBody {
-				}
-			.divBodyText {
-				}
-			.divStreamTopSpacer {
-				}
-			.divStreamDay {
-				position: relative;
-				width: 100%;
-				height: 100%;
-				margin-left: 0;
-				margin-top: 0;
-				border-top: 1px solid silver;
-				z-index: 0;
-				}
-			.divStreamDayText {
-				font-family: "Average";
-				font-size: 24px;
-				line-height: 145%;
-				padding-top: 5%;
-				padding-bottom: 10%;
-				
-				
-				width: 700px;
-				margin-left: auto;
-				margin-right: auto;
-				
-				vertical-align: top;
-				height: 100%;
-				margin-top: 30px;
-				}
-			.divStreamDayHead {
-				font-family: "Abril Fatface";
-				font-size: 40px;
-				margin-top: .1em;
-				-webkit-margin-after: .75em;
-				}
-			.divStreamDayImage {
-				height: 100%;
-				width: 100%;
-				position: absolute;
-				right: 0;
-				
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				
-				z-index: -1;
-				opacity: 1;
-				}
-			.divTextInFrontOfImage {
-				background-color: white; 
-				opacity: .90;
-				padding: 1.5em;
-				border:2px solid whitesmoke;
-				}
-			.spStreamArrows {
-				font-size: .8em;
-				color: silver;
-				margin-right: 15px;
-				}
-			.divStreamDay p {
-				margin-bottom: .3em;
-				}
-			.divTextContainer {
-				padding: 0;
-				}
-			.divBanner {
-				margin-bottom: -1px;
-				}
-			.divLevel {
-				margin-left: 20px;
-				display: none;
-				}
-			h4 {
-				font-family: "Georgia";
-				font-size: 18px;
-				-webkit-margin-after: 5px;
-				}
-			.divStreamSectionHead {
-				margin-top: 5px;
-				font-weight: bold;
-				-webkit-margin-after: 5px;
-				}
-			.spPermalink {
-				margin-left: 3px;
-				}
-			.spPermalink a {
-				text-decoration: none;
-				color: purple;
-				font-size: 13px;
-				font-weight: none !important;
-				}
-			.divDaySeparator {
-				height: 0;
-				}
-			.aStreamWedgeLink {
-				color: black;
-				}
-			.aStreamWedgeLink i {
-				font-size: .85em;
-				color: black;
-				cursor: pointer;
-				}
-			.aStreamDayLink {
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.aStreamDayLink a:link, .aStreamDayLink a:visited {
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.divStreamIcon {
-				float: left;
-				width: 20px;
-				margin-left: -20px;
-				margin-right: 0;
-				}
-			.spStreamArrows {
-				float: left;
-				width: 36px;
-				margin-left: -36px;
-				margin-right: 0;
-				display: none;
-				}
-			.aStreamArrowsLink {
-				font-size: .75em;
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.divFargoStreamFooter {
-				font-family: "Arial";
-				line-height: 200%;
-				height: 400px;
-				background-color: whitesmoke;
-				border-top: 1px solid silver;
-				text-align: center;
-				padding-top: 15px;
-				}
-			.divFargoSocialMediaLinks {
-				position: fixed;
-				z-index: 1;
-				}
-			.divNavSocialMediaLinks {
-				margin-top: 17px;
-				margin-left: 1em;
-				font-size: .9em;
-				}
-			.divNavSocialMediaLinks .nav>li>a {
-				display: inline;
-				}
-			.divNavSocialMediaLinks .aSocialMediaLink {
-				letter-spacing: 14px;
-				}
-			.aStreamTextLink {
-				cursor: pointer;
-				color: black;
-				text-decoration: none;
-				}
-			.aStreamTextLink a:link, .aStreamTextLink a:visited, .aStreamTextLink a:hover, .aStreamTextLink a:active {
-				cursor: pointer;
-				color: black;
-				text-decoration: none;
-				}
-			</style>
-		<style> /* styles for phone */
 			@media only screen 
 			and (min-device-width : 320px) 
 			and (max-device-width : 480px) {
-				.navbar {
+				.navbar .nav>li {
 					display: none;
-					}
-				.divBodyText {
-					}
-				.divStreamTopSpacer {
-					display: none;
+					height: 0;
 					}
 				.divFargoSocialMediaLinks {
 					display: none;
 					}
-				.divStreamDayHead {
-					font-size: 22px;
+				.container {
+					margin-top: 10px;
+					width: 90%;
 					}
-				.divStreamSectionHead {
-					margin-top: 8px;
-					-webkit-margin-after: 8px;
-					}
-				.divStreamDayText {
+				.divFargoMarkdown p {
 					font-size: 17px;
-					padding-left: 8%;
-					padding-right: 7%;
-					width: 85%;
+					line-height: 140%;
 					}
-				.aStreamWedgeLink i {
-					font-size: 1.1em;
+				h2 {
+					font-size: 24px;
+					line-height: 140%;
 					}
-				.divStreamIcon {
-					width: 14px;
-					margin-left: -14px;
+				.divHeadlineUnit {
+					margin-bottom: 5px;
 					}
-				.spPermalink {
+				.divPrevNext {
+					float: none;
+					}
+				.divBreadcrumbs {
 					display: none;
-					}
-				.divFargoStreamFooter {
 					font-size: 15px;
-					line-height: 170%;
 					}
-				.divTextInFrontOfImage {
-					width: 80% !important;
-					margin-left: auto;
-					margin-right: auto;
+				.breadcrumb>li>.divider {
+					padding: 0;
+					padding-left: 1px;
 					}
-				.spDateYearPart {
+				.spSlogan {
 					display: none;
 					}
 				}
 			</style>
-		<style> /* styles for tablet */
-			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-				}
-			</style>
-		
-		<script>
-			colorsArray = [
-				"white",
-				"whitesmoke",
-				"ghostwhite",
-				"gainsboro" 
-				];
-			function getdaynum (theDate) {
-				var year = theDate.getFullYear ();
-				var onejan = new Date (year, 0, 1);
-				return (Math.ceil ((theDate - onejan) / 86400000));
-				}
-			function ecStream (idnum) {
-				var c = document.getElementById ("idStreamWedge" + idnum), idUL = "#idStreamLevel" + idnum;
-				if (c.className == "fa fa-caret-down") {
-					c.className = "fa fa-caret-right";
-					$(idUL).slideUp (75);
-					}
-				else {
-					c.className = "fa fa-caret-down";
-					$(idUL).slideDown (75);
-					}
-				}
-			function startup () {
-				var ixarray = 0;
-				$("#idTextContainer").children ("div").each (function () {
-					var flSetColor = true;
-					$(this).children ("div").each (function () {
-						if (this.className == "divStreamDayImage") {
-							flSetColor = false;
-							}
-						});
-					if (flSetColor) {
-						this.style.backgroundColor = colorsArray [ixarray++ % colorsArray.length];
-						}
-					else {
-						$(this).children ("div").each (function () {
-							if (this.className == "divStreamDayText") {
-								var flset = false;
-								$(this).children ("div").each (function () {
-									if (!flset) {
-										this.className = "divTextInFrontOfImage"; //set classname of first child element
-										}
-									flset = true;
-									});
-								}
-							});
-						}
-					});
-				
-				var hash = window.location.hash;
-				if (hash.length > 0) {
-					$("#idTextContainer").find ("span").each (function () {
-						$(this).children ("a").each (function () {
-							if (string.endsWith (this.href, window.location.hash)) {
-								$(this).parents ("div").css ("display", "block");
-								$(this).parents ("p").css ("font-weight", "bold");
-								
-								var flexpand = true;
-								$(this).parents ("div").each (function () {
-									if (flexpand) {
-										$(this).children ("a").each (function () {
-											$(this).css ("font-weight", "bold");
-											});
-										$(this).find ("i").each (function () {
-											$(this).attr ("class", "fa fa-caret-down");
-											});
-										$(this).next ("div").css ("display", "block"); //the divLevel item
-										flexpand = false;
-										}
-									});
-								}
-							});
-						});
-					}
-				
-				if (getBoolean (pagetable.flFixedMenu)) {
-					document.body.style.paddingTop = "60px";
-					if (hash.length > 0) {
-						$(document).one ("scroll", function () {
-							var $el = $(this), top = $el.scrollTop ();
-							$el.scrollTop (top - 60);
-							});
-						}
-					}
-				}
-			</script>
-		
 		<!-- customStylesScripts -->
 		
 		</head>
 	<body>
+		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kadesoto" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/kadesoto" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://technimentis.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
 		
 <div class="navbar navbar-static-top">
 	<div class="navbar-inner">
@@ -438,360 +157,222 @@
 		</div>
 	</div>
 
-		<div class="divFargoStreamBody" id="idFargoStreamBody">
-			<div class="divBodyText" id="idBodyText">
-				<div class="divTextContainer" id="idTextContainer">
-					<div class="divStreamTopSpacer"></div>
-<div class="divStreamDay">
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (0)" ><i class="fa fa-arrow-up" id="idStreamUpArrow0"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (0)" ><i class="fa fa-arrow-down" id="idStreamDownArrow0"></i></a></span><a class="aStreamDayLink" href="/2014/01/30/">Thursday, January 30<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (0)" ><i class="fa fa-caret-right" id="idStreamWedge0"></i></a></span><a name="a1391104404"></a><a class="aStreamTextLink" onclick="ecStream (0)">Meeting with Roddy</a><span class="spPermalink"><a href="/2014/01/30/#a1391104404">#</a></span></div>
-<div class="divLevel" id="idStreamLevel0">
-<p><a name="a1391104407"></a>Met to discuss Experiment 2 of Project 15 and showed off a lot of the figures I've been working on over the last few weeks. We agreed it was time to go ahead and progress beyond the pilot phase and collect another 52 subjects' worth of data. I'll see if any lab members are available to assist with the data collection, but I hope to complete it in February. Could be tough -- that is almost three people per day for the month -- but I think we can do it.<span class="spPermalink"><a href="/2014/01/30/#a1391104407">#</a></span></p>
-<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (1)" ><i class="fa fa-caret-right" id="idStreamWedge1"></i></a></span><a name="a1391105086"></a><a class="aStreamTextLink" onclick="ecStream (1)">Some recommendations I got or we talked about:</a><span class="spPermalink"><a href="/2014/01/30/#a1391105086">#</a></span></p>
-<div class="divLevel" id="idStreamLevel1">
-<p><a name="a1391104838"></a>I should check to see if the relatively high guess rate for related lures (<i>M</i> = .14) is in the auditory or visual condition (or both).<span class="spPermalink"><a href="/2014/01/30/#a1391104838">#</a></span></p>
-<p><a name="a1391105066"></a>I should also keep a careful eye out for the number of observations in different cells, and perhaps show these in figures and tables where the concern applies.<span class="spPermalink"><a href="/2014/01/30/#a1391105066">#</a></span></p>
-<p><a name="a1391105095"></a>I could use items as the method of analysis in the proportion of <i>remember</i>, <i>know</i>, and <i>guess </i>tables<i>.</i><span class="spPermalink"><a href="/2014/01/30/#a1391105095">#</a></span></p>
-<p><a name="a1391105141"></a>I need to think more about what the confidence-accuracy plots actually mean when we subdivide by remember, know, and guess. Being able to explain these plots -- and really dig into them -- is going to be a critical part of the dissertation.<span class="spPermalink"><a href="/2014/01/30/#a1391105141">#</a></span></p>
-</div>
-<p><a name="a1391105124"></a>We also briefly discussed "media strategy" for <a href="http://pss.sagepub.com/content/early/2014/01/21/0956797613516149">DeSoto and Roediger (2014)</a> <a href="https://dl.dropboxusercontent.com/u/3695301/articles/DeSoto%20%26%20Roediger%20%282014%29.pdf"><i class="fa fa-file-o"></i></a> and whether I'll be able to get help from any undergraduate students over the next few months.<span class="spPermalink"><a href="/2014/01/30/#a1391105124">#</a></span></p>
-<p><a name="a1391107513"></a>Last, I just opened 75 slots on Experimetrix. We'll see who we get next week. I'd better make sure my study is rock solid! <span class="spPermalink"><a href="/2014/01/30/#a1391107513">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+		<div class="divFargoOutlineBody">
+			<div id="idOutlineContainer" class="container">
+				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
+					<div class="divBreadcrumbs" id="idBreadcrumbs">
+						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a><span class="divider">/</span><li><a href="http://technimentis.com/2014">2014</a></li></ul>
+						</div>
+					<h2 id="idBlogHomePageTitle">January 2014</h2>
+					</div>
+				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="30/meetingWithRoddy.html">Meeting with Roddy</a></div>
+		<p>Met to discuss Experiment 2 of Project 15 and showed off a lot of the figures I've been working on over the last few weeks. We agreed it was time to go ahead and progress beyond the pilot phase and collect another 52 subjects' worth of data. I'll see if any lab members are available to assist with the data collection, but I hope to complete it in February. Could be tough -- that is almost three people per day for the month -- but I think we can do it.</p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (1)" ><i class="fa fa-arrow-up" id="idStreamUpArrow1"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (1)" ><i class="fa fa-arrow-down" id="idStreamDownArrow1"></i></a></span><a class="aStreamDayLink" href="/2014/01/29/">Wednesday, January 29<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (2)" ><i class="fa fa-caret-right" id="idStreamWedge2"></i></a></span><a name="a1391027596"></a><a class="aStreamTextLink" onclick="ecStream (2)">Prepared some notes for tomorrow's meeting</a><span class="spPermalink"><a href="/2014/01/29/#a1391027596">#</a></span></div>
-<div class="divLevel" id="idStreamLevel2">
-<p><a name="a1391027607"></a>I just finished something relatively uninteresting: Repackaging many of the figures <a href="http://beta.fargo.io/users/desoto/2014/01/index.html">I've shared over the last month</a> so Roddy and I can talk about them at our meeting. Doing this reminded me of a thought I've had several times before: It is a shame that researchers must use two-dimensional mediums like tables and figures to represent a set of data. Thinking about data would be much easier if you could control analyses via natural language processing. For instance, you say to your Excel file, "Show me the false alarm rate for the word 'cardinal' in Experiment 1" and the number pops up -- boom, 0.19. Instead what you have to when discussing data is think of every possible way folks will want to consider the dataset and construct a table or figure for each way. That's not very convenient, especially when 90% of them will eventually go unused!<span class="spPermalink"><a href="/2014/01/29/#a1391027607">#</a></span></p>
-<p><a name="a1391027962"></a>(Something like <a href="http://www.wolframalpha.com/">Wolfram Alpha</a> for personal use or personal datasets would be close to what I'm thinking about.)<span class="spPermalink"><a href="/2014/01/29/#a1391027962">#</a></span></p>
-<p><a name="a1391028018"></a>Oh well, give it five or 10 years and maybe we'll be there.<span class="spPermalink"><a href="/2014/01/29/#a1391028018">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p>Some recommendations I got or we talked about:</p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (2)" ><i class="fa fa-arrow-up" id="idStreamUpArrow2"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (2)" ><i class="fa fa-arrow-down" id="idStreamDownArrow2"></i></a></span><a class="aStreamDayLink" href="/2014/01/28/">Tuesday, January 28<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (3)" ><i class="fa fa-caret-right" id="idStreamWedge3"></i></a></span><a name="a1390936837"></a><a class="aStreamTextLink" onclick="ecStream (3)">Some initial thoughts about Google Glass</a><span class="spPermalink"><a href="/2014/01/28/#a1390936837">#</a></span></div>
-<div class="divLevel" id="idStreamLevel3">
-<p><a name="a1390936848"></a>I've had a tangerine-colored pair of Google Glass for five days now and thought I would share some initial impressions.<span class="spPermalink"><a href="/2014/01/28/#a1390936848">#</a></span></p>
-<p><a name="a1390937130"></a>Downside: First, although I'm platform agnostic (psychologically speaking), I am set up in "Apple Land," not "Google World." It is a big change of pace to think of Google Contacts, Hangouts, and Google+ instead of iMessages and iChat. As a result a lot of functionality is unclear to me. If I take a picture and share it with a friend, I have no idea how they're receiving it -- via SMS? through a Hangout? Is it sending an e-mail? It's very strange. I'll text a friend later and ask, "Did you get that picture I sent you?" and most of the times they didn't. Who knows where it went. <span class="spPermalink"><a href="/2014/01/28/#a1390937130">#</a></span></p>
-<p><a name="a1390937250"></a>Upside: Having something on your face that can take pictures is really cool. Being able to quickly take photos with a wink, a button press, or a head spasm-plus-voice command is convenient. It's nice to get a natural framing too, so I can show to others: "This is how something looks when I look at it."  <span class="spPermalink"><a href="/2014/01/28/#a1390937250">#</a></span></p>
-<p><a name="a1390937357"></a>Here's an example -- a photo I took of the Cathedral Basilica of St. Louis while walking home from the bus stop yesterday. I was bundled up with hat and gloves and didn't need to undo any of that to take a quick picture.<span class="spPermalink"><a href="/2014/01/28/#a1390937357">#</a></span></p>
-<p><a name="a1390937396"></a><img src="https://dl.dropbox.com/s/dj81t3n8gve4zue/20140127_164009_283.jpg"><span class="spPermalink"><a href="/2014/01/28/#a1390937396">#</a></span></p>
-<p><a name="a1390937401"></a>Downside: Battery life. I don't understand it and it makes me nervous. It was really awful the first few days but seems to have mellowed out. Maybe it's finished installing updates, Glassware, etc. and is happy just to coexist with me?<span class="spPermalink"><a href="/2014/01/28/#a1390937401">#</a></span></p>
-<p><a name="a1390937438"></a>Upside: Having a Bluetooth headset. This is basic, but I've never made a phone call wirelessly before. Being able to dial someone in my pocket and speak to them with Google Glass is nice. Call quality (and reception) has varied, though. The same walk I photographed the Basilica I tried to make a call that dropped several times in a row. I don't know much about Bluetooth but it seems like a relatively fragile medium.<span class="spPermalink"><a href="/2014/01/28/#a1390937438">#</a></span></p>
-<p><a name="a1390937542"></a>Mixed bag: The looks. Privately, I enjoy my bright orange Google Glass and they remind me of the future. When I go out into the wild world, though, I have no idea what everyone's thinking. (Well, I know what they're thinking!) A photo of the author as a Glasshole:<span class="spPermalink"><a href="/2014/01/28/#a1390937542">#</a></span></p>
-<p><a name="a1390937621"></a><img src="https://dl.dropbox.com/s/h2n37etbtjq8vkh/20140125_204829_679.jpg"><span class="spPermalink"><a href="/2014/01/28/#a1390937621">#</a></span></p>
-<p><a name="a1390937638"></a>Downside: As an iPhone user I feel the functionality is quite limited. It costs an arm and a leg to tether (and it's not something I can even do with my current mobile data plan -- AT&T with unlimited data). Which means the thing sits inert on my face for most of the time, eventually bugging my ears.<span class="spPermalink"><a href="/2014/01/28/#a1390937638">#</a></span></p>
-<p><a name="a1390937710"></a>Upside: There is something strangely natural and reassuring about a face-mounted display. This sounds ridiculous, but even after a few days it feels natural to have them on -- almost comfortable. It's a form factor that seems goofy to an outsider but maybe isn't so strange after all. I guess as someone who has worn glasses since third grade, it's not that out there.<span class="spPermalink"><a href="/2014/01/28/#a1390937710">#</a></span></p>
-<p><a name="a1390937784"></a>Downside: Terrified about what would happen if I brought them into the bathroom by accident.<span class="spPermalink"><a href="/2014/01/28/#a1390937784">#</a></span></p>
-</div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (4)" ><i class="fa fa-caret-right" id="idStreamWedge4"></i></a></span><a name="a1390923984"></a><a class="aStreamTextLink" onclick="ecStream (4)">More dissertation analyses</a><span class="spPermalink"><a href="/2014/01/28/#a1390923984">#</a></span></div>
-<div class="divLevel" id="idStreamLevel4">
-<p><a name="a1390923992"></a><a href="http://beta.fargo.io/users/desoto/2014/01/27/dissertation15Analyses.html" target="_blank">Continuing from where I left off yesterday. </a><span class="spPermalink"><a href="/2014/01/28/#a1390923992">#</a></span></p>
-<p><a name="a1390924027"></a>I looked at the correlation between false alarm rate and response frequency, like we did in the <i>Psychological Science</i> paper. The figure looks exactly like I'd expect it to (if anything, the correlation is a little weak).<span class="spPermalink"><a href="/2014/01/28/#a1390924027">#</a></span></p>
-<p><a name="a1390929372"></a><img src="https://dl.dropbox.com/s/oj2tl1yewefzi47/Screenshot%202014-01-28%2009.43.53.png"><span class="spPermalink"><a href="/2014/01/28/#a1390929372">#</a></span></p>
-<p><a name="a1390924110"></a>I also tried to look at false <i>remember</i>, <i>know</i>, and <i>guess</i> responses as a function of response frequency and it was pretty messy. I think I need more power in order to look at those functions.<span class="spPermalink"><a href="/2014/01/28/#a1390924110">#</a></span></p>
-<p><a name="a1390924148"></a>More concerning, though, are the between-event confidence-accuracy correlations from yesterday. Remember that there were lots of values at the ceiling and the floor (refer to the figure from yesterday if you like). Because I've included unrelated lures in that analysis -- which were never studied by anyone -- I have data points in there that would never ever come off the floor. Specifically, any <i>R</i>, <i>K</i>, or <i>G </i>response to an unrelated lure would be located at the point (confidence, 0). So the solution is to recompute the confidence-accuracy relation for these items omitting unrelated lures. And when I do that, the results aren't quite as pretty as they were yesterday -- dang.<span class="spPermalink"><a href="/2014/01/28/#a1390924148">#</a></span></p>
-<p><a name="a1390928465"></a>Here are those updated figures:<span class="spPermalink"><a href="/2014/01/28/#a1390928465">#</a></span></p>
-<p><a name="a1390929042"></a><img src="https://dl.dropbox.com/s/sb8j9jqkopmz4g8/Screenshot%202014-01-28%2011.09.33.png"><span class="spPermalink"><a href="/2014/01/28/#a1390929042">#</a></span></p>
-<p><a name="a1390929048"></a>Without doing any stats, the correlation for <i>remembered </i>items (<i>r</i> = .24) appears similar to the correlation for <i>known</i> items (<i>r</i> = .25). Both, though, are better than the correlation for items that are <i>guessed </i>(<i>r</i> = .03).<span class="spPermalink"><a href="/2014/01/28/#a1390929048">#</a></span></p>
-<p><a name="a1390929446"></a>As you can see in this figure, making this change pulls a lot of points off the floor, especially for <i>remember </i>responses. This hasn't happened yet for <i>K </i>and <i>G</i> -- I am reasonably certain this is a power thing. (Reasonably.)<span class="spPermalink"><a href="/2014/01/28/#a1390929446">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<ul>
+<li><p>I should check to see if the relatively high guess rate for related lures (<i>M</i> = .14) is in the auditory or visual condition (or both).</p></li>
+<li><p>I should also keep a careful eye out for the number of observations in different cells, and perhaps show these in figures and tables where the concern applies.</p></li>
+<li><p>I could use items as the method of analysis in the proportion of <i>remember</i>, <i>know</i>, and <i>guess </i>tables<i>.</i></p></li>
+<li><p>I need to think more about what the confidence-accuracy plots actually mean when we subdivide by remember, know, and guess. Being able to explain these plots -- and really dig into them -- is going to be a critical part of the dissertation.</p></li>
+</ul>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (3)" ><i class="fa fa-arrow-up" id="idStreamUpArrow3"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (3)" ><i class="fa fa-arrow-down" id="idStreamDownArrow3"></i></a></span><a class="aStreamDayLink" href="/2014/01/27/">Monday, January 27<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (5)" ><i class="fa fa-caret-right" id="idStreamWedge5"></i></a></span><a name="a1390855756"></a><a class="aStreamTextLink" onclick="ecStream (5)">Dissertation (Project 15) analyses</a><span class="spPermalink"><a href="/2014/01/27/#a1390855756">#</a></span></div>
-<div class="divLevel" id="idStreamLevel5">
-<p><a name="a1390855768"></a>Working on analyses for Experiment 2 of my dissertation. I have 12 subjects' worth of pilot data that I'm investigating today to ensure there's nothing funky going on with my data collection, task, and so forth. So what I'm looking at is very basic stuff -- i.e., mean-level -- just to make sure nothing is going astray.<span class="spPermalink"><a href="/2014/01/27/#a1390855768">#</a></span></p>
-<p><a name="a1390856001"></a>Here are two tables that indicate the frequency with which subjects say "old" to the three different types of items in the study and the confidence with which they offer those "old" responses. That's on the left. On the right, I show the likelihood with which people say "remember," "know," and "guess" to the different item types.<span class="spPermalink"><a href="/2014/01/27/#a1390856001">#</a></span></p>
-<p><a name="a1390856073"></a><img src="https://dl.dropbox.com/s/c6pwff1pa7y2k2y/Screenshot%202014-01-27%2014.47.40.png"><span class="spPermalink"><a href="/2014/01/27/#a1390856073">#</a></span></p>
-<p><a name="a1390856078"></a>Looking at these tables alerts me that I could make yet a third one showing confidence for "remember," "know," and "guess." I'll do that in just a minute, although it's likely that they'll show anything unsurprising.<span class="spPermalink"><a href="/2014/01/27/#a1390856078">#</a></span></p>
-<p><a name="a1390857628"></a>Here's that table. A possible three-way interaction?<span class="spPermalink"><a href="/2014/01/27/#a1390857628">#</a></span></p>
-<p><a name="a1390857639"></a><img src="https://dl.dropbox.com/s/2pm68v09cnkye19/Screenshot%202014-01-27%2015.19.19.png"><span class="spPermalink"><a href="/2014/01/27/#a1390857639">#</a></span></p>
-<p><a name="a1390856128"></a>Next I have scatterplots depicting the between-events (top) and between-subjects (bottom) confidence-accuracy correlations. First we see a lot of ceiling and floor data for the between-events plots. This is expected because when we collapse across items, there really aren't a lot of subjects to drive variability. This would look a lot better with five or 10 times as many subjects.<span class="spPermalink"><a href="/2014/01/27/#a1390856128">#</a></span></p>
-<p><a name="a1390856524"></a><img src="https://dl.dropboxusercontent.com/u/3695301/statsphotos/rkgfigures.png"><span class="spPermalink"><a href="/2014/01/27/#a1390856524">#</a></span></p>
-<p><a name="a1390857175"></a><i>(Note: I noticed a small issue with the between-subjects figures that I've corrected in a later version -- does not change the conclusions, though.)</i><span class="spPermalink"><a href="/2014/01/27/#a1390857175">#</a></span></p>
-<p><a name="a1390856238"></a>The bottom looks great, though. Subject-level confidence-accuracy plots are low on points but seem to have plenty of variability, which means we can trust the resulting Pearson correlations.<span class="spPermalink"><a href="/2014/01/27/#a1390856238">#</a></span></p>
-<p><a name="a1390856268"></a>And what are those Pearson correlations, you might ask? Exactly what I was hoping. The confidence-accuracy relation for <i>remembered</i> items (<i>r</i> = .54) is higher than the relation for <i>known</i> items (<i>r</i> = .28) is higher than the relation for <i>guessed</i> items (<i>r</i> = .07) from a between-events perspective.<span class="spPermalink"><a href="/2014/01/27/#a1390856268">#</a></span></p>
-<p><a name="a1390856327"></a>The same relation holds between subjects: The correlation for <i>remembered</i> items (<i>r</i> = .91) > the correlation for <i>known</i> items (<i>r</i> = .65) > the correlation for <i>guessed </i>items (<i>r</i> = .56)<i>.</i><span class="spPermalink"><a href="/2014/01/27/#a1390856327">#</a></span></p>
-<p><a name="a1390856458"></a>So far, it's a really nice dataset and will look better with the full contingent of subjects.<span class="spPermalink"><a href="/2014/01/27/#a1390856458">#</a></span></p>
-<p><a name="a1390857226"></a>This all lives in "1-27-14 Data.xlsx."<span class="spPermalink"><a href="/2014/01/27/#a1390857226">#</a></span></p>
-</div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (6)" ><i class="fa fa-caret-right" id="idStreamWedge6"></i></a></span><a name="a1390845137"></a><a class="aStreamTextLink" onclick="ecStream (6)">Reviewed a paper and a science fair project</a><span class="spPermalink"><a href="/2014/01/27/#a1390845137">#</a></span></div>
-<div class="divLevel" id="idStreamLevel6">
-<p><a name="a1390845141"></a>Spent some time last Friday and this morning reviewing a submission to <i>Psychology & Neuroscience</i>, which I believe is primarily a Brazilian journal (thanks for finding me, guys). I'll bring it up again if I see it in print over the next few months. It's nice seeing the degree to which findings in the U.S. hold up in other countries.  <span class="spPermalink"><a href="/2014/01/27/#a1390845141">#</a></span></p>
-<p><a name="a1390845359"></a>Also, I spent a few minutes looking over an empirical project on memory an acquaintance of mine is working on for his ninth grade science fair project. It is a neat project and I'm glad to have been involved (to a small degree) during the research process. Perhaps I'll be able to talk about the project in more detail at a later date, too.<span class="spPermalink"><a href="/2014/01/27/#a1390845359">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p>We also briefly discussed "media strategy" for <a href="http://pss.sagepub.com/content/early/2014/01/21/0956797613516149">DeSoto and Roediger (2014)</a> <a href="https://dl.dropboxusercontent.com/u/3695301/articles/DeSoto%20%26%20Roediger%20%282014%29.pdf"><i class="fa fa-file-o"></i></a> and whether I'll be able to get help from any undergraduate students over the next few months.</p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (4)" ><i class="fa fa-arrow-up" id="idStreamUpArrow4"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (4)" ><i class="fa fa-arrow-down" id="idStreamDownArrow4"></i></a></span><a class="aStreamDayLink" href="/2014/01/24/">Friday, January 24<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (7)" ><i class="fa fa-caret-right" id="idStreamWedge7"></i></a></span><a name="a1390592145"></a><a class="aStreamTextLink" onclick="ecStream (7)">Met with Jason</a><span class="spPermalink"><a href="/2014/01/24/#a1390592145">#</a></span></div>
-<div class="divLevel" id="idStreamLevel7">
-<p><a name="a1390592150"></a>I met with Jason today to get a sanity check on some of the dissertation (Project 15) work I've been up to lately. He suggests everything's looking good so far. It's important to visualize my data first through use of scatterplots, etc. Then, I should perhaps separate analyses by <i>remember/know/guess</i> and conduct "simple" logistic regression on the confidence-accuracy relationships. Then you can compare beta weights via t-tests.<span class="spPermalink"><a href="/2014/01/24/#a1390592150">#</a></span></p>
-<p><a name="a1390592264"></a>You can do this for each subject and average the betas, or you can just get one big equation. Given the data it's probably the case you'd need to average.<span class="spPermalink"><a href="/2014/01/24/#a1390592264">#</a></span></p>
-<p><a name="a1390592289"></a>If not, we get into the land of multilevel modeling or linear mixed modeling. These methods are able to account for differences among subjects but deal with issues of missing data.<span class="spPermalink"><a href="/2014/01/24/#a1390592289">#</a></span></p>
-</div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (8)" ><i class="fa fa-caret-right" id="idStreamWedge8"></i></a></span><a name="a1390586109"></a><a class="aStreamTextLink" onclick="ecStream (8)">Lab meeting</a><span class="spPermalink"><a href="/2014/01/24/#a1390586109">#</a></span></div>
-<div class="divLevel" id="idStreamLevel8">
-<p><a name="a1390586114"></a>It was a bit of an "Andy show" today as most of the things we talked about I am involved with. Here's a list of things to do.<span class="spPermalink"><a href="/2014/01/24/#a1390586114">#</a></span></p>
-<p><a name="a1390586187"></a>There's a misspelling of an author's name on p. 9 of the Jacoby Festschrift chapter draft.  <span class="spPermalink"><a href="/2014/01/24/#a1390586187">#</a></span></p>
-<p><a name="a1390586295"></a>I should do a little Googling to see if I can find any documentation about the case in Dallas (possibly) where someone was accused of a rape but looked practically identical to the guy who actually committed the crime.<span class="spPermalink"><a href="/2014/01/24/#a1390586295">#</a></span></p>
-<p><a name="a1390586340"></a>I'll be on the lookout for a cartoon involving penguins from the newspaper a few days ago.<span class="spPermalink"><a href="/2014/01/24/#a1390586340">#</a></span></p>
-<p><a name="a1390586352"></a>An important takeaway message from the chapter: "Under most natural conditions, there's a tight link between confidence and accuracy in memory. When anomalies occur, though -- that's when problems arise."<span class="spPermalink"><a href="/2014/01/24/#a1390586352">#</a></span></p>
-<p><a name="a1390586390"></a>In future work, we might want to think about depicting our data using calibration curves. When designing double calibration curves -- <a href="http://tmp.fargo.io/users/desoto/2014/01/14/puzzlingOverCalibrationCurves.html">like the one shown here</a> -- we can divide by old and new or also divide by "old" or "new."<span class="spPermalink"><a href="/2014/01/24/#a1390586390">#</a></span></p>
-<p><a name="a1390586522"></a>In Table 2 of the chapter, perhaps indicate that the third column represents <i>means</i> of correlations<span class="spPermalink"><a href="/2014/01/24/#a1390586522">#</a></span></p>
-<p><a name="a1390586536"></a>Last, it's possible that through the use of linear mixed modeling (or multilevel linear modeling) you could also predict the confidence-accuracy relationship.<span class="spPermalink"><a href="/2014/01/24/#a1390586536">#</a></span></p>
-<p><a name="a1390586574"></a>One more thing -- take a look at the presidents data for people that did not remember Obama?<span class="spPermalink"><a href="/2014/01/24/#a1390586574">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p>Last, I just opened 75 slots on Experimetrix. We'll see who we get next week. I'd better make sure my study is rock solid! </p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">01/30/14; 11:53:24 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="30/meetingWithRoddy.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="29/preparedSomeNotesForTomorrowsMeeting.html">Prepared some notes for tomorrow's meeting</a></div>
+		<p>I just finished something relatively uninteresting: Repackaging many of the figures <a href="http://beta.fargo.io/users/desoto/2014/01/index.html">I've shared over the last month</a> so Roddy and I can talk about them at our meeting. Doing this reminded me of a thought I've had several times before: It is a shame that researchers must use two-dimensional mediums like tables and figures to represent a set of data. Thinking about data would be much easier if you could control analyses via natural language processing. For instance, you say to your Excel file, "Show me the false alarm rate for the word 'cardinal' in Experiment 1" and the number pops up -- boom, 0.19. Instead what you have to when discussing data is think of every possible way folks will want to consider the dataset and construct a table or figure for each way. That's not very convenient, especially when 90% of them will eventually go unused!</p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (5)" ><i class="fa fa-arrow-up" id="idStreamUpArrow5"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (5)" ><i class="fa fa-arrow-down" id="idStreamDownArrow5"></i></a></span><a class="aStreamDayLink" href="/2014/01/23/">Thursday, January 23<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (9)" ><i class="fa fa-caret-right" id="idStreamWedge9"></i></a></span><a name="a1390508438"></a><a class="aStreamTextLink" onclick="ecStream (9)">Fitting power functions</a><span class="spPermalink"><a href="/2014/01/23/#a1390508438">#</a></span></div>
-<div class="divLevel" id="idStreamLevel9">
-<p><a name="a1390508441"></a>I've spent most of my time and energy today trying to fit forgetting functions to one of my datasets. Research (e.g., <a href="http://www.jstor.org/stable/40062717">Wixted & Ebbesen, 1991</a>) suggests that the power function (i.e., <i>y </i>= <i>at^-b</i>) best describes forgetting from memory. I am not experienced in fitting these functions, though, so I had Excel draw power function trendlines through my data and just copied the resulting numbers. I am not super confident that I'm getting the right ones, though, so I really need to take things to a statistical package. Problem is, I don't know which one is right for the job.<span class="spPermalink"><a href="/2014/01/23/#a1390508441">#</a></span></p>
-<p><a name="a1390508625"></a>Plus, Adam brought up a good point when we spoke today: The data that I am trying to fit might involve a special case in which the power function (or really any function that drops off steeply after <i>t</i> = 0) might not best describe the underlying psychological mechanism I am exploring.<span class="spPermalink"><a href="/2014/01/23/#a1390508625">#</a></span></p>
-<p><a name="a1390508837"></a>It's really neat taking a look at forgetting for different items, though. Here's a vague, unlabeled figure so you can get a sense of what I'm talking about! I hope to be able to discuss some of these details with you soon.<span class="spPermalink"><a href="/2014/01/23/#a1390508837">#</a></span></p>
-<p><a name="a1390929594"></a><img src="https://dl.dropbox.com/s/cv87uarykw29ats/Screenshot%202014-01-23%2014.26.24.png"><span class="spPermalink"><a href="/2014/01/23/#a1390929594">#</a></span></p>
-<p><a name="a1390509087"></a>Time for me to take a break and focus on some other work, I think.<span class="spPermalink"><a href="/2014/01/23/#a1390509087">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p>(Something like <a href="http://www.wolframalpha.com/">Wolfram Alpha</a> for personal use or personal datasets would be close to what I'm thinking about.)</p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (6)" ><i class="fa fa-arrow-up" id="idStreamUpArrow6"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (6)" ><i class="fa fa-arrow-down" id="idStreamDownArrow6"></i></a></span><a class="aStreamDayLink" href="/2014/01/22/">Wednesday, January 22<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (10)" ><i class="fa fa-caret-right" id="idStreamWedge10"></i></a></span><a name="a1390435043"></a><a class="aStreamTextLink" onclick="ecStream (10)">Ordered Google Glass -- any potential for research?</a><span class="spPermalink"><a href="/2014/01/22/#a1390435043">#</a></span></div>
-<div class="divLevel" id="idStreamLevel10">
-<p><a name="a1390435055"></a>Not technically a research note, but today I ordered a tangerine-colored Google Glass that should arrive in a few days. It's not really a purchase I can afford (not being a developer, there's not much of a financial incentive reason to get one), so I imagine it'll be going back within the 30-day return window.<span class="spPermalink"><a href="/2014/01/22/#a1390435055">#</a></span></p>
-<p><a name="a1390435163"></a>I don't consider myself a "Glasshole," so I'm nervous about the social repercussions of wearing them around and about -- not to mention safety (can I wear them on a bus? jogging around the neighborhood?) -- so it'll be interesting, if not a little anxiety inducing, to play around with them for a few days. Maybe it won't be as bad as I'm imagining, especially on the campus of an elite private school where everyone and their mother has a top-of-the-line Macbook Pro.<span class="spPermalink"><a href="/2014/01/22/#a1390435163">#</a></span></p>
-<p><a name="a1390435261"></a>Bottom line is, if you'd like to play around with them for a little bit, come see me in a week or so. And if you see me with them on, please aim the rocks at my cushy bits and not my face. I can afford the doctor's bill but definitely can't afford the Glass replacement.<span class="spPermalink"><a href="/2014/01/22/#a1390435261">#</a></span></p>
-<p><a name="a1390435347"></a>But -- can anyone think of any interesting memory studies to be done with them? If so, now is the time to hit me up.<span class="spPermalink"><a href="/2014/01/22/#a1390435347">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p>Oh well, give it five or 10 years and maybe we'll be there.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">01/29/14; 02:33:16 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="29/preparedSomeNotesForTomorrowsMeeting.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="28/someInitialThoughtsAboutGoogleGlass.html">Some initial thoughts about Google Glass</a></div>
+		<p>I've had a tangerine-colored pair of Google Glass for five days now and thought I would share some initial impressions.</p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (7)" ><i class="fa fa-arrow-up" id="idStreamUpArrow7"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (7)" ><i class="fa fa-arrow-down" id="idStreamDownArrow7"></i></a></span><a class="aStreamDayLink" href="/2014/01/21/">Tuesday, January 21<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (11)" ><i class="fa fa-caret-right" id="idStreamWedge11"></i></a></span><a name="a1390345491"></a><a class="aStreamTextLink" onclick="ecStream (11)">Working on Festschrift chapter</a><span class="spPermalink"><a href="/2014/01/21/#a1390345491">#</a></span></div>
-<div class="divLevel" id="idStreamLevel11">
-<p><a name="a1390345499"></a>Some of the helpful comments Roddy and I got back on a chapter draft are concerned with the degree to which outliers may be driving correlational reports published in <a href="http://www.tandfonline.com/doi/abs/10.1080/09658211.2013.795974#.UuqeNmRdUT8">Roediger and DeSoto (2014)</a> <a href="https://dl.dropboxusercontent.com/u/3695301/articles/Roediger%20%26%20DeSoto%20%282014%29.pdf"><i class="fa fa-file-o"></i></a> and <a href="http://pss.sagepub.com/content/early/2014/01/21/0956797613516149">DeSoto and Roediger (2014)</a> <a href="https://dl.dropboxusercontent.com/u/3695301/articles/DeSoto%20%26%20Roediger%20%282014%29.pdf"><i class="fa fa-file-o"></i></a>.<span class="spPermalink"><a href="/2014/01/21/#a1390345499">#</a></span></p>
-<p><a name="a1390345557"></a>Here's the text of the comment: "What is the correlation if one discards all points with X and Y that are say 2 (95% confidence interval) or 2.58 (99% confidence interval) beyond their means. (Perhaps this was done in the original article. If not, doing it here would be a good extension of the earlier findings.)"<span class="spPermalink"><a href="/2014/01/21/#a1390345557">#</a></span></p>
-<p><a name="a1390345591"></a>When I get in tomorrow, I'll have to go through these issues. I'm almost entirely confident the results will still hold up (given that confidence is my line of work, I can't in good faith report 100% confidence), but we'll let the numbers speak for themselves. I'll post the results of those analyses when I'm able to get to them.<span class="spPermalink"><a href="/2014/01/21/#a1390345591">#</a></span></p>
-</div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (12)" ><i class="fa fa-caret-right" id="idStreamWedge12"></i></a></span><a name="a1390336411"></a><a class="aStreamTextLink" onclick="ecStream (12)">Abstract for Graduate Student Symposium application</a><span class="spPermalink"><a href="/2014/01/21/#a1390336411">#</a></span></div>
-<div class="divLevel" id="idStreamLevel12">
-<p><a name="a1390336429"></a>I'm working on an abstract for the presidents project for the WUSTL grad student symposium. It's a small grad student conference, but I think it would be beneficial to discuss the project at that venue due to the multidisciplinary nature of the project.<span class="spPermalink"><a href="/2014/01/21/#a1390336429">#</a></span></p>
-<p><a name="a1390336489"></a><a href="http://gradpages.wustl.edu/gss/graduate-research-symposium-0" target="_blank">Here's the website describing the symposium. It's where I will eventually submit the app to, as well.</a><span class="spPermalink"><a href="/2014/01/21/#a1390336489">#</a></span></p>
-<p><a name="a1390336527"></a>If I go ahead with it, I hope to post the poster, etc. here for feedback.<span class="spPermalink"><a href="/2014/01/21/#a1390336527">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p>Downside: First, although I'm platform agnostic (psychologically speaking), I am set up in "Apple Land," not "Google World." It is a big change of pace to think of Google Contacts, Hangouts, and Google+ instead of iMessages and iChat. As a result a lot of functionality is unclear to me. If I take a picture and share it with a friend, I have no idea how they're receiving it -- via SMS? through a Hangout? Is it sending an e-mail? It's very strange. I'll text a friend later and ask, "Did you get that picture I sent you?" and most of the times they didn't. Who knows where it went. </p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (8)" ><i class="fa fa-arrow-up" id="idStreamUpArrow8"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (8)" ><i class="fa fa-arrow-down" id="idStreamDownArrow8"></i></a></span><a class="aStreamDayLink" href="/2014/01/16/">Thursday, January 16<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (13)" ><i class="fa fa-caret-right" id="idStreamWedge13"></i></a></span><a name="a1389908213"></a><a class="aStreamTextLink" onclick="ecStream (13)">Working on figures and other visualizations for Project 18</a><span class="spPermalink"><a href="/2014/01/16/#a1389908213">#</a></span></div>
-<div class="divLevel" id="idStreamLevel13">
-<p><a name="a1389908227"></a>Met with Roddy today to discuss a few new ways of thinking about our (secret) president data. I wish I could show them here but I should probably wait a while longer before doing so. There are some new figures in the project folder I'll be able to use in the future.<span class="spPermalink"><a href="/2014/01/16/#a1389908227">#</a></span></p>
-<p><a name="a1389908288"></a><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CDAQqQIwAA&url=http%3A%2F%2Fwww.nytimes.com%2F2014%2F01%2F12%2Fopinion%2Fsunday%2Fall-the-news-thats-fit-to-forget.html&ei=T1HYUq-VI-LD2wW5wYHIDA&usg=AFQjCNEKFG4DpLNuGyYowP964eFNlIxsow&sig2=wA_naKF0yYQL63YLsni0vg&bvm=bv.59568121,d.b2I" target="_blank">Here's a relevant <i>New York Times </i>article you might want to look at.</a><span class="spPermalink"><a href="/2014/01/16/#a1389908288">#</a></span></p>
-<p><a name="a1389908340"></a>I'm thinking of presenting the data at the upcoming WUSTL Graduate Student Colloquium next month. It could be the last one I have an opportunity to present for (and I certainly wouldn't mind the prize money)!<span class="spPermalink"><a href="/2014/01/16/#a1389908340">#</a></span></p>
-<p><a name="a1389908431"></a>I should spend some time tomorrow and over the weekend thinking about what all the results mean.<span class="spPermalink"><a href="/2014/01/16/#a1389908431">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p>Upside: Having something on your face that can take pictures is really cool. Being able to quickly take photos with a wink, a button press, or a head spasm-plus-voice command is convenient. It's nice to get a natural framing too, so I can show to others: "This is how something looks when I look at it."  </p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (9)" ><i class="fa fa-arrow-up" id="idStreamUpArrow9"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (9)" ><i class="fa fa-arrow-down" id="idStreamDownArrow9"></i></a></span><a class="aStreamDayLink" href="/2014/01/15/">Wednesday, January 15<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (14)" ><i class="fa fa-caret-right" id="idStreamWedge14"></i></a></span><a name="a1389808957"></a><a class="aStreamTextLink" onclick="ecStream (14)">Continuing to puzzle over <i>R/K/G</i></a><span class="spPermalink"><a href="/2014/01/15/#a1389808957">#</a></span></div>
-<div class="divLevel" id="idStreamLevel14">
-<p><a name="a1389808964"></a>So I've gone back to some of the original <i>remember/know </i>papers and have plotted the data in a way that's a bit more traditional. Here's what they look like.<span class="spPermalink"><a href="/2014/01/15/#a1389808964">#</a></span></p>
-<p><a name="a1389809285"></a><img src="https://dl.dropboxusercontent.com/u/3695301/statsphotos/rkgdata.png"><span class="spPermalink"><a href="/2014/01/15/#a1389809285">#</a></span></p>
-<p><a name="a1389809289"></a>I've been worrying about whether performance under 50% indicates performance worse than chance, but I think I've been going about it wrong. What I need to do, basically, is subtract, say, remember hits from remember false alarms to get discrimination.<span class="spPermalink"><a href="/2014/01/15/#a1389809289">#</a></span></p>
-<p><a name="a1389809357"></a>But right away you see the problem -- the base rates are uneven; there are 100 targets, 100 related lures, and 100 unrelated lures. So which lure false alarm rate do you subtract from the hit rate? You could subtract one or the other, or you could also average both and subtract that from the hit rate.<span class="spPermalink"><a href="/2014/01/15/#a1389809357">#</a></span></p>
-<p><a name="a1389809415"></a>And if you do that, <i>remember</i> <i>d'</i> = 1.43, <i>know</i> <i>d'</i> = 0.32, and <i>guess</i> <i>d'</i> = -0.11. The negative <i>d'</i> for remembering is not altogether concerning. Gardiner, Ramponi, and Richardson-Klavehn (2002) report that, "This outcome is presumably attributable to the adoption of very lenient response criteria combined with the effects of greater response opportunity" (p. 91).<span class="spPermalink"><a href="/2014/01/15/#a1389809415">#</a></span></p>
-<p><a name="a1389809629"></a>Another relevant quote: "The high levels of remembering following the semantic study task resulted in many more guesses to lures than to targets. This suggests that there may be circumstances in which, when subjects include guesses in their know responses and false alarm rates are very high, high levels of remembering could result in a 'negative discrimination' effect: know responses to lures could exceed know responses to targets" (Gardiner, Java, and Richardson-Klavehn, 1996, p. 117).<span class="spPermalink"><a href="/2014/01/15/#a1389809629">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p>Here's an example -- a photo I took of the Cathedral Basilica of St. Louis while walking home from the bus stop yesterday. I was bundled up with hat and gloves and didn't need to undo any of that to take a quick picture.</p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (10)" ><i class="fa fa-arrow-up" id="idStreamUpArrow10"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (10)" ><i class="fa fa-arrow-down" id="idStreamDownArrow10"></i></a></span><a class="aStreamDayLink" href="/2014/01/14/">Tuesday, January 14<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (15)" ><i class="fa fa-caret-right" id="idStreamWedge15"></i></a></span><a name="a1389717944"></a><a class="aStreamTextLink" onclick="ecStream (15)">Puzzling over calibration curves</a><span class="spPermalink"><a href="/2014/01/14/#a1389717944">#</a></span></div>
-<div class="divLevel" id="idStreamLevel15">
-<p><a name="a1389717952"></a>So I've put together an unusual type of calibration curve for Experiment 1 of the <a href="http://pss.sagepub.com/content/early/2014/01/21/0956797613516149">DeSoto and Roediger (2014)</a> <a href="https://dl.dropboxusercontent.com/u/3695301/articles/DeSoto%20%26%20Roediger%20%282014%29.pdf"><i class="fa fa-file-o"></i></a> paper. In fact, I've spent all morning thinking about it. Here's what it looks like.<span class="spPermalink"><a href="/2014/01/14/#a1389717952">#</a></span></p>
-<p><a name="a1389718144"></a><img src="https://dl.dropbox.com/s/uxa9mgrz69ljz9z/Screenshot%202014-01-14%2009.40.14.png"><span class="spPermalink"><a href="/2014/01/14/#a1389718144">#</a></span></p>
-<p><a name="a1389718273"></a>In my experiment, subjects make a confidence rating from 0 (<i>not at all confident</i>) to 100 (<i>entirely confident</i>) after making a recognition decision (i.e., "old" or "new"). We divide up the confidence scale into new responses and old responses. Then, perfect calibration means expected accuracy with a zero confidence rating is .50. (Previously, when we lumped "old" and "new" responses together, expected accuracy was zero. Or wait, maybe it wasn't.)<span class="spPermalink"><a href="/2014/01/14/#a1389718273">#</a></span></p>
-<p><a name="a1389718449"></a>I need to do a bit more research on calibration curves in general to understand why I'm getting tangled up in what should be a straightforward concept.<span class="spPermalink"><a href="/2014/01/14/#a1389718449">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p><img src="https://dl.dropbox.com/s/dj81t3n8gve4zue/20140127_164009_283.jpg"></p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (11)" ><i class="fa fa-arrow-up" id="idStreamUpArrow11"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (11)" ><i class="fa fa-arrow-down" id="idStreamDownArrow11"></i></a></span><a class="aStreamDayLink" href="/2014/01/13/">Monday, January 13<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (16)" ><i class="fa fa-caret-right" id="idStreamWedge16"></i></a></span><a name="a1389646362"></a><a class="aStreamTextLink" onclick="ecStream (16)">Talked to Diana and Alex about <i>R/K/G</i></a><span class="spPermalink"><a href="/2014/01/13/#a1389646362">#</a></span></div>
-<div class="divLevel" id="idStreamLevel16">
-<p><a name="a1389646370"></a>I talked to Diana and Alex in the Dobbins lab about why I might be getting the strange <i>RKG</i> data described earlier today. The consensus is that a situation could exist where there's a low correct <i>guess</i> rate. It's challenging to explain in print, but basically if the criterion for <i>guesses</i> is at a point at the intersection between the target and lure curves where there are more <i>guesses</i> for lures than targets, you'd get the results I showed earlier today. <span class="spPermalink"><a href="/2014/01/13/#a1389646370">#</a></span></p>
-<p><a name="a1389647797"></a>Both of them mentioned that using categorized lists may cause patterns that normally don't arise in signal detection studies. This is certainly something to think about.<span class="spPermalink"><a href="/2014/01/13/#a1389647797">#</a></span></p>
-<p><a name="a1389652978"></a>It's about the end of the day as I update this note, and I think tomorrow I'll have to bury my nose in some of the older literature to get a handle on how folks that have come before me have solved this issue.<span class="spPermalink"><a href="/2014/01/13/#a1389652978">#</a></span></p>
-</div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (17)" ><i class="fa fa-caret-right" id="idStreamWedge17"></i></a></span><a name="a1389635247"></a><a class="aStreamTextLink" onclick="ecStream (17)">Lab meeting</a><span class="spPermalink"><a href="/2014/01/13/#a1389635247">#</a></span></div>
-<div class="divLevel" id="idStreamLevel17">
-<p><a name="a1389635253"></a>In today's lab meeting we talked about a Roediger and Nestojko chapter that will be coming out in a few weeks (that I read a few days ago). It talks about some interesting work by Nestojko and Roediger that fails to find the traditional testing effect after a two day delay. I'll link to it once the chapter or the paper go through. Next week, we'll talk about the one I helped write.<span class="spPermalink"><a href="/2014/01/13/#a1389635253">#</a></span></p>
-<p><a name="a1389635340"></a>We also spent a few minutes talking about confidence in eyewitness memory issues. I've been instructed to create a calibration plot for all items, all subjects based off the DeSoto and Roediger (2013) Experiment 2 results. Once I put that together, I'll link it here too.<span class="spPermalink"><a href="/2014/01/13/#a1389635340">#</a></span></p>
-<p><a name="a1389636960"></a>Here's the figure.<span class="spPermalink"><a href="/2014/01/13/#a1389636960">#</a></span></p>
-<p><a name="a1389636967"></a><img src="https://dl.dropbox.com/s/it7q5ocje47o8by/Screenshot%202014-01-13%2012.06.50.png"><span class="spPermalink"><a href="/2014/01/13/#a1389636967">#</a></span></p>
-<p><a name="a1389636976"></a>Here's what I wrote to Roddy: "Although we show the relation between confidence and accuracy can, for some items, be negative, high confidence ratings are still well-calibrated predictors of accuracy. If anything, it is the whopping underconfidence for ratings of 0-50 that is surprising." <span class="spPermalink"><a href="/2014/01/13/#a1389636976">#</a></span></p>
-<p><a name="a1389639396"></a>I drew the figure in a slightly different way, and here's what it looks like in the second version. I am not altogether sure the way I've drawn the figure is correct.<span class="spPermalink"><a href="/2014/01/13/#a1389639396">#</a></span></p>
-<p><a name="a1389639418"></a><img src="https://dl.dropbox.com/s/zafzolnv0wwlg19/Screenshot%202014-01-13%2012.56.01.png"><span class="spPermalink"><a href="/2014/01/13/#a1389639418">#</a></span></p>
-</div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (18)" ><i class="fa fa-caret-right" id="idStreamWedge18"></i></a></span><a name="a1389627453"></a><a class="aStreamTextLink" onclick="ecStream (18)">Puzzling over <i>R/K/G</i> data</a><span class="spPermalink"><a href="/2014/01/13/#a1389627453">#</a></span></div>
-<div class="divLevel" id="idStreamLevel18">
-<p><a name="a1389627628"></a>So in my pilot data, recognition memory performance for <i>remember</i> responses (hit rate = .80) is better than performance for <i>know</i> responses (hit rate = .50) is better than performance for <i>guess</i> responses (hit rate = .25). This is weird because it means that <i>know</i> responses indicate guessing, basically, whereas guess responses show reverse discrimination!<span class="spPermalink"><a href="/2014/01/13/#a1389627628">#</a></span></p>
-<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (19)" ><i class="fa fa-caret-right" id="idStreamWedge19"></i></a></span><a name="a1389628791"></a><a class="aStreamTextLink" onclick="ecStream (19)">Here are the troublesome data.</a><span class="spPermalink"><a href="/2014/01/13/#a1389628791">#</a></span></p>
-<div class="divLevel" id="idStreamLevel19">
-<p><a name="a1389628795"></a><img src="https://dl.dropboxusercontent.com/u/3695301/statsphotos/weirddprime.png" ><="" img=""><span class="spPermalink"><a href="/2014/01/13/#a1389628795">#</a></span></p>
-</div>
-<p><a name="a1389627838"></a>So that's worrisome, except overall discrimination (that is, hit rate minus false alarm rate, essentially) is positive, meaning that people are doing well overall. So maybe there's a way that this can exist in the real world.<span class="spPermalink"><a href="/2014/01/13/#a1389627838">#</a></span></p>
-<p><a name="a1389627999"></a>I'm talking to Diana about the issue over chat right now and she's worried about the guess data. Let's see what she has to say about it.<span class="spPermalink"><a href="/2014/01/13/#a1389627999">#</a></span></p>
-<p><a name="a1389628076"></a>I also e-mailed to schedule a meeting with Jason so I can show him the logistic regression data. Maybe he can help me make some sense out of things, too.<span class="spPermalink"><a href="/2014/01/13/#a1389628076">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p>Downside: Battery life. I don't understand it and it makes me nervous. It was really awful the first few days but seems to have mellowed out. Maybe it's finished installing updates, Glassware, etc. and is happy just to coexist with me?</p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (12)" ><i class="fa fa-arrow-up" id="idStreamUpArrow12"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (12)" ><i class="fa fa-arrow-down" id="idStreamDownArrow12"></i></a></span><a class="aStreamDayLink" href="/2014/01/10/">Friday, January 10<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (20)" ><i class="fa fa-caret-right" id="idStreamWedge20"></i></a></span><a name="a1389391445"></a><a class="aStreamTextLink" onclick="ecStream (20)">Working on the review paper</a><span class="spPermalink"><a href="/2014/01/10/#a1389391445">#</a></span></div>
-<div class="divLevel" id="idStreamLevel20">
-<p><a name="a1389391449"></a>Now that it's the end of the day, I'm spending some time copying and editing my review paper into a more manageable manuscript. The journal I'm aiming for only accepts manuscripts that are 50 pages or less, so some shortening is required. It's a tough position I'm in with this thing, because a lot of the sections are not written in enough detail, necessarily, to warrant the amount of space I've given them. Trimming things, though, will make the paper less "review" in nature. Whether this is an issue is not quite clear to me, but maybe once I begin to solicit comments I'll have a better sense.<span class="spPermalink"><a href="/2014/01/10/#a1389391449">#</a></span></p>
-</div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (21)" ><i class="fa fa-caret-right" id="idStreamWedge21"></i></a></span><a name="a1389385604"></a><a class="aStreamTextLink" onclick="ecStream (21)">Read the Roediger and Nestojko (in preparation) chapter</a><span class="spPermalink"><a href="/2014/01/10/#a1389385604">#</a></span></div>
-<div class="divLevel" id="idStreamLevel21">
-<p><a name="a1389385616"></a>A nice chapter by Roddy and John that will eventually come out in the Shiffrin festschrift book. Not a ton of comments to be made here -- will bring them up in the meeting -- but it's interesting to see some work that contradicts (or at least is unexpected concerning) earlier work on the testing effect.<span class="spPermalink"><a href="/2014/01/10/#a1389385616">#</a></span></p>
-</div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (22)" ><i class="fa fa-caret-right" id="idStreamWedge22"></i></a></span><a name="a1389380484"></a><a class="aStreamTextLink" onclick="ecStream (22)">Cutting my teeth on logistic regression</a><span class="spPermalink"><a href="/2014/01/10/#a1389380484">#</a></span></div>
-<div class="divLevel" id="idStreamLevel22">
-<p><a name="a1389380494"></a>I'm studying up on how logistic regression works for my dissertation. My grasp is not quite as solid as I'd like it to be, but it's been good practice trying to put together regression equations for the pilot data from Experiment 2 of my dissertation.<span class="spPermalink"><a href="/2014/01/10/#a1389380494">#</a></span></p>
-<p><a name="a1389380597"></a>The results, though, are quite promising. Take a look at the following figure.<span class="spPermalink"><a href="/2014/01/10/#a1389380597">#</a></span></p>
-<p><a name="a1389380607"></a><img src="https://dl.dropbox.com/s/odntp4vesp5jlfu/Screenshot%202014-01-10%2013.00.31.png" ><="" img=""><span class="spPermalink"><a href="/2014/01/10/#a1389380607">#</a></span></p>
-<p><a name="a1389380612"></a>This figure shows the predicted accuracy for confidence ratings 0-100 (in bins of 10) as a function of whether the memory is <i>remembered</i>, <i>known</i>, or <i>guessed</i>. And what you can see is that increases in confidence are more predictive of increases in accuracy when memories are <i>remembered</i>. This is the central issue of my dissertation (or the proposal, at least).<span class="spPermalink"><a href="/2014/01/10/#a1389380612">#</a></span></p>
-<p><a name="a1389380777"></a>What's somewhat concerning is that the predicted accuracy for most confidence ratings is below 50%, or chance. I need to figure out why this is happening. Basically, when people are saying "old," more than half of the time they're wrong -- which is indicative of reverse discrimination, which just doesn't seem right. I need to continue to think this issue through to determine whether this is surprising or not.<span class="spPermalink"><a href="/2014/01/10/#a1389380777">#</a></span></p>
-</div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (23)" ><i class="fa fa-caret-right" id="idStreamWedge23"></i></a></span><a name="a1389368349"></a><a class="aStreamTextLink" onclick="ecStream (23)">Created a new figure for presidents project</a><span class="spPermalink"><a href="/2014/01/10/#a1389368349">#</a></span></div>
-<div class="divLevel" id="idStreamLevel23">
-<p><a name="a1389368362"></a>Can't say much about it here, but it is saved in the appropriate folder.<span class="spPermalink"><a href="/2014/01/10/#a1389368362">#</a></span></p>
-</div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (24)" ><i class="fa fa-caret-right" id="idStreamWedge24"></i></a></span><a name="a1389363820"></a><a class="aStreamTextLink" onclick="ecStream (24)">Looked through Neath (2010), Healy and Parker (2001), and Healy, Havas, and Parker (2000) </a><span class="spPermalink"><a href="/2014/01/10/#a1389363820">#</a></span></div>
-<div class="divLevel" id="idStreamLevel24">
-<p><a name="a1389363879"></a>My hope was that one of these papers would be helpful for the presidents project. Unfortunately, the way Healy and colleagues conducted this research is not of immediate help to what we're trying to do in the <a href="http://psych.wustl.edu/memory">Memory Lab</a>.<span class="spPermalink"><a href="/2014/01/10/#a1389363879">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p>Upside: Having a Bluetooth headset. This is basic, but I've never made a phone call wirelessly before. Being able to dial someone in my pocket and speak to them with Google Glass is nice. Call quality (and reception) has varied, though. The same walk I photographed the Basilica I tried to make a call that dropped several times in a row. I don't know much about Bluetooth but it seems like a relatively fragile medium.</p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (13)" ><i class="fa fa-arrow-up" id="idStreamUpArrow13"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (13)" ><i class="fa fa-arrow-down" id="idStreamDownArrow13"></i></a></span><a class="aStreamDayLink" href="/2014/01/09/">Thursday, January  9<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (25)" ><i class="fa fa-caret-right" id="idStreamWedge25"></i></a></span><a name="a1389293865"></a><a class="aStreamTextLink" onclick="ecStream (25)">Created a new figure for the Festschrift chapter</a><span class="spPermalink"><a href="/2014/01/09/#a1389293865">#</a></span></div>
-<div class="divLevel" id="idStreamLevel25">
-<p><a name="a1389293877"></a>I created a figure depicting the between-events confidence-accuracy correlations for targets in the DRM paradigm (E1). Take a look! <span class="spPermalink"><a href="/2014/01/09/#a1389293877">#</a></span></p>
-<p><a name="a1389294244"></a><img src="https://dl.dropboxusercontent.com/u/3695301/photos/drmfigure.png" ><="" img=""><span class="spPermalink"><a href="/2014/01/09/#a1389294244">#</a></span></p>
-<p><a name="a1389364988"></a>It's saved as "DRM Between-Events Targets Figure."<span class="spPermalink"><a href="/2014/01/09/#a1389364988">#</a></span></p>
-</div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (26)" ><i class="fa fa-caret-right" id="idStreamWedge26"></i></a></span><a name="a1389291793"></a><a class="aStreamTextLink" onclick="ecStream (26)">Meeting with Roddy</a><span class="spPermalink"><a href="/2014/01/09/#a1389291793">#</a></span></div>
-<div class="divLevel" id="idStreamLevel26">
-<p><a name="a1389291801"></a>Met with Roddy to discuss next steps for work. <span class="spPermalink"><a href="/2014/01/09/#a1389291801">#</a></span></p>
-<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (27)" ><i class="fa fa-caret-right" id="idStreamWedge27"></i></a></span><a name="a1389291838"></a><a class="aStreamTextLink" onclick="ecStream (27)">Between-events confidence-accuracy correlation for targets in the DRM paradigm</a><span class="spPermalink"><a href="/2014/01/09/#a1389291838">#</a></span></p>
-<div class="divLevel" id="idStreamLevel27">
-<p><a name="a1389291852"></a>I need to send Roddy a figure depicting the between-events confidence-accuracy correlations for targets in Experiment 1 of Roediger and McDermott (1995). It'll pair with the parallel figure we have for lures, which'll be nice.<span class="spPermalink"><a href="/2014/01/09/#a1389291852">#</a></span></p>
-</div>
-<p><a name="a1389291933"></a>Keep an eye out for Wixted et al. (in prep) paper that Roddy might be involved with<span class="spPermalink"><a href="/2014/01/09/#a1389291933">#</a></span></p>
-<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (28)" ><i class="fa fa-caret-right" id="idStreamWedge28"></i></a></span><a name="a1389291981"></a><a class="aStreamTextLink" onclick="ecStream (28)">Dissertation work</a><span class="spPermalink"><a href="/2014/01/09/#a1389291981">#</a></span></p>
-<div class="divLevel" id="idStreamLevel28">
-<p><a name="a1389291990"></a>I need to go through the 20 subjects I collected before winter break for E2 of the dissertation. Once I do this, I need to send an update to my committee members (KM, ID, MM) covering (1) what I initially proposed, (2) the concerns that were raised, and (3) what I intend to do to address those concerns.<span class="spPermalink"><a href="/2014/01/09/#a1389291990">#</a></span></p>
-</div>
-<p><a name="a1389292194"></a>Get a final manuscript from APS once they're finished with the copyediting<span class="spPermalink"><a href="/2014/01/09/#a1389292194">#</a></span></p>
-<p><a name="a1389292220"></a>What's the story with only 90% of WUSTL undergraduates successfully placing Obama in the correct serial position?<span class="spPermalink"><a href="/2014/01/09/#a1389292220">#</a></span></p>
-<p><a name="a1389292253"></a>Get additional data (see Healy) to fill in missing years from our Presidents data, ensuring it's a college student sample<span class="spPermalink"><a href="/2014/01/09/#a1389292253">#</a></span></p>
-<p><a name="a1389292290"></a>Graph forgetting for each unit of analysis over the three time points<span class="spPermalink"><a href="/2014/01/09/#a1389292290">#</a></span></p>
-<p><a name="a1389292313"></a>Begin thinking of how the Psych Science paper could be converted to faces<span class="spPermalink"><a href="/2014/01/09/#a1389292313">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
+<p>Mixed bag: The looks. Privately, I enjoy my bright orange Google Glass and they remind me of the future. When I go out into the wild world, though, I have no idea what everyone's thinking. (Well, I know what they're thinking!) A photo of the author as a Glasshole:</p>
 
+<p><img src="https://dl.dropbox.com/s/h2n37etbtjq8vkh/20140125_204829_679.jpg"></p>
+
+<p>Downside: As an iPhone user I feel the functionality is quite limited. It costs an arm and a leg to tether (and it's not something I can even do with my current mobile data plan -- AT&amp;T with unlimited data). Which means the thing sits inert on my face for most of the time, eventually bugging my ears.</p>
+
+<p>Upside: There is something strangely natural and reassuring about a face-mounted display. This sounds ridiculous, but even after a few days it feels natural to have them on -- almost comfortable. It's a form factor that seems goofy to an outsider but maybe isn't so strange after all. I guess as someone who has worn glasses since third grade, it's not that out there.</p>
+
+<p>Downside: Terrified about what would happen if I brought them into the bathroom by accident.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">01/28/14; 01:20:37 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="28/someInitialThoughtsAboutGoogleGlass.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="28/15Analyses.html">More dissertation analyses</a></div>
+		<p><a href="http://beta.fargo.io/users/desoto/2014/01/27/dissertation15Analyses.html" target="_blank">Continuing from where I left off yesterday. </a></p>
+
+<p>I looked at the correlation between false alarm rate and response frequency, like we did in the <i>Psychological Science</i> paper. The figure looks exactly like I'd expect it to (if anything, the correlation is a little weak).</p>
+
+<p><img src="https://dl.dropbox.com/s/oj2tl1yewefzi47/Screenshot%202014-01-28%2009.43.53.png"></p>
+
+<p>I also tried to look at false <i>remember</i>, <i>know</i>, and <i>guess</i> responses as a function of response frequency and it was pretty messy. I think I need more power in order to look at those functions.</p>
+
+<p>More concerning, though, are the between-event confidence-accuracy correlations from yesterday. Remember that there were lots of values at the ceiling and the floor (refer to the figure from yesterday if you like). Because I've included unrelated lures in that analysis -- which were never studied by anyone -- I have data points in there that would never ever come off the floor. Specifically, any <i>R</i>, <i>K</i>, or <i>G </i>response to an unrelated lure would be located at the point (confidence, 0). So the solution is to recompute the confidence-accuracy relation for these items omitting unrelated lures. And when I do that, the results aren't quite as pretty as they were yesterday -- dang.</p>
+
+<p>Here are those updated figures:</p>
+
+<p><img src="https://dl.dropbox.com/s/sb8j9jqkopmz4g8/Screenshot%202014-01-28%2011.09.33.png"></p>
+
+<p>Without doing any stats, the correlation for <i>remembered </i>items (<i>r</i> = .24) appears similar to the correlation for <i>known</i> items (<i>r</i> = .25). Both, though, are better than the correlation for items that are <i>guessed </i>(<i>r</i> = .03).</p>
+
+<p>As you can see in this figure, making this change pulls a lot of points off the floor, especially for <i>remember </i>responses. This hasn't happened yet for <i>K </i>and <i>G</i> -- I am reasonably certain this is a power thing. (Reasonably.)</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">01/28/14; 09:46:24 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="28/15Analyses.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="27/dissertation15Analyses.html">Dissertation (Project 15) analyses</a></div>
+		<p>Working on analyses for Experiment 2 of my dissertation. I have 12 subjects' worth of pilot data that I'm investigating today to ensure there's nothing funky going on with my data collection, task, and so forth. So what I'm looking at is very basic stuff -- i.e., mean-level -- just to make sure nothing is going astray.</p>
+
+<p>Here are two tables that indicate the frequency with which subjects say "old" to the three different types of items in the study and the confidence with which they offer those "old" responses. That's on the left. On the right, I show the likelihood with which people say "remember," "know," and "guess" to the different item types.</p>
+
+<p><img src="https://dl.dropbox.com/s/c6pwff1pa7y2k2y/Screenshot%202014-01-27%2014.47.40.png"></p>
+
+<p>Looking at these tables alerts me that I could make yet a third one showing confidence for "remember," "know," and "guess." I'll do that in just a minute, although it's likely that they'll show anything unsurprising.</p>
+
+<p>Here's that table. A possible three-way interaction?</p>
+
+<p><img src="https://dl.dropbox.com/s/2pm68v09cnkye19/Screenshot%202014-01-27%2015.19.19.png"></p>
+
+<p>Next I have scatterplots depicting the between-events (top) and between-subjects (bottom) confidence-accuracy correlations. First we see a lot of ceiling and floor data for the between-events plots. This is expected because when we collapse across items, there really aren't a lot of subjects to drive variability. This would look a lot better with five or 10 times as many subjects.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/3695301/statsphotos/rkgfigures.png"></p>
+
+<p><i>(Note: I noticed a small issue with the between-subjects figures that I've corrected in a later version -- does not change the conclusions, though.)</i></p>
+
+<p>The bottom looks great, though. Subject-level confidence-accuracy plots are low on points but seem to have plenty of variability, which means we can trust the resulting Pearson correlations.</p>
+
+<p>And what are those Pearson correlations, you might ask? Exactly what I was hoping. The confidence-accuracy relation for <i>remembered</i> items (<i>r</i> = .54) is higher than the relation for <i>known</i> items (<i>r</i> = .28) is higher than the relation for <i>guessed</i> items (<i>r</i> = .07) from a between-events perspective.</p>
+
+<p>The same relation holds between subjects: The correlation for <i>remembered</i> items (<i>r</i> = .91) > the correlation for <i>known</i> items (<i>r</i> = .65) > the correlation for <i>guessed </i>items (<i>r</i> = .56)<i>.</i></p>
+
+<p>So far, it's a really nice dataset and will look better with the full contingent of subjects.</p>
+
+<p>This all lives in "1-27-14 Data.xlsx."</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">01/27/14; 02:49:16 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="27/dissertation15Analyses.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="27/reviewedAPaper.html">Reviewed a paper and a science fair project</a></div>
+		<p>Spent some time last Friday and this morning reviewing a submission to <i>Psychology &amp; Neuroscience</i>, which I believe is primarily a Brazilian journal (thanks for finding me, guys). I'll bring it up again if I see it in print over the next few months. It's nice seeing the degree to which findings in the U.S. hold up in other countries.  </p>
+
+<p>Also, I spent a few minutes looking over an empirical project on memory an acquaintance of mine is working on for his ninth grade science fair project. It is a neat project and I'm glad to have been involved (to a small degree) during the research process. Perhaps I'll be able to talk about the project in more detail at a later date, too.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">01/27/14; 11:52:17 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="27/reviewedAPaper.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="24/metWithJason.html">Met with Jason</a></div>
+		<p>I met with Jason today to get a sanity check on some of the dissertation (Project 15) work I've been up to lately. He suggests everything's looking good so far. It's important to visualize my data first through use of scatterplots, etc. Then, I should perhaps separate analyses by <i>remember/know/guess</i> and conduct "simple" logistic regression on the confidence-accuracy relationships. Then you can compare beta weights via t-tests.</p>
+
+<p>You can do this for each subject and average the betas, or you can just get one big equation. Given the data it's probably the case you'd need to average.</p>
+
+<p>If not, we get into the land of multilevel modeling or linear mixed modeling. These methods are able to account for differences among subjects but deal with issues of missing data.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">01/24/14; 01:35:45 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="24/metWithJason.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="24/labMeeting.html">Lab meeting</a></div>
+		<p>It was a bit of an "Andy show" today as most of the things we talked about I am involved with. Here's a list of things to do.</p>
+
+<p>There's a misspelling of an author's name on p. 9 of the Jacoby Festschrift chapter draft.  </p>
+
+<p>I should do a little Googling to see if I can find any documentation about the case in Dallas (possibly) where someone was accused of a rape but looked practically identical to the guy who actually committed the crime.</p>
+
+<p>I'll be on the lookout for a cartoon involving penguins from the newspaper a few days ago.</p>
+
+<p>An important takeaway message from the chapter: "Under most natural conditions, there's a tight link between confidence and accuracy in memory. When anomalies occur, though -- that's when problems arise."</p>
+
+<p>In future work, we might want to think about depicting our data using calibration curves. When designing double calibration curves -- <a href="http://tmp.fargo.io/users/desoto/2014/01/14/puzzlingOverCalibrationCurves.html">like the one shown here</a> -- we can divide by old and new or also divide by "old" or "new."</p>
+
+<p>In Table 2 of the chapter, perhaps indicate that the third column represents <i>means</i> of correlations</p>
+
+<p>Last, it's possible that through the use of linear mixed modeling (or multilevel linear modeling) you could also predict the confidence-accuracy relationship.</p>
+
+<p>One more thing -- take a look at the presidents data for people that did not remember Obama?</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">01/24/14; 11:55:09 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="24/labMeeting.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="23/fittingPowerFunctions.html">Fitting power functions</a></div>
+		<p>I've spent most of my time and energy today trying to fit forgetting functions to one of my datasets. Research (e.g., <a href="http://www.jstor.org/stable/40062717">Wixted &amp; Ebbesen, 1991</a>) suggests that the power function (i.e., <i>y </i>= <i>at^-b</i>) best describes forgetting from memory. I am not experienced in fitting these functions, though, so I had Excel draw power function trendlines through my data and just copied the resulting numbers. I am not super confident that I'm getting the right ones, though, so I really need to take things to a statistical package. Problem is, I don't know which one is right for the job.</p>
+
+<p>Plus, Adam brought up a good point when we spoke today: The data that I am trying to fit might involve a special case in which the power function (or really any function that drops off steeply after <i>t</i> = 0) might not best describe the underlying psychological mechanism I am exploring.</p>
+
+<p>It's really neat taking a look at forgetting for different items, though. Here's a vague, unlabeled figure so you can get a sense of what I'm talking about! I hope to be able to discuss some of these details with you soon.</p>
+
+<p><img src="https://dl.dropbox.com/s/cv87uarykw29ats/Screenshot%202014-01-23%2014.26.24.png"></p>
+
+<p>Time for me to take a break and focus on some other work, I think.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">01/23/14; 02:20:38 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="23/fittingPowerFunctions.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="22/orderedGoogleGlass.html">Ordered Google Glass -- any potential for research?</a></div>
+		<p>Not technically a research note, but today I ordered a tangerine-colored Google Glass that should arrive in a few days. It's not really a purchase I can afford (not being a developer, there's not much of a financial incentive reason to get one), so I imagine it'll be going back within the 30-day return window.</p>
+
+<p>I don't consider myself a "Glasshole," so I'm nervous about the social repercussions of wearing them around and about -- not to mention safety (can I wear them on a bus? jogging around the neighborhood?) -- so it'll be interesting, if not a little anxiety inducing, to play around with them for a few days. Maybe it won't be as bad as I'm imagining, especially on the campus of an elite private school where everyone and their mother has a top-of-the-line Macbook Pro.</p>
+
+<p>Bottom line is, if you'd like to play around with them for a little bit, come see me in a week or so. And if you see me with them on, please aim the rocks at my cushy bits and not my face. I can afford the doctor's bill but definitely can't afford the Glass replacement.</p>
+
+<p>But -- can anyone think of any interesting memory studies to be done with them? If so, now is the time to hit me up.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">01/22/14; 05:57:23 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="22/orderedGoogleGlass.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+
+				<div class="divFooterText">
+					<hr>
+					<p style="float: right;">Last built: Thu, Mar 20, 2014 at  2:24 PM</p>
+					<script>var disqus_identifier = "Thu, 09 Jan 2014 18:23:13 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
+					<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Thursday, January  9, 2014 at 12:23 PM</span>.</div>
 					</div>
 				</div>
 			</div>
-		<div class="divFargoStreamFooter">
-			<div>&copy; 2014 Andy DeSoto.</div>
-			<div>Last update: Thu, Mar 20, 2014 at  2:22 PM.</div>
-			<div><i>Everything's an interaction.</i></div>
-			<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kadesoto" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/kadesoto" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="http://technimentis.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
-</div>
-			</div>
 		<script>
-			startup ();
 			startupFargoPlatform ();
 			</script>
 		</body>

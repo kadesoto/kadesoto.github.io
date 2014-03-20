@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>January 28</title>
-		<meta charset="utf-8"> 
+		<meta charset='utf-8'> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://technimentis.com/rss.xml" />
 		<script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-3970063-10']); _gaq.push(['_setDomainName', 'technimentis.com']); _gaq.push(['_trackPageview']); (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
 		<!-- useBootstrap -->
@@ -22,7 +23,7 @@
     "opmlOwnerProfile": "http://www.andydesoto.com",
     "opmlOwnerName": "Andy DeSoto",
     "opmlOwnerEmail": "desoto@wustl.edu",
-    "opmlDateModified": "Thu, 20 Mar 2014 20:22:40 GMT",
+    "opmlDateModified": "Thu, 20 Mar 2014 20:24:31 GMT",
     "opmlExpansionState": "7,17,33",
     "opmlFeed": "http://technimentis.com/rss.xml",
     "opmlFlEncrypted": "false",
@@ -40,8 +41,8 @@
     "googleAnalyticsID": "UA-3970063-10",
     "domain": "technimentis.com",
     "bootstrapTheme": "spruce",
-    "type": "stream",
-    "slogan": "This aggression will not stand.",
+    "type": "bloghome",
+    "slogan": "Greetings, citizen of Planet Earth. We are your overlords. :-)",
     "disqusGroupName": "kadesoto",
     "siteTimeZone": "-6",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -79,343 +80,61 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css",
     "menuTitle": "Andy's Research Notes",
-    "now": "Thu Mar 20 2014 15:22:44 GMT-0500 (CDT)",
+    "now": "Thu Mar 20 2014 15:24:37 GMT-0500 (CDT)",
     "copyright": "&copy; 2014 Andy DeSoto.",
     "url": "http://technimentis.com/2014/01/28.html"
 }; //12/12/13 by DW
 		</script>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<link href="http://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Average" rel="stylesheet" type="text/css">
-		
 		<style>
-			.navbar {
-				font-family: "Average";
-				background-color: white;
-				font-size: 20px;
-				}
-			.divFargoStreamBody {
-				}
-			.divBodyText {
-				}
-			.divStreamTopSpacer {
-				}
-			.divStreamDay {
-				position: relative;
-				width: 100%;
-				height: 100%;
-				margin-left: 0;
-				margin-top: 0;
-				border-top: 1px solid silver;
-				z-index: 0;
-				}
-			.divStreamDayText {
-				font-family: "Average";
-				font-size: 24px;
-				line-height: 145%;
-				padding-top: 5%;
-				padding-bottom: 10%;
-				
-				
-				width: 700px;
-				margin-left: auto;
-				margin-right: auto;
-				
-				vertical-align: top;
-				height: 100%;
-				margin-top: 30px;
-				}
-			.divStreamDayHead {
-				font-family: "Abril Fatface";
-				font-size: 40px;
-				margin-top: .1em;
-				-webkit-margin-after: .75em;
-				}
-			.divStreamDayImage {
-				height: 100%;
-				width: 100%;
-				position: absolute;
-				right: 0;
-				
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				
-				z-index: -1;
-				opacity: 1;
-				}
-			.divTextInFrontOfImage {
-				background-color: white; 
-				opacity: .90;
-				padding: 1.5em;
-				border:2px solid whitesmoke;
-				}
-			.spStreamArrows {
-				font-size: .8em;
-				color: silver;
-				margin-right: 15px;
-				}
-			.divStreamDay p {
-				margin-bottom: .3em;
-				}
-			.divTextContainer {
-				padding: 0;
-				}
-			.divBanner {
-				margin-bottom: -1px;
-				}
-			.divLevel {
-				margin-left: 20px;
-				display: none;
-				}
-			h4 {
-				font-family: "Georgia";
-				font-size: 18px;
-				-webkit-margin-after: 5px;
-				}
-			.divStreamSectionHead {
-				margin-top: 5px;
-				font-weight: bold;
-				-webkit-margin-after: 5px;
-				}
-			.spPermalink {
-				margin-left: 3px;
-				}
-			.spPermalink a {
-				text-decoration: none;
-				color: purple;
-				font-size: 13px;
-				font-weight: none !important;
-				}
-			.divDaySeparator {
-				height: 0;
-				}
-			.aStreamWedgeLink {
-				color: black;
-				}
-			.aStreamWedgeLink i {
-				font-size: .85em;
-				color: black;
-				cursor: pointer;
-				}
-			.aStreamDayLink {
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.aStreamDayLink a:link, .aStreamDayLink a:visited {
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.divStreamIcon {
-				float: left;
-				width: 20px;
-				margin-left: -20px;
-				margin-right: 0;
-				}
-			.spStreamArrows {
-				float: left;
-				width: 36px;
-				margin-left: -36px;
-				margin-right: 0;
-				display: none;
-				}
-			.aStreamArrowsLink {
-				font-size: .75em;
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.divFargoStreamFooter {
-				font-family: "Arial";
-				line-height: 200%;
-				height: 400px;
-				background-color: whitesmoke;
-				border-top: 1px solid silver;
-				text-align: center;
-				padding-top: 15px;
-				}
-			.divFargoSocialMediaLinks {
-				position: fixed;
-				z-index: 1;
-				}
-			.divNavSocialMediaLinks {
-				margin-top: 17px;
-				margin-left: 1em;
-				font-size: .9em;
-				}
-			.divNavSocialMediaLinks .nav>li>a {
-				display: inline;
-				}
-			.divNavSocialMediaLinks .aSocialMediaLink {
-				letter-spacing: 14px;
-				}
-			.aStreamTextLink {
-				cursor: pointer;
-				color: black;
-				text-decoration: none;
-				}
-			.aStreamTextLink a:link, .aStreamTextLink a:visited, .aStreamTextLink a:hover, .aStreamTextLink a:active {
-				cursor: pointer;
-				color: black;
-				text-decoration: none;
-				}
-			</style>
-		<style> /* styles for phone */
 			@media only screen 
 			and (min-device-width : 320px) 
 			and (max-device-width : 480px) {
-				.navbar {
+				.navbar .nav>li {
 					display: none;
-					}
-				.divBodyText {
-					}
-				.divStreamTopSpacer {
-					display: none;
+					height: 0;
 					}
 				.divFargoSocialMediaLinks {
 					display: none;
 					}
-				.divStreamDayHead {
-					font-size: 22px;
+				.container {
+					margin-top: 10px;
+					width: 90%;
 					}
-				.divStreamSectionHead {
-					margin-top: 8px;
-					-webkit-margin-after: 8px;
-					}
-				.divStreamDayText {
+				.divFargoMarkdown p {
 					font-size: 17px;
-					padding-left: 8%;
-					padding-right: 7%;
-					width: 85%;
+					line-height: 140%;
 					}
-				.aStreamWedgeLink i {
-					font-size: 1.1em;
+				h2 {
+					font-size: 24px;
+					line-height: 140%;
 					}
-				.divStreamIcon {
-					width: 14px;
-					margin-left: -14px;
+				.divHeadlineUnit {
+					margin-bottom: 5px;
 					}
-				.spPermalink {
+				.divPrevNext {
+					float: none;
+					}
+				.divBreadcrumbs {
 					display: none;
-					}
-				.divFargoStreamFooter {
 					font-size: 15px;
-					line-height: 170%;
 					}
-				.divTextInFrontOfImage {
-					width: 80% !important;
-					margin-left: auto;
-					margin-right: auto;
+				.breadcrumb>li>.divider {
+					padding: 0;
+					padding-left: 1px;
 					}
-				.spDateYearPart {
+				.spSlogan {
 					display: none;
 					}
 				}
 			</style>
-		<style> /* styles for tablet */
-			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-				}
-			</style>
-		
-		<script>
-			colorsArray = [
-				"white",
-				"whitesmoke",
-				"ghostwhite",
-				"gainsboro" 
-				];
-			function getdaynum (theDate) {
-				var year = theDate.getFullYear ();
-				var onejan = new Date (year, 0, 1);
-				return (Math.ceil ((theDate - onejan) / 86400000));
-				}
-			function ecStream (idnum) {
-				var c = document.getElementById ("idStreamWedge" + idnum), idUL = "#idStreamLevel" + idnum;
-				if (c.className == "fa fa-caret-down") {
-					c.className = "fa fa-caret-right";
-					$(idUL).slideUp (75);
-					}
-				else {
-					c.className = "fa fa-caret-down";
-					$(idUL).slideDown (75);
-					}
-				}
-			function startup () {
-				var ixarray = 0;
-				$("#idTextContainer").children ("div").each (function () {
-					var flSetColor = true;
-					$(this).children ("div").each (function () {
-						if (this.className == "divStreamDayImage") {
-							flSetColor = false;
-							}
-						});
-					if (flSetColor) {
-						this.style.backgroundColor = colorsArray [ixarray++ % colorsArray.length];
-						}
-					else {
-						$(this).children ("div").each (function () {
-							if (this.className == "divStreamDayText") {
-								var flset = false;
-								$(this).children ("div").each (function () {
-									if (!flset) {
-										this.className = "divTextInFrontOfImage"; //set classname of first child element
-										}
-									flset = true;
-									});
-								}
-							});
-						}
-					});
-				
-				var hash = window.location.hash;
-				if (hash.length > 0) {
-					$("#idTextContainer").find ("span").each (function () {
-						$(this).children ("a").each (function () {
-							if (string.endsWith (this.href, window.location.hash)) {
-								$(this).parents ("div").css ("display", "block");
-								$(this).parents ("p").css ("font-weight", "bold");
-								
-								var flexpand = true;
-								$(this).parents ("div").each (function () {
-									if (flexpand) {
-										$(this).children ("a").each (function () {
-											$(this).css ("font-weight", "bold");
-											});
-										$(this).find ("i").each (function () {
-											$(this).attr ("class", "fa fa-caret-down");
-											});
-										$(this).next ("div").css ("display", "block"); //the divLevel item
-										flexpand = false;
-										}
-									});
-								}
-							});
-						});
-					}
-				
-				if (getBoolean (pagetable.flFixedMenu)) {
-					document.body.style.paddingTop = "60px";
-					if (hash.length > 0) {
-						$(document).one ("scroll", function () {
-							var $el = $(this), top = $el.scrollTop ();
-							$el.scrollTop (top - 60);
-							});
-						}
-					}
-				}
-			</script>
-		
 		<!-- customStylesScripts -->
 		
 		</head>
 	<body>
+		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kadesoto" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/kadesoto" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://technimentis.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
 		
 <div class="navbar navbar-static-top">
 	<div class="navbar-inner">
@@ -438,59 +157,79 @@
 		</div>
 	</div>
 
-		<div class="divFargoStreamBody" id="idFargoStreamBody">
-			<div class="divBodyText" id="idBodyText">
-				<div class="divTextContainer" id="idTextContainer">
-					<div class="divStreamTopSpacer"></div>
-<div class="divStreamDay">
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (0)" ><i class="fa fa-arrow-up" id="idStreamUpArrow0"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (0)" ><i class="fa fa-arrow-down" id="idStreamDownArrow0"></i></a></span><a class="aStreamDayLink" href="/2014/01/28/">Tuesday, January 28<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (0)" ><i class="fa fa-caret-right" id="idStreamWedge0"></i></a></span><a name="a1390936837"></a><a class="aStreamTextLink" onclick="ecStream (0)">Some initial thoughts about Google Glass</a><span class="spPermalink"><a href="/2014/01/28/#a1390936837">#</a></span></div>
-<div class="divLevel" id="idStreamLevel0">
-<p><a name="a1390936848"></a>I've had a tangerine-colored pair of Google Glass for five days now and thought I would share some initial impressions.<span class="spPermalink"><a href="/2014/01/28/#a1390936848">#</a></span></p>
-<p><a name="a1390937130"></a>Downside: First, although I'm platform agnostic (psychologically speaking), I am set up in "Apple Land," not "Google World." It is a big change of pace to think of Google Contacts, Hangouts, and Google+ instead of iMessages and iChat. As a result a lot of functionality is unclear to me. If I take a picture and share it with a friend, I have no idea how they're receiving it -- via SMS? through a Hangout? Is it sending an e-mail? It's very strange. I'll text a friend later and ask, "Did you get that picture I sent you?" and most of the times they didn't. Who knows where it went. <span class="spPermalink"><a href="/2014/01/28/#a1390937130">#</a></span></p>
-<p><a name="a1390937250"></a>Upside: Having something on your face that can take pictures is really cool. Being able to quickly take photos with a wink, a button press, or a head spasm-plus-voice command is convenient. It's nice to get a natural framing too, so I can show to others: "This is how something looks when I look at it."  <span class="spPermalink"><a href="/2014/01/28/#a1390937250">#</a></span></p>
-<p><a name="a1390937357"></a>Here's an example -- a photo I took of the Cathedral Basilica of St. Louis while walking home from the bus stop yesterday. I was bundled up with hat and gloves and didn't need to undo any of that to take a quick picture.<span class="spPermalink"><a href="/2014/01/28/#a1390937357">#</a></span></p>
-<p><a name="a1390937396"></a><img src="https://dl.dropbox.com/s/dj81t3n8gve4zue/20140127_164009_283.jpg"><span class="spPermalink"><a href="/2014/01/28/#a1390937396">#</a></span></p>
-<p><a name="a1390937401"></a>Downside: Battery life. I don't understand it and it makes me nervous. It was really awful the first few days but seems to have mellowed out. Maybe it's finished installing updates, Glassware, etc. and is happy just to coexist with me?<span class="spPermalink"><a href="/2014/01/28/#a1390937401">#</a></span></p>
-<p><a name="a1390937438"></a>Upside: Having a Bluetooth headset. This is basic, but I've never made a phone call wirelessly before. Being able to dial someone in my pocket and speak to them with Google Glass is nice. Call quality (and reception) has varied, though. The same walk I photographed the Basilica I tried to make a call that dropped several times in a row. I don't know much about Bluetooth but it seems like a relatively fragile medium.<span class="spPermalink"><a href="/2014/01/28/#a1390937438">#</a></span></p>
-<p><a name="a1390937542"></a>Mixed bag: The looks. Privately, I enjoy my bright orange Google Glass and they remind me of the future. When I go out into the wild world, though, I have no idea what everyone's thinking. (Well, I know what they're thinking!) A photo of the author as a Glasshole:<span class="spPermalink"><a href="/2014/01/28/#a1390937542">#</a></span></p>
-<p><a name="a1390937621"></a><img src="https://dl.dropbox.com/s/h2n37etbtjq8vkh/20140125_204829_679.jpg"><span class="spPermalink"><a href="/2014/01/28/#a1390937621">#</a></span></p>
-<p><a name="a1390937638"></a>Downside: As an iPhone user I feel the functionality is quite limited. It costs an arm and a leg to tether (and it's not something I can even do with my current mobile data plan -- AT&T with unlimited data). Which means the thing sits inert on my face for most of the time, eventually bugging my ears.<span class="spPermalink"><a href="/2014/01/28/#a1390937638">#</a></span></p>
-<p><a name="a1390937710"></a>Upside: There is something strangely natural and reassuring about a face-mounted display. This sounds ridiculous, but even after a few days it feels natural to have them on -- almost comfortable. It's a form factor that seems goofy to an outsider but maybe isn't so strange after all. I guess as someone who has worn glasses since third grade, it's not that out there.<span class="spPermalink"><a href="/2014/01/28/#a1390937710">#</a></span></p>
-<p><a name="a1390937784"></a>Downside: Terrified about what would happen if I brought them into the bathroom by accident.<span class="spPermalink"><a href="/2014/01/28/#a1390937784">#</a></span></p>
-</div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (1)" ><i class="fa fa-caret-right" id="idStreamWedge1"></i></a></span><a name="a1390923984"></a><a class="aStreamTextLink" onclick="ecStream (1)">More dissertation analyses</a><span class="spPermalink"><a href="/2014/01/28/#a1390923984">#</a></span></div>
-<div class="divLevel" id="idStreamLevel1">
-<p><a name="a1390923992"></a><a href="http://beta.fargo.io/users/desoto/2014/01/27/dissertation15Analyses.html" target="_blank">Continuing from where I left off yesterday. </a><span class="spPermalink"><a href="/2014/01/28/#a1390923992">#</a></span></p>
-<p><a name="a1390924027"></a>I looked at the correlation between false alarm rate and response frequency, like we did in the <i>Psychological Science</i> paper. The figure looks exactly like I'd expect it to (if anything, the correlation is a little weak).<span class="spPermalink"><a href="/2014/01/28/#a1390924027">#</a></span></p>
-<p><a name="a1390929372"></a><img src="https://dl.dropbox.com/s/oj2tl1yewefzi47/Screenshot%202014-01-28%2009.43.53.png"><span class="spPermalink"><a href="/2014/01/28/#a1390929372">#</a></span></p>
-<p><a name="a1390924110"></a>I also tried to look at false <i>remember</i>, <i>know</i>, and <i>guess</i> responses as a function of response frequency and it was pretty messy. I think I need more power in order to look at those functions.<span class="spPermalink"><a href="/2014/01/28/#a1390924110">#</a></span></p>
-<p><a name="a1390924148"></a>More concerning, though, are the between-event confidence-accuracy correlations from yesterday. Remember that there were lots of values at the ceiling and the floor (refer to the figure from yesterday if you like). Because I've included unrelated lures in that analysis -- which were never studied by anyone -- I have data points in there that would never ever come off the floor. Specifically, any <i>R</i>, <i>K</i>, or <i>G </i>response to an unrelated lure would be located at the point (confidence, 0). So the solution is to recompute the confidence-accuracy relation for these items omitting unrelated lures. And when I do that, the results aren't quite as pretty as they were yesterday -- dang.<span class="spPermalink"><a href="/2014/01/28/#a1390924148">#</a></span></p>
-<p><a name="a1390928465"></a>Here are those updated figures:<span class="spPermalink"><a href="/2014/01/28/#a1390928465">#</a></span></p>
-<p><a name="a1390929042"></a><img src="https://dl.dropbox.com/s/sb8j9jqkopmz4g8/Screenshot%202014-01-28%2011.09.33.png"><span class="spPermalink"><a href="/2014/01/28/#a1390929042">#</a></span></p>
-<p><a name="a1390929048"></a>Without doing any stats, the correlation for <i>remembered </i>items (<i>r</i> = .24) appears similar to the correlation for <i>known</i> items (<i>r</i> = .25). Both, though, are better than the correlation for items that are <i>guessed </i>(<i>r</i> = .03).<span class="spPermalink"><a href="/2014/01/28/#a1390929048">#</a></span></p>
-<p><a name="a1390929446"></a>As you can see in this figure, making this change pulls a lot of points off the floor, especially for <i>remember </i>responses. This hasn't happened yet for <i>K </i>and <i>G</i> -- I am reasonably certain this is a power thing. (Reasonably.)<span class="spPermalink"><a href="/2014/01/28/#a1390929446">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
+		<div class="divFargoOutlineBody">
+			<div id="idOutlineContainer" class="container">
+				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
+					<div class="divBreadcrumbs" id="idBreadcrumbs">
+						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a><span class="divider">/</span><li><a href="http://technimentis.com/2014">2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/01">January 2014</a></li></ul>
+						</div>
+					<h2 id="idBlogHomePageTitle">January 28</h2>
+					</div>
+				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="someInitialThoughtsAboutGoogleGlass.html">Some initial thoughts about Google Glass</a></div>
+		<p>I've had a tangerine-colored pair of Google Glass for five days now and thought I would share some initial impressions.</p>
 
+<p>Downside: First, although I'm platform agnostic (psychologically speaking), I am set up in "Apple Land," not "Google World." It is a big change of pace to think of Google Contacts, Hangouts, and Google+ instead of iMessages and iChat. As a result a lot of functionality is unclear to me. If I take a picture and share it with a friend, I have no idea how they're receiving it -- via SMS? through a Hangout? Is it sending an e-mail? It's very strange. I'll text a friend later and ask, "Did you get that picture I sent you?" and most of the times they didn't. Who knows where it went. </p>
+
+<p>Upside: Having something on your face that can take pictures is really cool. Being able to quickly take photos with a wink, a button press, or a head spasm-plus-voice command is convenient. It's nice to get a natural framing too, so I can show to others: "This is how something looks when I look at it."  </p>
+
+<p>Here's an example -- a photo I took of the Cathedral Basilica of St. Louis while walking home from the bus stop yesterday. I was bundled up with hat and gloves and didn't need to undo any of that to take a quick picture.</p>
+
+<p><img src="https://dl.dropbox.com/s/dj81t3n8gve4zue/20140127_164009_283.jpg"></p>
+
+<p>Downside: Battery life. I don't understand it and it makes me nervous. It was really awful the first few days but seems to have mellowed out. Maybe it's finished installing updates, Glassware, etc. and is happy just to coexist with me?</p>
+
+<p>Upside: Having a Bluetooth headset. This is basic, but I've never made a phone call wirelessly before. Being able to dial someone in my pocket and speak to them with Google Glass is nice. Call quality (and reception) has varied, though. The same walk I photographed the Basilica I tried to make a call that dropped several times in a row. I don't know much about Bluetooth but it seems like a relatively fragile medium.</p>
+
+<p>Mixed bag: The looks. Privately, I enjoy my bright orange Google Glass and they remind me of the future. When I go out into the wild world, though, I have no idea what everyone's thinking. (Well, I know what they're thinking!) A photo of the author as a Glasshole:</p>
+
+<p><img src="https://dl.dropbox.com/s/h2n37etbtjq8vkh/20140125_204829_679.jpg"></p>
+
+<p>Downside: As an iPhone user I feel the functionality is quite limited. It costs an arm and a leg to tether (and it's not something I can even do with my current mobile data plan -- AT&amp;T with unlimited data). Which means the thing sits inert on my face for most of the time, eventually bugging my ears.</p>
+
+<p>Upside: There is something strangely natural and reassuring about a face-mounted display. This sounds ridiculous, but even after a few days it feels natural to have them on -- almost comfortable. It's a form factor that seems goofy to an outsider but maybe isn't so strange after all. I guess as someone who has worn glasses since third grade, it's not that out there.</p>
+
+<p>Downside: Terrified about what would happen if I brought them into the bathroom by accident.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">01/28/14; 01:20:37 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="someInitialThoughtsAboutGoogleGlass.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="15Analyses.html">More dissertation analyses</a></div>
+		<p><a href="http://beta.fargo.io/users/desoto/2014/01/27/dissertation15Analyses.html" target="_blank">Continuing from where I left off yesterday. </a></p>
+
+<p>I looked at the correlation between false alarm rate and response frequency, like we did in the <i>Psychological Science</i> paper. The figure looks exactly like I'd expect it to (if anything, the correlation is a little weak).</p>
+
+<p><img src="https://dl.dropbox.com/s/oj2tl1yewefzi47/Screenshot%202014-01-28%2009.43.53.png"></p>
+
+<p>I also tried to look at false <i>remember</i>, <i>know</i>, and <i>guess</i> responses as a function of response frequency and it was pretty messy. I think I need more power in order to look at those functions.</p>
+
+<p>More concerning, though, are the between-event confidence-accuracy correlations from yesterday. Remember that there were lots of values at the ceiling and the floor (refer to the figure from yesterday if you like). Because I've included unrelated lures in that analysis -- which were never studied by anyone -- I have data points in there that would never ever come off the floor. Specifically, any <i>R</i>, <i>K</i>, or <i>G </i>response to an unrelated lure would be located at the point (confidence, 0). So the solution is to recompute the confidence-accuracy relation for these items omitting unrelated lures. And when I do that, the results aren't quite as pretty as they were yesterday -- dang.</p>
+
+<p>Here are those updated figures:</p>
+
+<p><img src="https://dl.dropbox.com/s/sb8j9jqkopmz4g8/Screenshot%202014-01-28%2011.09.33.png"></p>
+
+<p>Without doing any stats, the correlation for <i>remembered </i>items (<i>r</i> = .24) appears similar to the correlation for <i>known</i> items (<i>r</i> = .25). Both, though, are better than the correlation for items that are <i>guessed </i>(<i>r</i> = .03).</p>
+
+<p>As you can see in this figure, making this change pulls a lot of points off the floor, especially for <i>remember </i>responses. This hasn't happened yet for <i>K </i>and <i>G</i> -- I am reasonably certain this is a power thing. (Reasonably.)</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">01/28/14; 09:46:24 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="15Analyses.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+
+				<div class="divFooterText">
+					<hr>
+					<p style="float: right;">Last built: Thu, Mar 20, 2014 at  2:24 PM</p>
+					<script>var disqus_identifier = "Tue, 28 Jan 2014 15:46:24 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
+					<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Tuesday, January 28, 2014 at  9:46 AM</span>.</div>
 					</div>
 				</div>
 			</div>
-		<div class="divFargoStreamFooter">
-			<div>&copy; 2014 Andy DeSoto.</div>
-			<div>Last update: Thu, Mar 20, 2014 at  2:22 PM.</div>
-			<div><i>Everything's an interaction.</i></div>
-			<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kadesoto" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/kadesoto" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="http://technimentis.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
-</div>
-			</div>
 		<script>
-			startup ();
 			startupFargoPlatform ();
 			</script>
 		</body>

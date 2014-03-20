@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>March 2014</title>
-		<meta charset="utf-8"> 
+		<meta charset='utf-8'> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://technimentis.com/rss.xml" />
 		<script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-3970063-10']); _gaq.push(['_setDomainName', 'technimentis.com']); _gaq.push(['_trackPageview']); (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
 		<!-- useBootstrap -->
@@ -22,7 +23,7 @@
     "opmlOwnerProfile": "http://www.andydesoto.com",
     "opmlOwnerName": "Andy DeSoto",
     "opmlOwnerEmail": "desoto@wustl.edu",
-    "opmlDateModified": "Thu, 20 Mar 2014 20:22:40 GMT",
+    "opmlDateModified": "Thu, 20 Mar 2014 20:24:31 GMT",
     "opmlExpansionState": "7,17,33",
     "opmlFeed": "http://technimentis.com/rss.xml",
     "opmlFlEncrypted": "false",
@@ -40,8 +41,8 @@
     "googleAnalyticsID": "UA-3970063-10",
     "domain": "technimentis.com",
     "bootstrapTheme": "spruce",
-    "type": "stream",
-    "slogan": "It's even worse than it appears.",
+    "type": "bloghome",
+    "slogan": "Welcome back my friends to the show that never ends.",
     "disqusGroupName": "kadesoto",
     "siteTimeZone": "-6",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -79,343 +80,61 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css",
     "menuTitle": "Andy's Research Notes",
-    "now": "Thu Mar 20 2014 15:22:41 GMT-0500 (CDT)",
+    "now": "Thu Mar 20 2014 15:24:32 GMT-0500 (CDT)",
     "copyright": "&copy; 2014 Andy DeSoto.",
     "url": "http://technimentis.com/2014/03.html"
 }; //12/12/13 by DW
 		</script>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<link href="http://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Average" rel="stylesheet" type="text/css">
-		
 		<style>
-			.navbar {
-				font-family: "Average";
-				background-color: white;
-				font-size: 20px;
-				}
-			.divFargoStreamBody {
-				}
-			.divBodyText {
-				}
-			.divStreamTopSpacer {
-				}
-			.divStreamDay {
-				position: relative;
-				width: 100%;
-				height: 100%;
-				margin-left: 0;
-				margin-top: 0;
-				border-top: 1px solid silver;
-				z-index: 0;
-				}
-			.divStreamDayText {
-				font-family: "Average";
-				font-size: 24px;
-				line-height: 145%;
-				padding-top: 5%;
-				padding-bottom: 10%;
-				
-				
-				width: 700px;
-				margin-left: auto;
-				margin-right: auto;
-				
-				vertical-align: top;
-				height: 100%;
-				margin-top: 30px;
-				}
-			.divStreamDayHead {
-				font-family: "Abril Fatface";
-				font-size: 40px;
-				margin-top: .1em;
-				-webkit-margin-after: .75em;
-				}
-			.divStreamDayImage {
-				height: 100%;
-				width: 100%;
-				position: absolute;
-				right: 0;
-				
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				
-				z-index: -1;
-				opacity: 1;
-				}
-			.divTextInFrontOfImage {
-				background-color: white; 
-				opacity: .90;
-				padding: 1.5em;
-				border:2px solid whitesmoke;
-				}
-			.spStreamArrows {
-				font-size: .8em;
-				color: silver;
-				margin-right: 15px;
-				}
-			.divStreamDay p {
-				margin-bottom: .3em;
-				}
-			.divTextContainer {
-				padding: 0;
-				}
-			.divBanner {
-				margin-bottom: -1px;
-				}
-			.divLevel {
-				margin-left: 20px;
-				display: none;
-				}
-			h4 {
-				font-family: "Georgia";
-				font-size: 18px;
-				-webkit-margin-after: 5px;
-				}
-			.divStreamSectionHead {
-				margin-top: 5px;
-				font-weight: bold;
-				-webkit-margin-after: 5px;
-				}
-			.spPermalink {
-				margin-left: 3px;
-				}
-			.spPermalink a {
-				text-decoration: none;
-				color: purple;
-				font-size: 13px;
-				font-weight: none !important;
-				}
-			.divDaySeparator {
-				height: 0;
-				}
-			.aStreamWedgeLink {
-				color: black;
-				}
-			.aStreamWedgeLink i {
-				font-size: .85em;
-				color: black;
-				cursor: pointer;
-				}
-			.aStreamDayLink {
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.aStreamDayLink a:link, .aStreamDayLink a:visited {
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.divStreamIcon {
-				float: left;
-				width: 20px;
-				margin-left: -20px;
-				margin-right: 0;
-				}
-			.spStreamArrows {
-				float: left;
-				width: 36px;
-				margin-left: -36px;
-				margin-right: 0;
-				display: none;
-				}
-			.aStreamArrowsLink {
-				font-size: .75em;
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.divFargoStreamFooter {
-				font-family: "Arial";
-				line-height: 200%;
-				height: 400px;
-				background-color: whitesmoke;
-				border-top: 1px solid silver;
-				text-align: center;
-				padding-top: 15px;
-				}
-			.divFargoSocialMediaLinks {
-				position: fixed;
-				z-index: 1;
-				}
-			.divNavSocialMediaLinks {
-				margin-top: 17px;
-				margin-left: 1em;
-				font-size: .9em;
-				}
-			.divNavSocialMediaLinks .nav>li>a {
-				display: inline;
-				}
-			.divNavSocialMediaLinks .aSocialMediaLink {
-				letter-spacing: 14px;
-				}
-			.aStreamTextLink {
-				cursor: pointer;
-				color: black;
-				text-decoration: none;
-				}
-			.aStreamTextLink a:link, .aStreamTextLink a:visited, .aStreamTextLink a:hover, .aStreamTextLink a:active {
-				cursor: pointer;
-				color: black;
-				text-decoration: none;
-				}
-			</style>
-		<style> /* styles for phone */
 			@media only screen 
 			and (min-device-width : 320px) 
 			and (max-device-width : 480px) {
-				.navbar {
+				.navbar .nav>li {
 					display: none;
-					}
-				.divBodyText {
-					}
-				.divStreamTopSpacer {
-					display: none;
+					height: 0;
 					}
 				.divFargoSocialMediaLinks {
 					display: none;
 					}
-				.divStreamDayHead {
-					font-size: 22px;
+				.container {
+					margin-top: 10px;
+					width: 90%;
 					}
-				.divStreamSectionHead {
-					margin-top: 8px;
-					-webkit-margin-after: 8px;
-					}
-				.divStreamDayText {
+				.divFargoMarkdown p {
 					font-size: 17px;
-					padding-left: 8%;
-					padding-right: 7%;
-					width: 85%;
+					line-height: 140%;
 					}
-				.aStreamWedgeLink i {
-					font-size: 1.1em;
+				h2 {
+					font-size: 24px;
+					line-height: 140%;
 					}
-				.divStreamIcon {
-					width: 14px;
-					margin-left: -14px;
+				.divHeadlineUnit {
+					margin-bottom: 5px;
 					}
-				.spPermalink {
+				.divPrevNext {
+					float: none;
+					}
+				.divBreadcrumbs {
 					display: none;
-					}
-				.divFargoStreamFooter {
 					font-size: 15px;
-					line-height: 170%;
 					}
-				.divTextInFrontOfImage {
-					width: 80% !important;
-					margin-left: auto;
-					margin-right: auto;
+				.breadcrumb>li>.divider {
+					padding: 0;
+					padding-left: 1px;
 					}
-				.spDateYearPart {
+				.spSlogan {
 					display: none;
 					}
 				}
 			</style>
-		<style> /* styles for tablet */
-			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-				}
-			</style>
-		
-		<script>
-			colorsArray = [
-				"white",
-				"whitesmoke",
-				"ghostwhite",
-				"gainsboro" 
-				];
-			function getdaynum (theDate) {
-				var year = theDate.getFullYear ();
-				var onejan = new Date (year, 0, 1);
-				return (Math.ceil ((theDate - onejan) / 86400000));
-				}
-			function ecStream (idnum) {
-				var c = document.getElementById ("idStreamWedge" + idnum), idUL = "#idStreamLevel" + idnum;
-				if (c.className == "fa fa-caret-down") {
-					c.className = "fa fa-caret-right";
-					$(idUL).slideUp (75);
-					}
-				else {
-					c.className = "fa fa-caret-down";
-					$(idUL).slideDown (75);
-					}
-				}
-			function startup () {
-				var ixarray = 0;
-				$("#idTextContainer").children ("div").each (function () {
-					var flSetColor = true;
-					$(this).children ("div").each (function () {
-						if (this.className == "divStreamDayImage") {
-							flSetColor = false;
-							}
-						});
-					if (flSetColor) {
-						this.style.backgroundColor = colorsArray [ixarray++ % colorsArray.length];
-						}
-					else {
-						$(this).children ("div").each (function () {
-							if (this.className == "divStreamDayText") {
-								var flset = false;
-								$(this).children ("div").each (function () {
-									if (!flset) {
-										this.className = "divTextInFrontOfImage"; //set classname of first child element
-										}
-									flset = true;
-									});
-								}
-							});
-						}
-					});
-				
-				var hash = window.location.hash;
-				if (hash.length > 0) {
-					$("#idTextContainer").find ("span").each (function () {
-						$(this).children ("a").each (function () {
-							if (string.endsWith (this.href, window.location.hash)) {
-								$(this).parents ("div").css ("display", "block");
-								$(this).parents ("p").css ("font-weight", "bold");
-								
-								var flexpand = true;
-								$(this).parents ("div").each (function () {
-									if (flexpand) {
-										$(this).children ("a").each (function () {
-											$(this).css ("font-weight", "bold");
-											});
-										$(this).find ("i").each (function () {
-											$(this).attr ("class", "fa fa-caret-down");
-											});
-										$(this).next ("div").css ("display", "block"); //the divLevel item
-										flexpand = false;
-										}
-									});
-								}
-							});
-						});
-					}
-				
-				if (getBoolean (pagetable.flFixedMenu)) {
-					document.body.style.paddingTop = "60px";
-					if (hash.length > 0) {
-						$(document).one ("scroll", function () {
-							var $el = $(this), top = $el.scrollTop ();
-							$el.scrollTop (top - 60);
-							});
-						}
-					}
-				}
-			</script>
-		
 		<!-- customStylesScripts -->
 		
 		</head>
 	<body>
+		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kadesoto" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/kadesoto" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://technimentis.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
 		
 <div class="navbar navbar-static-top">
 	<div class="navbar-inner">
@@ -438,207 +157,234 @@
 		</div>
 	</div>
 
-		<div class="divFargoStreamBody" id="idFargoStreamBody">
-			<div class="divBodyText" id="idBodyText">
-				<div class="divTextContainer" id="idTextContainer">
-					<div class="divStreamTopSpacer"></div>
-<div class="divStreamDay">
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (0)" ><i class="fa fa-arrow-up" id="idStreamUpArrow0"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (0)" ><i class="fa fa-arrow-down" id="idStreamDownArrow0"></i></a></span><a class="aStreamDayLink" href="/2014/03/20/">Thursday, March 20<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (0)" ><i class="fa fa-caret-right" id="idStreamWedge0"></i></a></span><a name="a1395331552"></a><a class="aStreamTextLink" onclick="ecStream (0)">Redoing a figure</a><span class="spPermalink"><a href="/2014/03/20/#a1395331552">#</a></span></div>
-<div class="divLevel" id="idStreamLevel0">
-<p><a name="a1395331555"></a>Every once in a while we researchers have the pleasure of recreating a historic or classic figure for reuse in a presentation or paper. It's a zenlike experience to engage in this process of re-transcription. Today's mission was to redo Figure 1 from <a href="http://psycnet.apa.org/journals/xge/64/5/482/">a 1962 paper by Bennet Murdock</a> (<i class = "fa fa-dollar"></i>) on the serial position curve in memory.<span class="spPermalink"><a href="/2014/03/20/#a1395331555">#</a></span></p>
-<p><a name="a1395331895"></a>Here's the original figure...<span class="spPermalink"><a href="/2014/03/20/#a1395331895">#</a></span></p>
-<p><a name="a1395331898"></a><img src="https://dl.dropbox.com/s/8dy43j9bfdycdyd/Screenshot%202014-03-19%2015.50.09.png"><span class="spPermalink"><a href="/2014/03/20/#a1395331898">#</a></span></p>
-<p><a name="a1395331937"></a>... and here's my redo.<span class="spPermalink"><a href="/2014/03/20/#a1395331937">#</a></span></p>
-<p><a name="a1395331947"></a><img src="https://dl.dropbox.com/s/g7093qxzwvpmgi0/Screenshot%202014-03-20%2011.02.11.png"><span class="spPermalink"><a href="/2014/03/20/#a1395331947">#</a></span></p>
-<p><a name="a1395331982"></a>Although the new figure is much more flexible (can be edited, etc.) and vector rather than raster (can be resized, reshaped, etc., without loss of quality), there's a real elegance to the original figure. In particular, I bumped into issues recreating the "shiny" bubbles of the 20-1 condition in the original, so I had to settle for a less interesting (but perhaps more readable) intermediate gray shade. Additionally, it's not so easy to create those "legend arrows" from the original, so I stuck with a more traditional legend.<span class="spPermalink"><a href="/2014/03/20/#a1395331982">#</a></span></p>
-<p><a name="a1395332124"></a>What did the original figure creator get right? What did he or she get wrong? I was about to assume the figure was Murdock's work, but it occurred to me that the journal typesetter or editor may have created the figure. I think I have seen similar figures in papers by other authors, but am not certain.<span class="spPermalink"><a href="/2014/03/20/#a1395332124">#</a></span></p>
-<p><a name="a1395332186"></a>P.S.: I utilize a feature of Fargo, my outlining system, for the first time in this post. Above, I link to Murdock's paper but, like so many other academic works, it's behind a paywall. In order to indicate this, I enter a little tag I invented myself -- [ paywall ] -- and [Fargo] renders a dollar sign icon. Later today I'll link the icon to some information about paywalls.   <span class="spPermalink"><a href="/2014/03/20/#a1395332186">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+		<div class="divFargoOutlineBody">
+			<div id="idOutlineContainer" class="container">
+				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
+					<div class="divBreadcrumbs" id="idBreadcrumbs">
+						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a><span class="divider">/</span><li><a href="http://technimentis.com/2014">2014</a></li></ul>
+						</div>
+					<h2 id="idBlogHomePageTitle">March 2014</h2>
+					</div>
+				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="20/redoingAFigure.html">Redoing a figure</a></div>
+		<p>Every once in a while we researchers have the pleasure of recreating a historic or classic figure for reuse in a presentation or paper. It's a zenlike experience to engage in this process of re-transcription. Today's mission was to redo Figure 1 from <a href="http://psycnet.apa.org/journals/xge/64/5/482/">a 1962 paper by Bennet Murdock</a> (<i class = "fa fa-dollar"></i>) on the serial position curve in memory.</p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (1)" ><i class="fa fa-arrow-up" id="idStreamUpArrow1"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (1)" ><i class="fa fa-arrow-down" id="idStreamDownArrow1"></i></a></span><a class="aStreamDayLink" href="/2014/03/19/">Wednesday, March 19<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (1)" ><i class="fa fa-caret-right" id="idStreamWedge1"></i></a></span><a name="a1395250243"></a><a class="aStreamTextLink" onclick="ecStream (1)">Gamma correlations, continued</a><span class="spPermalink"><a href="/2014/03/19/#a1395250243">#</a></span></div>
-<div class="divLevel" id="idStreamLevel1">
-<p><a name="a1395249986"></a>So yesterday I calculated the within-subject gamma correlations for <i>remember</i>, <i>know</i>, and <i>guess</i> responses. I finished the work this morning and now know the within-<i>item</i> correlations for <i>remember</i>, <i>know</i>, and <i>guess</i> responses. Just like for the within-subject correlations, the within-item correlations are higher for <i>remember</i> responses (M = .57, SD = .42), intermediate for <i>know</i> responses (M = .41, SD = .36), and lowest for <i>guesses</i> (M = .05, SD = .58). This is significant as per a repeated-measures ANOVA, <i>F</i>(2, 314) = 69.07, <i>p</i> < .001, and corresponding post-hoc tests.<span class="spPermalink"><a href="/2014/03/19/#a1395249986">#</a></span></p>
-<p><a name="a1395250236"></a>Here's the SPSS printout of the figure: <span class="spPermalink"><a href="/2014/03/19/#a1395250236">#</a></span></p>
-<p><a name="a1395250263"></a><img src="https://dl.dropbox.com/s/83wtl91isfej60x/Screenshot%202014-03-19%2012.20.28.png"><span class="spPermalink"><a href="/2014/03/19/#a1395250263">#</a></span></p>
-<p><a name="a1395250331"></a>It turns out that the <a href="http://technimentis.com/2014/03/18/gammaCorrelationsForDissertationWorkOtherNotes.html">correlations reported yesterday are statistically significant, too</a>. The repeated-measures ANOVA was significant, <i>F</i>(2, 96) = 12.86, <i>p</i> < .001.<span class="spPermalink"><a href="/2014/03/19/#a1395250331">#</a></span></p>
-<p><a name="a1395250419"></a>What are the implications? More to come.<span class="spPermalink"><a href="/2014/03/19/#a1395250419">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p>Here's the original figure...</p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (2)" ><i class="fa fa-arrow-up" id="idStreamUpArrow2"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (2)" ><i class="fa fa-arrow-down" id="idStreamDownArrow2"></i></a></span><a class="aStreamDayLink" href="/2014/03/18/">Tuesday, March 18<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (2)" ><i class="fa fa-caret-right" id="idStreamWedge2"></i></a></span><a name="a1395178935"></a><a class="aStreamTextLink" onclick="ecStream (2)">Gamma correlations for dissertation work; other notes</a><span class="spPermalink"><a href="/2014/03/18/#a1395178935">#</a></span></div>
-<div class="divLevel" id="idStreamLevel2">
-<p><a name="a1395178956"></a>Brain's a little blurry today. I attempted (with mixed success) a 20-mile training run this morning that I'm still recovering from. Here's the route:<span class="spPermalink"><a href="/2014/03/18/#a1395178956">#</a></span></p>
-<p><a name="a1395192591"></a><img src="https://dl.dropbox.com/s/54e0dqrn09ym578/runningroute.png"><span class="spPermalink"><a href="/2014/03/18/#a1395192591">#</a></span></p>
-<p><a name="a1395179298"></a>Today my research efforts were spent on obtaining <a href="http://en.wikipedia.org/wiki/Goodman_and_Kruskal's_gamma">gamma correlations</a> for subjects in my dissertation project. 3-18-14 Data.xlsx contains these numbers. There's not much to look at here, so we can just summarize them by saying that average gamma for <i>remember</i> responses (<i>M</i> = .47, <i>SD</i> = .49) appears numerically greater than average gamma for <i>know</i> responses (<i>M</i> = .26, <i>SD</i> = .33), and those appear greater than gamma for <i>guess </i>responses (<i>M</i> = .08, <i>SD</i> = .28). I haven't run the within-subjects ANOVA yet so I can't tell you whether these differences are significant. Do note that there's a lot of variability here, as illustrated by the standard deviations. To show you what I'm talking about, here are the correlations for the <i>remember</i> responses, for each subject:<span class="spPermalink"><a href="/2014/03/18/#a1395179298">#</a></span></p>
-<p><a name="a1395179813"></a><img src="https://dl.dropbox.com/s/7vilywtx83yv8ke/Screenshot%202014-03-18%2016.56.02.png"><span class="spPermalink"><a href="/2014/03/18/#a1395179813">#</a></span></p>
-<p><a name="a1395179819"></a>(Of course, the negative -1.00's pop out here as something we might want to investigate in the future.)<span class="spPermalink"><a href="/2014/03/18/#a1395179819">#</a></span></p>
-<p><a name="a1395179842"></a>I was conducting a similar analysis for the item-level gammas but ran into an issue when sanitizing the data file. Looking at these numbers, unfortunately, will have to wait for tomorrow.<span class="spPermalink"><a href="/2014/03/18/#a1395179842">#</a></span></p>
-<p><a name="a1395179868"></a>One unrelated note: <a href="https://www.newschallenge.org/challenge/2014/submissions/outliners-as-a-tool-for-open-science">I submitted a Knight News Challenge fellowship proposal for a project using Fargo</a>. You can take a look at the proposal here. I speak about the idea casually (note that a lot of the verbiage was copied and pasted into the fellowship proposal -- shh, don't tell) <a href="http://technimentis.com/2014/02/27/fargoForOpenScienceDocumentation.html">in an earlier blog post here</a>. <span class="spPermalink"><a href="/2014/03/18/#a1395179868">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p><img src="https://dl.dropbox.com/s/8dy43j9bfdycdyd/Screenshot%202014-03-19%2015.50.09.png"></p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (3)" ><i class="fa fa-arrow-up" id="idStreamUpArrow3"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (3)" ><i class="fa fa-arrow-down" id="idStreamDownArrow3"></i></a></span><a class="aStreamDayLink" href="/2014/03/17/">Monday, March 17<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (3)" ><i class="fa fa-caret-right" id="idStreamWedge3"></i></a></span><a name="a1395080193"></a><a class="aStreamTextLink" onclick="ecStream (3)">Catching up</a><span class="spPermalink"><a href="/2014/03/17/#a1395080193">#</a></span></div>
-<div class="divLevel" id="idStreamLevel3">
-<p><a name="a1395080204"></a>Getting back into the swing of things this Monday. Last week was spring break here at WUSTL, so I worked from home a bunch and got some professional development-related things going for a change of pace. I was expecting to segue back into my more usual work when I got sidelined with a weird bug (perhaps from something I ate Friday night?) and was on my back all weekend as a result. My brain is only now starting to clear up.<span class="spPermalink"><a href="/2014/03/17/#a1395080204">#</a></span></p>
-<p><a name="a1395080300"></a>Some neat links for the day: <a href="http://modnotebooks.com/">These things called Mod Notebooks</a> -- you pay $25, get a notebook in the mail, and then ship it in when it's filled and they digitize it for you. On one hand $25 seems pretty low (especially considering a traditional Moleskine's worth least half that without the digitization included). But on the other hand it seems much more useful to get something digitized on a daily basis. Once I fill up a notebook, what are the chances I'm going to want to go back and look at it?<span class="spPermalink"><a href="/2014/03/17/#a1395080300">#</a></span></p>
-<p><a name="a1395080404"></a>Also, if you're interested in <a href="http://freebracketchallenge.1.mayhem.cbssports.com/brackets/shareable-bracket/14a104376ee688f579c2a2c0fd637ff1a5c0b907910f2e99?randkey=142407">my March Madness bracket, come on and get me right here</a>.<span class="spPermalink"><a href="/2014/03/17/#a1395080404">#</a></span></p>
-<p><a name="a1395080433"></a>I spent the morning working on a review for a journal article I received over the weekend. I can't say much about it here but will share it around if and when it's published. Reading through I was reminded just how hard it can be to write a good paper. It's such a particular challenge to keep the overall goal of a manuscript in mind (e.g., the main thesis, how sections connect to each other) at the same time you keep the underlying facts accurate and concise. Writing really is a balancing act.<span class="spPermalink"><a href="/2014/03/17/#a1395080433">#</a></span></p>
-<p><a name="a1395080598"></a>The biggest challenge is getting my head back into my dissertation, which I've taken a break from the last few days. It's helpful going back to look at some of my previous posts <a href="http://technimentis.com/2014/02/28/investigatingConfidenceaccuracyCorrelations.html">(1)</a>, <a href="http://technimentis.com/2014/03/03/updatedLogisticRegressionAnalyses.html">(2)</a> to refresh my memory. The next step is seeing if any critical elements are missing from my prior analyses and then going forward with the proposed Experiment 3.<span class="spPermalink"><a href="/2014/03/17/#a1395080598">#</a></span></p>
-<p><a name="a1395080638"></a>(Last note -- you might have noticed that this site is now hosted on my <a href="http://technimentis.com/">Technimentis</a> domain. I've always felt this is the right place for documenting and writing about my research.) <span class="spPermalink"><a href="/2014/03/17/#a1395080638">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p>... and here's my redo.</p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (4)" ><i class="fa fa-arrow-up" id="idStreamUpArrow4"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (4)" ><i class="fa fa-arrow-down" id="idStreamDownArrow4"></i></a></span><a class="aStreamDayLink" href="/2014/03/13/">Thursday, March 13<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (4)" ><i class="fa fa-caret-right" id="idStreamWedge4"></i></a></span><a name="a1394722345"></a><a class="aStreamTextLink" onclick="ecStream (4)">Review of the Jawbone UP24, about four months in</a><span class="spPermalink"><a href="/2014/03/13/#a1394722345">#</a></span></div>
-<div class="divLevel" id="idStreamLevel4">
-<p><a name="a1394724445"></a>#backgroundImage "https://dl.dropbox.com/s/zfwmmxf1x5wjx1f/Photo%20Mar%2013%2C%2010%2025%2052%20AM.jpg"<span class="spPermalink"><a href="/2014/03/13/#a1394724445">#</a></span></p>
-<p><a name="a1394724776"></a>#description "The verdict: It's a great fitness tracker"<span class="spPermalink"><a href="/2014/03/13/#a1394724776">#</a></span></p>
-<p><a name="a1394722358"></a><a href="http://www.linkedin.com/pub/bennett-keefer/58/778/46b">My buddy (and favorite Chemicals Professional) Bennett </a>reports he's interested in a fitness tracker. I've been using my <a href="http://jawbone.com/store/buy/up24">Jawbone UP 24</a> for about four months now, so it's a good time to write about it.<span class="spPermalink"><a href="/2014/03/13/#a1394722358">#</a></span></p>
-<p><a name="a1394722652"></a>First, some background: I got burned by being an early adopter in this area about a year and a half ago. I went through six different copies of the Jawbone UP, v. 1, which was truly a horrible device. Once the pain of that experience faded, I tried some other trackers -- the Larklife (which I think has been discontinued) and the Fitbit Flex (<a href="https://medium.com/product-design/6034555eddfd">which I wrote about here</a>). But I finally got an UP24 and have been very happy with it since. <a href="http://thewirecutter.com/reviews/best-fitness-tracker/">Most tech writers seem to favor the Fitbit Force</a> (assuming it isn't giving you horrible skin rashes), but I think the UP24 is an under appreciated piece of tech. Here's why.<span class="spPermalink"><a href="/2014/03/13/#a1394722652">#</a></span></p>
-<p><a name="a1394722989"></a><b>Aesthetics and comfort</b>. Let's get this out of the way first: I think the UP24 is one of the best-looking fitness trackers out there. The orange ("persimmon") is what I have, and the black is also a solid choice. If you go with the standard UP (to save $50), there are other nice colors available. These things look more like bracelets or fashion accessories than connected devices. They're also comfortable, too -- this is something you're buying to wear, literally, 24 hours a day (hence the name) -- so you can't understate the importance of this issue. The only times the UP24 gets uncomfortable or weird is when I'm pulling my arm out from underneath a pillow in the middle of the night. It's super easy to put on, take off, and charge. (Bennett is a swimmer, though, and the device is not waterproof. Rather, it's described as "showerproof.")<span class="spPermalink"><a href="/2014/03/13/#a1394722989">#</a></span></p>
-<p><a name="a1394723289"></a><b>Fitness tracking</b>. Want to record a workout with your UP24? Press the band a few times and it goes into stopwatch mode. When you're done, press it again to turn it off. If your workout was a run, you're basically done. If you did something else that the UP24 can't sense (e.g., bike riding, cross training), you go into the app and tell it what you did. Distance, time, calories burned, and so on are all baked in, and you can edit the intensity of your workout to fine-tune what's reported. I mostly use my UP24 to measure running workouts, so the device especially excels. The pedometer is generally accurate at measuring distance assuming I'm running at my usual slow pace. If I try to speed up or slow down even further, the estimates can get off (but never by more than half a mile or so). The biggest downside of the UP24 is that there's no screen on it, though, so you have no idea how far you've run while you're running. This means that before a workout, I'll have to map out my route and try and recall it during the run to make sure I do the right distance.<span class="spPermalink"><a href="/2014/03/13/#a1394723289">#</a></span></p>
-<p><a name="a1394723557"></a><b>Sleep tracking</b>. One of the main reasons I got the UP24 was to track my sleep. This hasn't been as useful as I thought it would be (<a href="http://beta.fargo.io/users/desoto/personalAnalytics/">although you can view my own public sleep data by clicking here</a> -- although it seems to have broken, and I don't know why). Jawbone released a new UP Coffee app in the interests of helping users discover correlations between their daily activity and sleep habits, but knowing what we know about statistics, this sort of stuff requires a whole lot of data to be collected before "insights" become accurate.<span class="spPermalink"><a href="/2014/03/13/#a1394723557">#</a></span></p>
-<p><a name="a1394723758"></a><b>Interconnectivity</b>. Honestly, this is what makes the Jawbone UP24 the winner for me. Jawbone has spent more effort than any other fitness tracker has to ensure interconnectivity and interoperability between different "internet of things" devices. Here's what I mean. When I wake up, the living room lights turn on. When I hop on my scale, the data is sent directly to the UP app. Everything is simultaneously copied to my Google Drive, too. I could set up even more triggers, <a href="http://ifttt.com">thanks to IFTTT</a> (no other tracker supports this, to my knowledge), to text me when I hit a step limit, send an e-mail or a tweet if I've had a lazy day, or write a blog post if I report that I'm sad. I find this reassuring because it means that when it becomes time to try a new fitness tracker, I can take my data with me (perhaps with a bit of wrangling). Considering that personal fitness tracking has the potential to be a lifelong hobby, an eye toward archival and longevity is <i>huge</i>.<span class="spPermalink"><a href="/2014/03/13/#a1394723758">#</a></span></p>
-<p><a name="a1394724081"></a><b>App</b>. I like the Jawbone app a lot, too. I'm not going to get into it here, though. One warning: These guys seem to build for the iPhone first.<span class="spPermalink"><a href="/2014/03/13/#a1394724081">#</a></span></p>
-<p><a name="a1394724111"></a>The bottom line: The Jawbone UP24 is a comfortable, fashion conscious wristband that provides a (relatively) inexpensive way to start collecting personal data. I'm happy with mine and love taking it on runs, and am hugely grateful that the device connects to so many other devices and services that I love. When something comes out with more and more accurate sensors and a screen (like some of Samsung's new offerings, perhaps), it might be time to upgrade. But for now, I don't foresee taking this thing off for the rest of the year at least.<span class="spPermalink"><a href="/2014/03/13/#a1394724111">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p><img src="https://dl.dropbox.com/s/g7093qxzwvpmgi0/Screenshot%202014-03-20%2011.02.11.png"></p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (5)" ><i class="fa fa-arrow-up" id="idStreamUpArrow5"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (5)" ><i class="fa fa-arrow-down" id="idStreamDownArrow5"></i></a></span><a class="aStreamDayLink" href="/2014/03/06/">Thursday, March  6<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (5)" ><i class="fa fa-caret-right" id="idStreamWedge5"></i></a></span><a name="a1394125310"></a><a class="aStreamTextLink" onclick="ecStream (5)">Individual logistic regression plots</a><span class="spPermalink"><a href="/2014/03/06/#a1394125310">#</a></span></div>
-<div class="divLevel" id="idStreamLevel5">
-<p><a name="a1394125389"></a>In a Facebook comment <a href="http://jasonfinley.com">Jason Finley</a> suggested that I graph the logistic regression curves for each individual subject in order to identify outliers, etc., writing, "Thoughtful. Try also making a tiny plot for each subject and eyeballing the lot of them." <span class="spPermalink"><a href="/2014/03/06/#a1394125389">#</a></span></p>
-<p><a name="a1394125455"></a>So I did that for 20 of the 64 subjects and here's what we get: <span class="spPermalink"><a href="/2014/03/06/#a1394125455">#</a></span></p>
-<p><a name="a1394125386"></a><img src="https://dl.dropbox.com/s/c79f2zi5cyewne6/Screenshot%202014-03-06%2011.00.56.png"><span class="spPermalink"><a href="/2014/03/06/#a1394125386">#</a></span></p>
-<p><a name="a1394125487"></a>It's definitely a mess. Blue is <i>remember</i>, red is <i>know</i>, and green is <i>guess </i>(<a href="http://desoto.smallpict.com/2014/03/04/subjectlevelRegressionsNotSoPretty.html">look here for a bit of background on the project</a>). I'm staring at the plots trying to identify relationships and it isn't easy. Generally, the blue curves are highest to the right of the figures, suggesting that <i>remember</i> responses are more accurate than the other types when made at high confidence. And red is generally larger than green, too. But other than that, I'm at a loss.<span class="spPermalink"><a href="/2014/03/06/#a1394125487">#</a></span></p>
-<p><a name="a1394125593"></a>The implication, then, is that there's a lot of variability within subjects in this procedure. My opinion is that an aggregated logistic regression equation, although valid for characterizing the overall relationship between confidence and accuracy as a function of <i>remember</i>, <i>know</i>, and <i>guess</i>, won't prove too useful on an individual level.<span class="spPermalink"><a href="/2014/03/06/#a1394125593">#</a></span></p>
-</div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (6)" ><i class="fa fa-caret-right" id="idStreamWedge6"></i></a></span><a name="a1394120088"></a><a class="aStreamTextLink" onclick="ecStream (6)">What's the meaning of a nonlinear relationship?</a><span class="spPermalink"><a href="/2014/03/06/#a1394120088">#</a></span></div>
-<div class="divLevel" id="idStreamLevel6">
-<p><a name="a1394120290"></a>Here's an interesting finding from this morning's fiddling. I correlated performance on a task in the <a href="http://psych.wustl.edu/memory">Memory Lab</a> with performance on a task elsewhere (sorry, I'm being deliberately ambiguous for the moment). The correlation was significant and sizable at <i>r</i> = .93. Of course, any good researcher knows <i>always plot your data</i>, so here's how they look:<span class="spPermalink"><a href="/2014/03/06/#a1394120290">#</a></span></p>
-<p><a name="a1394120380"></a><img src="https://dl.dropbox.com/s/blhwu4ushtgibvi/Screenshot%202014-03-06%2009.30.06.png"><span class="spPermalink"><a href="/2014/03/06/#a1394120380">#</a></span></p>
-<p><a name="a1394120485"></a>As you can see, the relationship looks somewhat logarithmic (or otherwise curvilinear). What causes that kind of relation? I'm pondering.<span class="spPermalink"><a href="/2014/03/06/#a1394120485">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p>Although the new figure is much more flexible (can be edited, etc.) and vector rather than raster (can be resized, reshaped, etc., without loss of quality), there's a real elegance to the original figure. In particular, I bumped into issues recreating the "shiny" bubbles of the 20-1 condition in the original, so I had to settle for a less interesting (but perhaps more readable) intermediate gray shade. Additionally, it's not so easy to create those "legend arrows" from the original, so I stuck with a more traditional legend.</p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (6)" ><i class="fa fa-arrow-up" id="idStreamUpArrow6"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (6)" ><i class="fa fa-arrow-down" id="idStreamDownArrow6"></i></a></span><a class="aStreamDayLink" href="/2014/03/04/">Tuesday, March  4<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (7)" ><i class="fa fa-caret-right" id="idStreamWedge7"></i></a></span><a name="a1393966383"></a><a class="aStreamTextLink" onclick="ecStream (7)">Subject-level regressions not so pretty</a><span class="spPermalink"><a href="/2014/03/04/#a1393966383">#</a></span></div>
-<div class="divLevel" id="idStreamLevel7">
-<p><a name="a1393966393"></a>So in yesterday's notes I provided two logistic regression models that predict accuracy given confidence and <i>remember/know/guess </i>judgment. I noted that I was presenting results of a global regression, rather than the average of individualized subject-level regressions. Unfortunately, when we look at those, they aren't so pretty -- look if you dare:<span class="spPermalink"><a href="/2014/03/04/#a1393966393">#</a></span></p>
-<p><a name="a1393966453"></a><img src="https://dl.dropbox.com/s/tr1jazhlc5ttgx0/Screenshot%202014-03-04%2014.52.18.png"><span class="spPermalink"><a href="/2014/03/04/#a1393966453">#</a></span></p>
-<p><a name="a1393966469"></a>Why is this happening, you ask? Well, it's mainly due to a few outlier subjects who have extraordinary <i>remember </i>and <i>know</i> coefficients. Subject 2 is -2142 log odds when he (or she) responds <i>know</i>, and Subject 19 is +1298 log odds when he responds <i>remember</i>. For reference, most of these other values are between -5 and 5. <span class="spPermalink"><a href="/2014/03/04/#a1393966469">#</a></span></p>
-<p><a name="a1393966613"></a>So why do we have these outlier subjects? It comes down to strange variability in responding. For example, Subject 2, who had such weird data for <i>know</i> responses, shows some pretty unusual responses. Let's look at when he responds <i>know</i>:<span class="spPermalink"><a href="/2014/03/04/#a1393966613">#</a></span></p>
-<p><a name="a1393966757"></a><img src="https://dl.dropbox.com/s/xvso607l7yqxo0e/Screenshot%202014-03-04%2014.58.21.png"><span class="spPermalink"><a href="/2014/03/04/#a1393966757">#</a></span></p>
-<p><a name="a1393966764"></a>Do you notice what he's doing? He rates his confidence as 100 (on a 0-100 scale) every time he responds <i>know</i>. He's also right every time he responds <i>know</i>. (Someone who misunderstood the instructions?) Obviously, this is going to throw off the prediction equations.<span class="spPermalink"><a href="/2014/03/04/#a1393966764">#</a></span></p>
-<p><a name="a1393967179"></a>So now the challenge becomes "come up with a rule to exclude outliers," if such a rule is needed. If you talk to open science types, they'll suggest that I should have come up with this rule before looking at the data. But this reveals an issue with such a strategy: This is the first time I've conducted this kind of research, and didn't know I would be bumping into this type of issue (let alone what a rule for dealing with outliers should be).<span class="spPermalink"><a href="/2014/03/04/#a1393967179">#</a></span></p>
-<p><a name="a1393967268"></a>Of course, the solution is transparency -- I'll have to say this in my dissertation, and perhaps use the experience of this study to craft an outlier rule for use in the future Experiment 3.<span class="spPermalink"><a href="/2014/03/04/#a1393967268">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="divStreamDay">
-<div class="divDaySeparator"></div>
+<p>What did the original figure creator get right? What did he or she get wrong? I was about to assume the figure was Murdock's work, but it occurred to me that the journal typesetter or editor may have created the figure. I think I have seen similar figures in papers by other authors, but am not certain.</p>
 
-<div class="divStreamDayText">
-<div>
-<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (7)" ><i class="fa fa-arrow-up" id="idStreamUpArrow7"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (7)" ><i class="fa fa-arrow-down" id="idStreamDownArrow7"></i></a></span><a class="aStreamDayLink" href="/2014/03/03/">Monday, March  3<span class="spDateYearPart">, 2014</span></a></div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (8)" ><i class="fa fa-caret-right" id="idStreamWedge8"></i></a></span><a name="a1393886742"></a><a class="aStreamTextLink" onclick="ecStream (8)">1983/2011 <i>60 Minutes</i> on eyewitness identification</a><span class="spPermalink"><a href="/2014/03/03/#a1393886742">#</a></span></div>
-<div class="divLevel" id="idStreamLevel8">
-<p><a name="a1393886764"></a>In lab meeting today we watched a <i>60</i> <i>Minutes</i> by Morley Safer and Suzanne St. Pierre called "Lenell Geter's In Jail." <a href="http://www.cbsnews.com/news/morley-safers-pick-lenell-geters-in-jail-02-07-2011/">You can watch it by clicking here</a>. Our lab has been interested in applying principles of cognitive psychology to education for a while now, but recently we've been getting into the issue of eyewitness testimony and the relation between confidence and accuracy in memory.<span class="spPermalink"><a href="/2014/03/03/#a1393886764">#</a></span></p>
-<p><a name="a1393886865"></a>This amazing segment, which runs 25 minutes or so, contains just about every classic mistake you can make when sentencing a man to prison for life. It's got a protagonist and some impressive villains. I want to share some of the details but it's really worth watching over dinner or something all the way to the end.<span class="spPermalink"><a href="/2014/03/03/#a1393886865">#</a></span></p>
-<p><a name="a1393887034"></a>Actually, let's see if I can embed it here:<span class="spPermalink"><a href="/2014/03/03/#a1393887034">#</a></span></p>
-<p><a name="a1393887040"></a><embed src="http://i.i.cbsi.com/cnwk.1d/av/video/cbsnews/atlantis2/cbsnews_player_embed.swf" type="application/x-shockwave-flash" background="#333333" width="425" height="279" allowFullScreen="true" allowScriptAccess="always" FlashVars="si=254&contentValue=999999&shareUrl=http://www.cbsnews.com/news/morley-safers-pick-lenell-geters-in-jail-02-07-2011/" /><span class="spPermalink"><a href="/2014/03/03/#a1393887040">#</a></span></p>
-<p><a name="a1393887091"></a>(Note: The embed doesn't seem to be working, sorry. Click the link up there.)<span class="spPermalink"><a href="/2014/03/03/#a1393887091">#</a></span></p>
-</div>
-<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (9)" ><i class="fa fa-caret-right" id="idStreamWedge9"></i></a></span><a name="a1393883339"></a><a class="aStreamTextLink" onclick="ecStream (9)">Updated logistic regression analyses</a><span class="spPermalink"><a href="/2014/03/03/#a1393883339">#</a></span></div>
-<div class="divLevel" id="idStreamLevel9">
-<p><a name="a1393883384"></a>Now that I have my full complement of subjects (<i>N </i>= 64), I'm able to re-run logistic regression analyses and investigate the degree to which confidence is predictive of accuracy as a function of <i>remember</i>, <i>know</i>, or <i>guess</i>. I'll present two regression models. The first is just the effects of confidence on accuracy as a function of <i>remember</i>, <i>know</i>, or <i>guess</i>:<span class="spPermalink"><a href="/2014/03/03/#a1393883384">#</a></span></p>
-<p><a name="a1393883353"></a><img src="https://dl.dropbox.com/s/uytebax3asruo3s/Screenshot%202014-03-03%2015.48.26.png"><span class="spPermalink"><a href="/2014/03/03/#a1393883353">#</a></span></p>
-<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (10)" ><i class="fa fa-caret-right" id="idStreamWedge10"></i></a></span><a name="a1393883590"></a><a class="aStreamTextLink" onclick="ecStream (10)">The regression equations for the figure above (Model 1) are:</a><span class="spPermalink"><a href="/2014/03/03/#a1393883590">#</a></span></p>
-<div class="divLevel" id="idStreamLevel10">
-<p><a name="a1393883606"></a>For <i>remember</i>, log odds = -1.125 + .031<i>c</i>, where <i>c</i> is confidence (0-100)<span class="spPermalink"><a href="/2014/03/03/#a1393883606">#</a></span></p>
-<p><a name="a1393883642"></a>For <i>know</i>, log odds = -1.999 + .031<i>c</i><span class="spPermalink"><a href="/2014/03/03/#a1393883642">#</a></span></p>
-<p><a name="a1393883651"></a>For <i>guess</i>, log odds =  -2.104 + .031<i>c</i><span class="spPermalink"><a href="/2014/03/03/#a1393883651">#</a></span></p>
-</div>
-<p><a name="a1393883663"></a>And here's what the prediction curves look like when we through in the interaction term (i.e., confidence <i>x</i> remember/know/guess). Let's call this Model 2.<span class="spPermalink"><a href="/2014/03/03/#a1393883663">#</a></span></p>
-<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (11)" ><i class="fa fa-caret-right" id="idStreamWedge11"></i></a></span><a name="a1393883352"></a><a class="aStreamTextLink" onclick="ecStream (11)"><img src="https://dl.dropbox.com/s/q1n9lqnxmnoppxz/Screenshot%202014-03-03%2015.48.15.png"></a><span class="spPermalink"><a href="/2014/03/03/#a1393883352">#</a></span></p>
-<div class="divLevel" id="idStreamLevel11">
-<p><a name="a1393883678"></a>For <i>remember</i>, log odds = -2.946 + .053<i>c</i><span class="spPermalink"><a href="/2014/03/03/#a1393883678">#</a></span></p>
-<p><a name="a1393883723"></a>For <i>know</i>, log odds = -1.895<i> </i>+ .029<i>c</i><span class="spPermalink"><a href="/2014/03/03/#a1393883723">#</a></span></p>
-<p><a name="a1393883736"></a>For <i>guess</i>, log odds = -1.043 + .005<i>c</i><span class="spPermalink"><a href="/2014/03/03/#a1393883736">#</a></span></p>
-</div>
-<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (12)" ><i class="fa fa-caret-right" id="idStreamWedge12"></i></a></span><a name="a1393885187"></a><a class="aStreamTextLink" onclick="ecStream (12)">Because logistic regression is not my strong suit, I am researching the best way to evaluate these global models. Right now I am not convinced that the model with the interaction term is doing that much better predicting accuracy. <a href="http://www.medicine.mcgill.ca/epidemiology/joseph/courses/epib-621/logfit.pdf">One thing I'm reading about is how we can use signal detection theory to compare models</a>. Here's one way of taking a look:</a><span class="spPermalink"><a href="/2014/03/03/#a1393885187">#</a></span></p>
-<div class="divLevel" id="idStreamLevel12">
-<p><a name="a1393885307"></a>Model 1: <i>HR</i> = .805, <i>FAR</i> = .402, <i>d'</i> =  1.11<span class="spPermalink"><a href="/2014/03/03/#a1393885307">#</a></span></p>
-<p><a name="a1393885356"></a>Model 2: <i>HR</i> = .778, <i>FAR</i> = .337, <i>d'</i> =  1.19<span class="spPermalink"><a href="/2014/03/03/#a1393885356">#</a></span></p>
-</div>
-<p><a name="a1393885598"></a>So as you can see, not a huge improvement in discrimination (prediction) going from Model 1 to Model 2.<span class="spPermalink"><a href="/2014/03/03/#a1393885598">#</a></span></p>
-<p><a name="a1393885788"></a>Now, this is the global analysis. I suppose the next step is getting the subject-level equations.<span class="spPermalink"><a href="/2014/03/03/#a1393885788">#</a></span></p>
-<p><a name="a1393885814"></a>What can we draw from all of this? A possible observation, which we get from Model 2, is that there really perhaps <i>is </i>a difference in the predictiveness of confidence as a function of <i>remember/know/guess</i>. This is helpful because <a href="http://desoto.smallpict.com/2014/02/28/investigatingConfidenceaccuracyCorrelations.html">some of the analyses I presented last week suggested that there wasn't one</a>. But what we show here is that one increase in a point of confidence is worth twice as much, in terms of log odds, when one is <i>remembering </i>as opposed to when one is <i>knowing</i>. And when people say they're guessing, they really are, regardless of confidence rating. They hover around what I think is chance (i.e., 33% accuracy). This is really neat.<span class="spPermalink"><a href="/2014/03/03/#a1393885814">#</a></span></p>
-<p><a name="a1393886000"></a>Of course, these analyses are leaving out something rather important: "new" responses, because we never collect <i>remember/know/guess</i> judgments for "new" responses. We need to characterize those responses another day, but you could always turn to <a href="http://pss.sagepub.com/content/early/2014/01/21/0956797613516149">DeSoto and Roediger (2014)</a> <a href="https://dl.dropboxusercontent.com/u/3695301/articles/DeSoto%20%26%20Roediger%20%282014%29.pdf"><i class="fa fa-file-o"></i></a> for one look at this issue.<span class="spPermalink"><a href="/2014/03/03/#a1393886000">#</a></span></p>
-<p><a name="a1393886147"></a><a href="https://dl.dropbox.com/s/wrwndf5ili4rat3/Logistic%20Figure%20-%20Full%20Data.xlsx">Here's the data (and the formulae) used to make the figures above, if you're interested</a>.<span class="spPermalink"><a href="/2014/03/03/#a1393886147">#</a></span></p>
-</div>
-</div>
-</div>
-</div>
+<p>P.S.: I utilize a feature of Fargo, my outlining system, for the first time in this post. Above, I link to Murdock's paper but, like so many other academic works, it's behind a paywall. In order to indicate this, I enter a little tag I invented myself -- [ paywall ] -- and [Fargo] renders a dollar sign icon. Later today I'll link the icon to some information about paywalls.   </p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">03/20/14; 10:05:52 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="20/redoingAFigure.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="19/gammaCorrelationsContinued.html">Gamma correlations, continued</a></div>
+		<p>So yesterday I calculated the within-subject gamma correlations for <i>remember</i>, <i>know</i>, and <i>guess</i> responses. I finished the work this morning and now know the within-<i>item</i> correlations for <i>remember</i>, <i>know</i>, and <i>guess</i> responses. Just like for the within-subject correlations, the within-item correlations are higher for <i>remember</i> responses (M = .57, SD = .42), intermediate for <i>know</i> responses (M = .41, SD = .36), and lowest for <i>guesses</i> (M = .05, SD = .58). This is significant as per a repeated-measures ANOVA, <i>F</i>(2, 314) = 69.07, <i>p</i> &lt; .001, and corresponding post-hoc tests.</p>
 
+<p>Here's the SPSS printout of the figure: </p>
+
+<p><img src="https://dl.dropbox.com/s/83wtl91isfej60x/Screenshot%202014-03-19%2012.20.28.png"></p>
+
+<p>It turns out that the <a href="http://technimentis.com/2014/03/18/gammaCorrelationsForDissertationWorkOtherNotes.html">correlations reported yesterday are statistically significant, too</a>. The repeated-measures ANOVA was significant, <i>F</i>(2, 96) = 12.86, <i>p</i> &lt; .001.</p>
+
+<p>What are the implications? More to come.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">03/19/14; 11:30:43 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="19/gammaCorrelationsContinued.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="18/gammaCorrelationsForDissertationWorkOtherNotes.html">Gamma correlations for dissertation work; other notes</a></div>
+		<p>Brain's a little blurry today. I attempted (with mixed success) a 20-mile training run this morning that I'm still recovering from. Here's the route:</p>
+
+<p><img src="https://dl.dropbox.com/s/54e0dqrn09ym578/runningroute.png"></p>
+
+<p>Today my research efforts were spent on obtaining <a href="http://en.wikipedia.org/wiki/Goodman_and_Kruskal's_gamma">gamma correlations</a> for subjects in my dissertation project. 3-18-14 Data.xlsx contains these numbers. There's not much to look at here, so we can just summarize them by saying that average gamma for <i>remember</i> responses (<i>M</i> = .47, <i>SD</i> = .49) appears numerically greater than average gamma for <i>know</i> responses (<i>M</i> = .26, <i>SD</i> = .33), and those appear greater than gamma for <i>guess </i>responses (<i>M</i> = .08, <i>SD</i> = .28). I haven't run the within-subjects ANOVA yet so I can't tell you whether these differences are significant. Do note that there's a lot of variability here, as illustrated by the standard deviations. To show you what I'm talking about, here are the correlations for the <i>remember</i> responses, for each subject:</p>
+
+<p><img src="https://dl.dropbox.com/s/7vilywtx83yv8ke/Screenshot%202014-03-18%2016.56.02.png"></p>
+
+<p>(Of course, the negative -1.00's pop out here as something we might want to investigate in the future.)</p>
+
+<p>I was conducting a similar analysis for the item-level gammas but ran into an issue when sanitizing the data file. Looking at these numbers, unfortunately, will have to wait for tomorrow.</p>
+
+<p>One unrelated note: <a href="https://www.newschallenge.org/challenge/2014/submissions/outliners-as-a-tool-for-open-science">I submitted a Knight News Challenge fellowship proposal for a project using Fargo</a>. You can take a look at the proposal here. I speak about the idea casually (note that a lot of the verbiage was copied and pasted into the fellowship proposal -- shh, don't tell) <a href="http://technimentis.com/2014/02/27/fargoForOpenScienceDocumentation.html">in an earlier blog post here</a>. </p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">03/18/14; 03:42:15 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="18/gammaCorrelationsForDissertationWorkOtherNotes.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="17/catchingUp.html">Catching up</a></div>
+		<p>Getting back into the swing of things this Monday. Last week was spring break here at WUSTL, so I worked from home a bunch and got some professional development-related things going for a change of pace. I was expecting to segue back into my more usual work when I got sidelined with a weird bug (perhaps from something I ate Friday night?) and was on my back all weekend as a result. My brain is only now starting to clear up.</p>
+
+<p>Some neat links for the day: <a href="http://modnotebooks.com/">These things called Mod Notebooks</a> -- you pay $25, get a notebook in the mail, and then ship it in when it's filled and they digitize it for you. On one hand $25 seems pretty low (especially considering a traditional Moleskine's worth least half that without the digitization included). But on the other hand it seems much more useful to get something digitized on a daily basis. Once I fill up a notebook, what are the chances I'm going to want to go back and look at it?</p>
+
+<p>Also, if you're interested in <a href="http://freebracketchallenge.1.mayhem.cbssports.com/brackets/shareable-bracket/14a104376ee688f579c2a2c0fd637ff1a5c0b907910f2e99?randkey=142407">my March Madness bracket, come on and get me right here</a>.</p>
+
+<p>I spent the morning working on a review for a journal article I received over the weekend. I can't say much about it here but will share it around if and when it's published. Reading through I was reminded just how hard it can be to write a good paper. It's such a particular challenge to keep the overall goal of a manuscript in mind (e.g., the main thesis, how sections connect to each other) at the same time you keep the underlying facts accurate and concise. Writing really is a balancing act.</p>
+
+<p>The biggest challenge is getting my head back into my dissertation, which I've taken a break from the last few days. It's helpful going back to look at some of my previous posts <a href="http://technimentis.com/2014/02/28/investigatingConfidenceaccuracyCorrelations.html">(1)</a>, <a href="http://technimentis.com/2014/03/03/updatedLogisticRegressionAnalyses.html">(2)</a> to refresh my memory. The next step is seeing if any critical elements are missing from my prior analyses and then going forward with the proposed Experiment 3.</p>
+
+<p>(Last note -- you might have noticed that this site is now hosted on my <a href="http://technimentis.com/">Technimentis</a> domain. I've always felt this is the right place for documenting and writing about my research.) </p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">03/17/14; 12:16:33 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="17/catchingUp.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="13/reviewOfTheJawboneUp24AboutFourMonthsIn.html">Review of the Jawbone UP24, about four months in</a></div>
+		<p><a href="http://www.linkedin.com/pub/bennett-keefer/58/778/46b">My buddy (and favorite Chemicals Professional) Bennett </a>reports he's interested in a fitness tracker. I've been using my <a href="http://jawbone.com/store/buy/up24">Jawbone UP 24</a> for about four months now, so it's a good time to write about it.</p>
+
+<p>First, some background: I got burned by being an early adopter in this area about a year and a half ago. I went through six different copies of the Jawbone UP, v. 1, which was truly a horrible device. Once the pain of that experience faded, I tried some other trackers -- the Larklife (which I think has been discontinued) and the Fitbit Flex (<a href="https://medium.com/product-design/6034555eddfd">which I wrote about here</a>). But I finally got an UP24 and have been very happy with it since. <a href="http://thewirecutter.com/reviews/best-fitness-tracker/">Most tech writers seem to favor the Fitbit Force</a> (assuming it isn't giving you horrible skin rashes), but I think the UP24 is an under appreciated piece of tech. Here's why.</p>
+
+<p><b>Aesthetics and comfort</b>. Let's get this out of the way first: I think the UP24 is one of the best-looking fitness trackers out there. The orange ("persimmon") is what I have, and the black is also a solid choice. If you go with the standard UP (to save $50), there are other nice colors available. These things look more like bracelets or fashion accessories than connected devices. They're also comfortable, too -- this is something you're buying to wear, literally, 24 hours a day (hence the name) -- so you can't understate the importance of this issue. The only times the UP24 gets uncomfortable or weird is when I'm pulling my arm out from underneath a pillow in the middle of the night. It's super easy to put on, take off, and charge. (Bennett is a swimmer, though, and the device is not waterproof. Rather, it's described as "showerproof.")</p>
+
+<p><b>Fitness tracking</b>. Want to record a workout with your UP24? Press the band a few times and it goes into stopwatch mode. When you're done, press it again to turn it off. If your workout was a run, you're basically done. If you did something else that the UP24 can't sense (e.g., bike riding, cross training), you go into the app and tell it what you did. Distance, time, calories burned, and so on are all baked in, and you can edit the intensity of your workout to fine-tune what's reported. I mostly use my UP24 to measure running workouts, so the device especially excels. The pedometer is generally accurate at measuring distance assuming I'm running at my usual slow pace. If I try to speed up or slow down even further, the estimates can get off (but never by more than half a mile or so). The biggest downside of the UP24 is that there's no screen on it, though, so you have no idea how far you've run while you're running. This means that before a workout, I'll have to map out my route and try and recall it during the run to make sure I do the right distance.</p>
+
+<p><b>Sleep tracking</b>. One of the main reasons I got the UP24 was to track my sleep. This hasn't been as useful as I thought it would be (<a href="http://beta.fargo.io/users/desoto/personalAnalytics/">although you can view my own public sleep data by clicking here</a> -- although it seems to have broken, and I don't know why). Jawbone released a new UP Coffee app in the interests of helping users discover correlations between their daily activity and sleep habits, but knowing what we know about statistics, this sort of stuff requires a whole lot of data to be collected before "insights" become accurate.</p>
+
+<p><b>Interconnectivity</b>. Honestly, this is what makes the Jawbone UP24 the winner for me. Jawbone has spent more effort than any other fitness tracker has to ensure interconnectivity and interoperability between different "internet of things" devices. Here's what I mean. When I wake up, the living room lights turn on. When I hop on my scale, the data is sent directly to the UP app. Everything is simultaneously copied to my Google Drive, too. I could set up even more triggers, <a href="http://ifttt.com">thanks to IFTTT</a> (no other tracker supports this, to my knowledge), to text me when I hit a step limit, send an e-mail or a tweet if I've had a lazy day, or write a blog post if I report that I'm sad. I find this reassuring because it means that when it becomes time to try a new fitness tracker, I can take my data with me (perhaps with a bit of wrangling). Considering that personal fitness tracking has the potential to be a lifelong hobby, an eye toward archival and longevity is <i>huge</i>.</p>
+
+<p><b>App</b>. I like the Jawbone app a lot, too. I'm not going to get into it here, though. One warning: These guys seem to build for the iPhone first.</p>
+
+<p>The bottom line: The Jawbone UP24 is a comfortable, fashion conscious wristband that provides a (relatively) inexpensive way to start collecting personal data. I'm happy with mine and love taking it on runs, and am hugely grateful that the device connects to so many other devices and services that I love. When something comes out with more and more accurate sensors and a screen (like some of Samsung's new offerings, perhaps), it might be time to upgrade. But for now, I don't foresee taking this thing off for the rest of the year at least.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">03/13/14; 08:52:25 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="13/reviewOfTheJawboneUp24AboutFourMonthsIn.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="06/individualLogisticRegressionPlots.html">Individual logistic regression plots</a></div>
+		<p>In a Facebook comment <a href="http://jasonfinley.com">Jason Finley</a> suggested that I graph the logistic regression curves for each individual subject in order to identify outliers, etc., writing, "Thoughtful. Try also making a tiny plot for each subject and eyeballing the lot of them." </p>
+
+<p>So I did that for 20 of the 64 subjects and here's what we get: </p>
+
+<p><img src="https://dl.dropbox.com/s/c79f2zi5cyewne6/Screenshot%202014-03-06%2011.00.56.png"></p>
+
+<p>It's definitely a mess. Blue is <i>remember</i>, red is <i>know</i>, and green is <i>guess </i>(<a href="http://desoto.smallpict.com/2014/03/04/subjectlevelRegressionsNotSoPretty.html">look here for a bit of background on the project</a>). I'm staring at the plots trying to identify relationships and it isn't easy. Generally, the blue curves are highest to the right of the figures, suggesting that <i>remember</i> responses are more accurate than the other types when made at high confidence. And red is generally larger than green, too. But other than that, I'm at a loss.</p>
+
+<p>The implication, then, is that there's a lot of variability within subjects in this procedure. My opinion is that an aggregated logistic regression equation, although valid for characterizing the overall relationship between confidence and accuracy as a function of <i>remember</i>, <i>know</i>, and <i>guess</i>, won't prove too useful on an individual level.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">03/06/14; 11:01:50 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="06/individualLogisticRegressionPlots.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="06/whatsTheMeaningOfANonlinearRelationship.html">What's the meaning of a nonlinear relationship?</a></div>
+		<p>Here's an interesting finding from this morning's fiddling. I correlated performance on a task in the <a href="http://psych.wustl.edu/memory">Memory Lab</a> with performance on a task elsewhere (sorry, I'm being deliberately ambiguous for the moment). The correlation was significant and sizable at <i>r</i> = .93. Of course, any good researcher knows <i>always plot your data</i>, so here's how they look:</p>
+
+<p><img src="https://dl.dropbox.com/s/blhwu4ushtgibvi/Screenshot%202014-03-06%2009.30.06.png"></p>
+
+<p>As you can see, the relationship looks somewhat logarithmic (or otherwise curvilinear). What causes that kind of relation? I'm pondering.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">03/06/14; 09:34:48 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="06/whatsTheMeaningOfANonlinearRelationship.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="04/subjectlevelRegressionsNotSoPretty.html">Subject-level regressions not so pretty</a></div>
+		<p>So in yesterday's notes I provided two logistic regression models that predict accuracy given confidence and <i>remember/know/guess </i>judgment. I noted that I was presenting results of a global regression, rather than the average of individualized subject-level regressions. Unfortunately, when we look at those, they aren't so pretty -- look if you dare:</p>
+
+<p><img src="https://dl.dropbox.com/s/tr1jazhlc5ttgx0/Screenshot%202014-03-04%2014.52.18.png"></p>
+
+<p>Why is this happening, you ask? Well, it's mainly due to a few outlier subjects who have extraordinary <i>remember </i>and <i>know</i> coefficients. Subject 2 is -2142 log odds when he (or she) responds <i>know</i>, and Subject 19 is +1298 log odds when he responds <i>remember</i>. For reference, most of these other values are between -5 and 5. </p>
+
+<p>So why do we have these outlier subjects? It comes down to strange variability in responding. For example, Subject 2, who had such weird data for <i>know</i> responses, shows some pretty unusual responses. Let's look at when he responds <i>know</i>:</p>
+
+<p><img src="https://dl.dropbox.com/s/xvso607l7yqxo0e/Screenshot%202014-03-04%2014.58.21.png"></p>
+
+<p>Do you notice what he's doing? He rates his confidence as 100 (on a 0-100 scale) every time he responds <i>know</i>. He's also right every time he responds <i>know</i>. (Someone who misunderstood the instructions?) Obviously, this is going to throw off the prediction equations.</p>
+
+<p>So now the challenge becomes "come up with a rule to exclude outliers," if such a rule is needed. If you talk to open science types, they'll suggest that I should have come up with this rule before looking at the data. But this reveals an issue with such a strategy: This is the first time I've conducted this kind of research, and didn't know I would be bumping into this type of issue (let alone what a rule for dealing with outliers should be).</p>
+
+<p>Of course, the solution is transparency -- I'll have to say this in my dissertation, and perhaps use the experience of this study to craft an outlier rule for use in the future Experiment 3.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">03/04/14; 02:53:03 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="04/subjectlevelRegressionsNotSoPretty.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="03/1983201160MinutesOnEyewitnessIdentification.html">1983/2011 <i>60 Minutes</i> on eyewitness identification</a></div>
+		<p>In lab meeting today we watched a <i>60</i> <i>Minutes</i> by Morley Safer and Suzanne St. Pierre called "Lenell Geter's In Jail." <a href="http://www.cbsnews.com/news/morley-safers-pick-lenell-geters-in-jail-02-07-2011/">You can watch it by clicking here</a>. Our lab has been interested in applying principles of cognitive psychology to education for a while now, but recently we've been getting into the issue of eyewitness testimony and the relation between confidence and accuracy in memory.</p>
+
+<p>This amazing segment, which runs 25 minutes or so, contains just about every classic mistake you can make when sentencing a man to prison for life. It's got a protagonist and some impressive villains. I want to share some of the details but it's really worth watching over dinner or something all the way to the end.</p>
+
+<p>Actually, let's see if I can embed it here:</p>
+
+<p><embed src="http://i.i.cbsi.com/cnwk.1d/av/video/cbsnews/atlantis2/cbsnews_player_embed.swf" type="application/x-shockwave-flash" background="#333333" width="425" height="279" allowFullScreen="true" allowScriptAccess="always" FlashVars="si=254&amp;contentValue=999999&amp;shareUrl=http://www.cbsnews.com/news/morley-safers-pick-lenell-geters-in-jail-02-07-2011/" /></p>
+
+<p>(Note: The embed doesn't seem to be working, sorry. Click the link up there.)</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">03/03/14; 04:45:42 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="03/1983201160MinutesOnEyewitnessIdentification.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="03/updatedLogisticRegressionAnalyses.html">Updated logistic regression analyses</a></div>
+		<p>Now that I have my full complement of subjects (<i>N </i>= 64), I'm able to re-run logistic regression analyses and investigate the degree to which confidence is predictive of accuracy as a function of <i>remember</i>, <i>know</i>, or <i>guess</i>. I'll present two regression models. The first is just the effects of confidence on accuracy as a function of <i>remember</i>, <i>know</i>, or <i>guess</i>:</p>
+
+<p><img src="https://dl.dropbox.com/s/uytebax3asruo3s/Screenshot%202014-03-03%2015.48.26.png"></p>
+
+<p>The regression equations for the figure above (Model 1) are:</p>
+
+<ul>
+<li><p>For <i>remember</i>, log odds = -1.125 + .031<i>c</i>, where <i>c</i> is confidence (0-100)</p></li>
+<li><p>For <i>know</i>, log odds = -1.999 + .031<i>c</i></p></li>
+<li><p>For <i>guess</i>, log odds =  -2.104 + .031<i>c</i></p></li>
+</ul>
+
+<p>And here's what the prediction curves look like when we through in the interaction term (i.e., confidence <i>x</i> remember/know/guess). Let's call this Model 2.</p>
+
+<p><img src="https://dl.dropbox.com/s/q1n9lqnxmnoppxz/Screenshot%202014-03-03%2015.48.15.png"></p>
+
+<ul>
+<li><p>For <i>remember</i>, log odds = -2.946 + .053<i>c</i></p></li>
+<li><p>For <i>know</i>, log odds = -1.895<i> </i>+ .029<i>c</i></p></li>
+<li><p>For <i>guess</i>, log odds = -1.043 + .005<i>c</i></p></li>
+</ul>
+
+<p>Because logistic regression is not my strong suit, I am researching the best way to evaluate these global models. Right now I am not convinced that the model with the interaction term is doing that much better predicting accuracy. <a href="http://www.medicine.mcgill.ca/epidemiology/joseph/courses/epib-621/logfit.pdf">One thing I'm reading about is how we can use signal detection theory to compare models</a>. Here's one way of taking a look:</p>
+
+<ul>
+<li><p>Model 1: <i>HR</i> = .805, <i>FAR</i> = .402, <i>d'</i> =  1.11</p></li>
+<li><p>Model 2: <i>HR</i> = .778, <i>FAR</i> = .337, <i>d'</i> =  1.19</p></li>
+</ul>
+
+<p>So as you can see, not a huge improvement in discrimination (prediction) going from Model 1 to Model 2.</p>
+
+<p>Now, this is the global analysis. I suppose the next step is getting the subject-level equations.</p>
+
+<p>What can we draw from all of this? A possible observation, which we get from Model 2, is that there really perhaps <i>is </i>a difference in the predictiveness of confidence as a function of <i>remember/know/guess</i>. This is helpful because <a href="http://desoto.smallpict.com/2014/02/28/investigatingConfidenceaccuracyCorrelations.html">some of the analyses I presented last week suggested that there wasn't one</a>. But what we show here is that one increase in a point of confidence is worth twice as much, in terms of log odds, when one is <i>remembering </i>as opposed to when one is <i>knowing</i>. And when people say they're guessing, they really are, regardless of confidence rating. They hover around what I think is chance (i.e., 33% accuracy). This is really neat.</p>
+
+<p>Of course, these analyses are leaving out something rather important: "new" responses, because we never collect <i>remember/know/guess</i> judgments for "new" responses. We need to characterize those responses another day, but you could always turn to <a href="http://pss.sagepub.com/content/early/2014/01/21/0956797613516149">DeSoto and Roediger (2014)</a> <a href="https://dl.dropboxusercontent.com/u/3695301/articles/DeSoto%20%26%20Roediger%20%282014%29.pdf"><i class="fa fa-file-o"></i></a> for one look at this issue.</p>
+
+<p><a href="https://dl.dropbox.com/s/wrwndf5ili4rat3/Logistic%20Figure%20-%20Full%20Data.xlsx">Here's the data (and the formulae) used to make the figures above, if you're interested</a>.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">03/03/14; 03:48:59 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="03/updatedLogisticRegressionAnalyses.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+
+				<div class="divFooterText">
+					<hr>
+					<p style="float: right;">Last built: Thu, Mar 20, 2014 at  2:24 PM</p>
+					<script>var disqus_identifier = "Mon, 03 Mar 2014 21:48:59 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
+					<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Monday, March  3, 2014 at  3:48 PM</span>.</div>
 					</div>
 				</div>
 			</div>
-		<div class="divFargoStreamFooter">
-			<div>&copy; 2014 Andy DeSoto.</div>
-			<div>Last update: Thu, Mar 20, 2014 at  2:22 PM.</div>
-			<div><i>Everything's an interaction.</i></div>
-			<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kadesoto" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/kadesoto" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="http://technimentis.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
-</div>
-			</div>
 		<script>
-			startup ();
 			startupFargoPlatform ();
 			</script>
 		</body>
