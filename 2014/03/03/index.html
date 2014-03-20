@@ -2,8 +2,7 @@
 <html>
 	<head>
 		<title>March 3</title>
-		<meta charset='utf-8'> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"> 
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://technimentis.com/rss.xml" />
 		<script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-3970063-10']); _gaq.push(['_setDomainName', 'technimentis.com']); _gaq.push(['_trackPageview']); (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
 		<!-- useBootstrap -->
@@ -23,8 +22,8 @@
     "opmlOwnerProfile": "http://www.andydesoto.com",
     "opmlOwnerName": "Andy DeSoto",
     "opmlOwnerEmail": "desoto@wustl.edu",
-    "opmlDateModified": "Thu, 20 Mar 2014 17:47:17 GMT",
-    "opmlExpansionState": "1,2,3,19,29,45",
+    "opmlDateModified": "Thu, 20 Mar 2014 20:22:40 GMT",
+    "opmlExpansionState": "7,17,33",
     "opmlFeed": "http://technimentis.com/rss.xml",
     "opmlFlEncrypted": "false",
     "opmlLongTitle": "Andy's Research Notes",
@@ -41,8 +40,8 @@
     "googleAnalyticsID": "UA-3970063-10",
     "domain": "technimentis.com",
     "bootstrapTheme": "spruce",
-    "type": "bloghome",
-    "slogan": "Don't slam the door on the way out.",
+    "type": "stream",
+    "slogan": "Good for the environment.",
     "disqusGroupName": "kadesoto",
     "siteTimeZone": "-6",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -80,61 +79,343 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css",
     "menuTitle": "Andy's Research Notes",
-    "now": "Thu Mar 20 2014 12:47:18 GMT-0500 (CDT)",
+    "now": "Thu Mar 20 2014 15:22:41 GMT-0500 (CDT)",
     "copyright": "&copy; 2014 Andy DeSoto.",
     "url": "http://technimentis.com/2014/03/03.html"
 }; //12/12/13 by DW
 		</script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="http://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Average" rel="stylesheet" type="text/css">
+		
 		<style>
+			.navbar {
+				font-family: "Average";
+				background-color: white;
+				font-size: 20px;
+				}
+			.divFargoStreamBody {
+				}
+			.divBodyText {
+				}
+			.divStreamTopSpacer {
+				}
+			.divStreamDay {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				margin-left: 0;
+				margin-top: 0;
+				border-top: 1px solid silver;
+				z-index: 0;
+				}
+			.divStreamDayText {
+				font-family: "Average";
+				font-size: 24px;
+				line-height: 145%;
+				padding-top: 5%;
+				padding-bottom: 10%;
+				
+				
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				
+				vertical-align: top;
+				height: 100%;
+				margin-top: 30px;
+				}
+			.divStreamDayHead {
+				font-family: "Abril Fatface";
+				font-size: 40px;
+				margin-top: .1em;
+				-webkit-margin-after: .75em;
+				}
+			.divStreamDayImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divTextInFrontOfImage {
+				background-color: white; 
+				opacity: .90;
+				padding: 1.5em;
+				border:2px solid whitesmoke;
+				}
+			.spStreamArrows {
+				font-size: .8em;
+				color: silver;
+				margin-right: 15px;
+				}
+			.divStreamDay p {
+				margin-bottom: .3em;
+				}
+			.divTextContainer {
+				padding: 0;
+				}
+			.divBanner {
+				margin-bottom: -1px;
+				}
+			.divLevel {
+				margin-left: 20px;
+				display: none;
+				}
+			h4 {
+				font-family: "Georgia";
+				font-size: 18px;
+				-webkit-margin-after: 5px;
+				}
+			.divStreamSectionHead {
+				margin-top: 5px;
+				font-weight: bold;
+				-webkit-margin-after: 5px;
+				}
+			.spPermalink {
+				margin-left: 3px;
+				}
+			.spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 13px;
+				font-weight: none !important;
+				}
+			.divDaySeparator {
+				height: 0;
+				}
+			.aStreamWedgeLink {
+				color: black;
+				}
+			.aStreamWedgeLink i {
+				font-size: .85em;
+				color: black;
+				cursor: pointer;
+				}
+			.aStreamDayLink {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.aStreamDayLink a:link, .aStreamDayLink a:visited {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divStreamIcon {
+				float: left;
+				width: 20px;
+				margin-left: -20px;
+				margin-right: 0;
+				}
+			.spStreamArrows {
+				float: left;
+				width: 36px;
+				margin-left: -36px;
+				margin-right: 0;
+				display: none;
+				}
+			.aStreamArrowsLink {
+				font-size: .75em;
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divFargoStreamFooter {
+				font-family: "Arial";
+				line-height: 200%;
+				height: 400px;
+				background-color: whitesmoke;
+				border-top: 1px solid silver;
+				text-align: center;
+				padding-top: 15px;
+				}
+			.divFargoSocialMediaLinks {
+				position: fixed;
+				z-index: 1;
+				}
+			.divNavSocialMediaLinks {
+				margin-top: 17px;
+				margin-left: 1em;
+				font-size: .9em;
+				}
+			.divNavSocialMediaLinks .nav>li>a {
+				display: inline;
+				}
+			.divNavSocialMediaLinks .aSocialMediaLink {
+				letter-spacing: 14px;
+				}
+			.aStreamTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.aStreamTextLink a:link, .aStreamTextLink a:visited, .aStreamTextLink a:hover, .aStreamTextLink a:active {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			</style>
+		<style> /* styles for phone */
 			@media only screen 
 			and (min-device-width : 320px) 
 			and (max-device-width : 480px) {
-				.navbar .nav>li {
+				.navbar {
 					display: none;
-					height: 0;
+					}
+				.divBodyText {
+					}
+				.divStreamTopSpacer {
+					display: none;
 					}
 				.divFargoSocialMediaLinks {
 					display: none;
 					}
-				.container {
-					margin-top: 10px;
-					width: 90%;
+				.divStreamDayHead {
+					font-size: 22px;
 					}
-				.divFargoMarkdown p {
+				.divStreamSectionHead {
+					margin-top: 8px;
+					-webkit-margin-after: 8px;
+					}
+				.divStreamDayText {
 					font-size: 17px;
-					line-height: 140%;
+					padding-left: 8%;
+					padding-right: 7%;
+					width: 85%;
 					}
-				h2 {
-					font-size: 24px;
-					line-height: 140%;
+				.aStreamWedgeLink i {
+					font-size: 1.1em;
 					}
-				.divHeadlineUnit {
-					margin-bottom: 5px;
+				.divStreamIcon {
+					width: 14px;
+					margin-left: -14px;
 					}
-				.divPrevNext {
-					float: none;
-					}
-				.divBreadcrumbs {
+				.spPermalink {
 					display: none;
+					}
+				.divFargoStreamFooter {
 					font-size: 15px;
+					line-height: 170%;
 					}
-				.breadcrumb>li>.divider {
-					padding: 0;
-					padding-left: 1px;
+				.divTextInFrontOfImage {
+					width: 80% !important;
+					margin-left: auto;
+					margin-right: auto;
 					}
-				.spSlogan {
+				.spDateYearPart {
 					display: none;
 					}
 				}
 			</style>
+		<style> /* styles for tablet */
+			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+				}
+			</style>
+		
+		<script>
+			colorsArray = [
+				"white",
+				"whitesmoke",
+				"ghostwhite",
+				"gainsboro" 
+				];
+			function getdaynum (theDate) {
+				var year = theDate.getFullYear ();
+				var onejan = new Date (year, 0, 1);
+				return (Math.ceil ((theDate - onejan) / 86400000));
+				}
+			function ecStream (idnum) {
+				var c = document.getElementById ("idStreamWedge" + idnum), idUL = "#idStreamLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					$(idUL).slideDown (75);
+					}
+				}
+			function startup () {
+				var ixarray = 0;
+				$("#idTextContainer").children ("div").each (function () {
+					var flSetColor = true;
+					$(this).children ("div").each (function () {
+						if (this.className == "divStreamDayImage") {
+							flSetColor = false;
+							}
+						});
+					if (flSetColor) {
+						this.style.backgroundColor = colorsArray [ixarray++ % colorsArray.length];
+						}
+					else {
+						$(this).children ("div").each (function () {
+							if (this.className == "divStreamDayText") {
+								var flset = false;
+								$(this).children ("div").each (function () {
+									if (!flset) {
+										this.className = "divTextInFrontOfImage"; //set classname of first child element
+										}
+									flset = true;
+									});
+								}
+							});
+						}
+					});
+				
+				var hash = window.location.hash;
+				if (hash.length > 0) {
+					$("#idTextContainer").find ("span").each (function () {
+						$(this).children ("a").each (function () {
+							if (string.endsWith (this.href, window.location.hash)) {
+								$(this).parents ("div").css ("display", "block");
+								$(this).parents ("p").css ("font-weight", "bold");
+								
+								var flexpand = true;
+								$(this).parents ("div").each (function () {
+									if (flexpand) {
+										$(this).children ("a").each (function () {
+											$(this).css ("font-weight", "bold");
+											});
+										$(this).find ("i").each (function () {
+											$(this).attr ("class", "fa fa-caret-down");
+											});
+										$(this).next ("div").css ("display", "block"); //the divLevel item
+										flexpand = false;
+										}
+									});
+								}
+							});
+						});
+					}
+				
+				if (getBoolean (pagetable.flFixedMenu)) {
+					document.body.style.paddingTop = "60px";
+					if (hash.length > 0) {
+						$(document).one ("scroll", function () {
+							var $el = $(this), top = $el.scrollTop ();
+							$el.scrollTop (top - 60);
+							});
+						}
+					}
+				}
+			</script>
+		
 		<!-- customStylesScripts -->
 		
 		</head>
 	<body>
-		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kadesoto" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/kadesoto" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="http://technimentis.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
-</div>
 		
 <div class="navbar navbar-static-top">
 	<div class="navbar-inner">
@@ -157,86 +438,68 @@
 		</div>
 	</div>
 
-		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a><span class="divider">/</span><li><a href="http://technimentis.com/2014">2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/03">March 2014</a></li></ul>
-						</div>
-					<h2 id="idBlogHomePageTitle">March 3</h2>
-					</div>
-				<div class="divFargoBlogHome">
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="1983201160MinutesOnEyewitnessIdentification.html">1983/2011 <i>60 Minutes</i> on eyewitness identification</a></div>
-		<p>In lab meeting today we watched a <i>60</i> <i>Minutes</i> by Morley Safer and Suzanne St. Pierre called "Lenell Geter's In Jail." <a href="http://www.cbsnews.com/news/morley-safers-pick-lenell-geters-in-jail-02-07-2011/">You can watch it by clicking here</a>. Our lab has been interested in applying principles of cognitive psychology to education for a while now, but recently we've been getting into the issue of eyewitness testimony and the relation between confidence and accuracy in memory.</p>
+		<div class="divFargoStreamBody" id="idFargoStreamBody">
+			<div class="divBodyText" id="idBodyText">
+				<div class="divTextContainer" id="idTextContainer">
+					<div class="divStreamTopSpacer"></div>
+<div class="divStreamDay">
+<div class="divStreamDayText">
+<div>
+<div class="divStreamDayHead"><span class="spStreamArrows"><a class="aStreamArrowsLink" onclick="clickUpArrow (0)" ><i class="fa fa-arrow-up" id="idStreamUpArrow0"></i></a><a class="aStreamArrowsLink" onclick="clickDownArrow (0)" ><i class="fa fa-arrow-down" id="idStreamDownArrow0"></i></a></span><a class="aStreamDayLink" href="/2014/03/03/">Monday, March  3<span class="spDateYearPart">, 2014</span></a></div>
+<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (0)" ><i class="fa fa-caret-right" id="idStreamWedge0"></i></a></span><a name="a1393886742"></a><a class="aStreamTextLink" onclick="ecStream (0)">1983/2011 <i>60 Minutes</i> on eyewitness identification</a><span class="spPermalink"><a href="/2014/03/03/#a1393886742">#</a></span></div>
+<div class="divLevel" id="idStreamLevel0">
+<p><a name="a1393886764"></a>In lab meeting today we watched a <i>60</i> <i>Minutes</i> by Morley Safer and Suzanne St. Pierre called "Lenell Geter's In Jail." <a href="http://www.cbsnews.com/news/morley-safers-pick-lenell-geters-in-jail-02-07-2011/">You can watch it by clicking here</a>. Our lab has been interested in applying principles of cognitive psychology to education for a while now, but recently we've been getting into the issue of eyewitness testimony and the relation between confidence and accuracy in memory.<span class="spPermalink"><a href="/2014/03/03/#a1393886764">#</a></span></p>
+<p><a name="a1393886865"></a>This amazing segment, which runs 25 minutes or so, contains just about every classic mistake you can make when sentencing a man to prison for life. It's got a protagonist and some impressive villains. I want to share some of the details but it's really worth watching over dinner or something all the way to the end.<span class="spPermalink"><a href="/2014/03/03/#a1393886865">#</a></span></p>
+<p><a name="a1393887034"></a>Actually, let's see if I can embed it here:<span class="spPermalink"><a href="/2014/03/03/#a1393887034">#</a></span></p>
+<p><a name="a1393887040"></a><embed src="http://i.i.cbsi.com/cnwk.1d/av/video/cbsnews/atlantis2/cbsnews_player_embed.swf" type="application/x-shockwave-flash" background="#333333" width="425" height="279" allowFullScreen="true" allowScriptAccess="always" FlashVars="si=254&contentValue=999999&shareUrl=http://www.cbsnews.com/news/morley-safers-pick-lenell-geters-in-jail-02-07-2011/" /><span class="spPermalink"><a href="/2014/03/03/#a1393887040">#</a></span></p>
+<p><a name="a1393887091"></a>(Note: The embed doesn't seem to be working, sorry. Click the link up there.)<span class="spPermalink"><a href="/2014/03/03/#a1393887091">#</a></span></p>
+</div>
+<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (1)" ><i class="fa fa-caret-right" id="idStreamWedge1"></i></a></span><a name="a1393883339"></a><a class="aStreamTextLink" onclick="ecStream (1)">Updated logistic regression analyses</a><span class="spPermalink"><a href="/2014/03/03/#a1393883339">#</a></span></div>
+<div class="divLevel" id="idStreamLevel1">
+<p><a name="a1393883384"></a>Now that I have my full complement of subjects (<i>N </i>= 64), I'm able to re-run logistic regression analyses and investigate the degree to which confidence is predictive of accuracy as a function of <i>remember</i>, <i>know</i>, or <i>guess</i>. I'll present two regression models. The first is just the effects of confidence on accuracy as a function of <i>remember</i>, <i>know</i>, or <i>guess</i>:<span class="spPermalink"><a href="/2014/03/03/#a1393883384">#</a></span></p>
+<p><a name="a1393883353"></a><img src="https://dl.dropbox.com/s/uytebax3asruo3s/Screenshot%202014-03-03%2015.48.26.png"><span class="spPermalink"><a href="/2014/03/03/#a1393883353">#</a></span></p>
+<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (2)" ><i class="fa fa-caret-right" id="idStreamWedge2"></i></a></span><a name="a1393883590"></a><a class="aStreamTextLink" onclick="ecStream (2)">The regression equations for the figure above (Model 1) are:</a><span class="spPermalink"><a href="/2014/03/03/#a1393883590">#</a></span></p>
+<div class="divLevel" id="idStreamLevel2">
+<p><a name="a1393883606"></a>For <i>remember</i>, log odds = -1.125 + .031<i>c</i>, where <i>c</i> is confidence (0-100)<span class="spPermalink"><a href="/2014/03/03/#a1393883606">#</a></span></p>
+<p><a name="a1393883642"></a>For <i>know</i>, log odds = -1.999 + .031<i>c</i><span class="spPermalink"><a href="/2014/03/03/#a1393883642">#</a></span></p>
+<p><a name="a1393883651"></a>For <i>guess</i>, log odds =  -2.104 + .031<i>c</i><span class="spPermalink"><a href="/2014/03/03/#a1393883651">#</a></span></p>
+</div>
+<p><a name="a1393883663"></a>And here's what the prediction curves look like when we through in the interaction term (i.e., confidence <i>x</i> remember/know/guess). Let's call this Model 2.<span class="spPermalink"><a href="/2014/03/03/#a1393883663">#</a></span></p>
+<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (3)" ><i class="fa fa-caret-right" id="idStreamWedge3"></i></a></span><a name="a1393883352"></a><a class="aStreamTextLink" onclick="ecStream (3)"><img src="https://dl.dropbox.com/s/q1n9lqnxmnoppxz/Screenshot%202014-03-03%2015.48.15.png"></a><span class="spPermalink"><a href="/2014/03/03/#a1393883352">#</a></span></p>
+<div class="divLevel" id="idStreamLevel3">
+<p><a name="a1393883678"></a>For <i>remember</i>, log odds = -2.946 + .053<i>c</i><span class="spPermalink"><a href="/2014/03/03/#a1393883678">#</a></span></p>
+<p><a name="a1393883723"></a>For <i>know</i>, log odds = -1.895<i> </i>+ .029<i>c</i><span class="spPermalink"><a href="/2014/03/03/#a1393883723">#</a></span></p>
+<p><a name="a1393883736"></a>For <i>guess</i>, log odds = -1.043 + .005<i>c</i><span class="spPermalink"><a href="/2014/03/03/#a1393883736">#</a></span></p>
+</div>
+<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (4)" ><i class="fa fa-caret-right" id="idStreamWedge4"></i></a></span><a name="a1393885187"></a><a class="aStreamTextLink" onclick="ecStream (4)">Because logistic regression is not my strong suit, I am researching the best way to evaluate these global models. Right now I am not convinced that the model with the interaction term is doing that much better predicting accuracy. <a href="http://www.medicine.mcgill.ca/epidemiology/joseph/courses/epib-621/logfit.pdf">One thing I'm reading about is how we can use signal detection theory to compare models</a>. Here's one way of taking a look:</a><span class="spPermalink"><a href="/2014/03/03/#a1393885187">#</a></span></p>
+<div class="divLevel" id="idStreamLevel4">
+<p><a name="a1393885307"></a>Model 1: <i>HR</i> = .805, <i>FAR</i> = .402, <i>d'</i> =  1.11<span class="spPermalink"><a href="/2014/03/03/#a1393885307">#</a></span></p>
+<p><a name="a1393885356"></a>Model 2: <i>HR</i> = .778, <i>FAR</i> = .337, <i>d'</i> =  1.19<span class="spPermalink"><a href="/2014/03/03/#a1393885356">#</a></span></p>
+</div>
+<p><a name="a1393885598"></a>So as you can see, not a huge improvement in discrimination (prediction) going from Model 1 to Model 2.<span class="spPermalink"><a href="/2014/03/03/#a1393885598">#</a></span></p>
+<p><a name="a1393885788"></a>Now, this is the global analysis. I suppose the next step is getting the subject-level equations.<span class="spPermalink"><a href="/2014/03/03/#a1393885788">#</a></span></p>
+<p><a name="a1393885814"></a>What can we draw from all of this? A possible observation, which we get from Model 2, is that there really perhaps <i>is </i>a difference in the predictiveness of confidence as a function of <i>remember/know/guess</i>. This is helpful because <a href="http://desoto.smallpict.com/2014/02/28/investigatingConfidenceaccuracyCorrelations.html">some of the analyses I presented last week suggested that there wasn't one</a>. But what we show here is that one increase in a point of confidence is worth twice as much, in terms of log odds, when one is <i>remembering </i>as opposed to when one is <i>knowing</i>. And when people say they're guessing, they really are, regardless of confidence rating. They hover around what I think is chance (i.e., 33% accuracy). This is really neat.<span class="spPermalink"><a href="/2014/03/03/#a1393885814">#</a></span></p>
+<p><a name="a1393886000"></a>Of course, these analyses are leaving out something rather important: "new" responses, because we never collect <i>remember/know/guess</i> judgments for "new" responses. We need to characterize those responses another day, but you could always turn to <a href="http://pss.sagepub.com/content/early/2014/01/21/0956797613516149">DeSoto and Roediger (2014)</a> <a href="https://dl.dropboxusercontent.com/u/3695301/articles/DeSoto%20%26%20Roediger%20%282014%29.pdf"><i class="fa fa-file-o"></i></a> for one look at this issue.<span class="spPermalink"><a href="/2014/03/03/#a1393886000">#</a></span></p>
+<p><a name="a1393886147"></a><a href="https://dl.dropbox.com/s/wrwndf5ili4rat3/Logistic%20Figure%20-%20Full%20Data.xlsx">Here's the data (and the formulae) used to make the figures above, if you're interested</a>.<span class="spPermalink"><a href="/2014/03/03/#a1393886147">#</a></span></p>
+</div>
+</div>
+</div>
+</div>
 
-<p>This amazing segment, which runs 25 minutes or so, contains just about every classic mistake you can make when sentencing a man to prison for life. It's got a protagonist and some impressive villains. I want to share some of the details but it's really worth watching over dinner or something all the way to the end.</p>
-
-<p>Actually, let's see if I can embed it here:</p>
-
-<p><embed src="http://i.i.cbsi.com/cnwk.1d/av/video/cbsnews/atlantis2/cbsnews_player_embed.swf" type="application/x-shockwave-flash" background="#333333" width="425" height="279" allowFullScreen="true" allowScriptAccess="always" FlashVars="si=254&amp;contentValue=999999&amp;shareUrl=http://www.cbsnews.com/news/morley-safers-pick-lenell-geters-in-jail-02-07-2011/" /></p>
-
-<p>(Note: The embed doesn't seem to be working, sorry. Click the link up there.)</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">03/03/14; 04:45:42 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="1983201160MinutesOnEyewitnessIdentification.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="updatedLogisticRegressionAnalyses.html">Updated logistic regression analyses</a></div>
-		<p>Now that I have my full complement of subjects (<i>N </i>= 64), I'm able to re-run logistic regression analyses and investigate the degree to which confidence is predictive of accuracy as a function of <i>remember</i>, <i>know</i>, or <i>guess</i>. I'll present two regression models. The first is just the effects of confidence on accuracy as a function of <i>remember</i>, <i>know</i>, or <i>guess</i>:</p>
-
-<p><img src="https://dl.dropbox.com/s/uytebax3asruo3s/Screenshot%202014-03-03%2015.48.26.png"></p>
-
-<p>The regression equations for the figure above (Model 1) are:</p>
-
-<ul>
-<li><p>For <i>remember</i>, log odds = -1.125 + .031<i>c</i>, where <i>c</i> is confidence (0-100)</p></li>
-<li><p>For <i>know</i>, log odds = -1.999 + .031<i>c</i></p></li>
-<li><p>For <i>guess</i>, log odds =  -2.104 + .031<i>c</i></p></li>
-</ul>
-
-<p>And here's what the prediction curves look like when we through in the interaction term (i.e., confidence <i>x</i> remember/know/guess). Let's call this Model 2.</p>
-
-<p><img src="https://dl.dropbox.com/s/q1n9lqnxmnoppxz/Screenshot%202014-03-03%2015.48.15.png"></p>
-
-<ul>
-<li><p>For <i>remember</i>, log odds = -2.946 + .053<i>c</i></p></li>
-<li><p>For <i>know</i>, log odds = -1.895<i> </i>+ .029<i>c</i></p></li>
-<li><p>For <i>guess</i>, log odds = -1.043 + .005<i>c</i></p></li>
-</ul>
-
-<p>Because logistic regression is not my strong suit, I am researching the best way to evaluate these global models. Right now I am not convinced that the model with the interaction term is doing that much better predicting accuracy. <a href="http://www.medicine.mcgill.ca/epidemiology/joseph/courses/epib-621/logfit.pdf">One thing I'm reading about is how we can use signal detection theory to compare models</a>. Here's one way of taking a look:</p>
-
-<ul>
-<li><p>Model 1: <i>HR</i> = .805, <i>FAR</i> = .402, <i>d'</i> =  1.11</p></li>
-<li><p>Model 2: <i>HR</i> = .778, <i>FAR</i> = .337, <i>d'</i> =  1.19</p></li>
-</ul>
-
-<p>So as you can see, not a huge improvement in discrimination (prediction) going from Model 1 to Model 2.</p>
-
-<p>Now, this is the global analysis. I suppose the next step is getting the subject-level equations.</p>
-
-<p>What can we draw from all of this? A possible observation, which we get from Model 2, is that there really perhaps <i>is </i>a difference in the predictiveness of confidence as a function of <i>remember/know/guess</i>. This is helpful because <a href="http://desoto.smallpict.com/2014/02/28/investigatingConfidenceaccuracyCorrelations.html">some of the analyses I presented last week suggested that there wasn't one</a>. But what we show here is that one increase in a point of confidence is worth twice as much, in terms of log odds, when one is <i>remembering </i>as opposed to when one is <i>knowing</i>. And when people say they're guessing, they really are, regardless of confidence rating. They hover around what I think is chance (i.e., 33% accuracy). This is really neat.</p>
-
-<p>Of course, these analyses are leaving out something rather important: "new" responses, because we never collect <i>remember/know/guess</i> judgments for "new" responses. We need to characterize those responses another day, but you could always turn to <a href="http://pss.sagepub.com/content/early/2014/01/21/0956797613516149">DeSoto and Roediger (2014)</a> <a href="https://dl.dropboxusercontent.com/u/3695301/articles/DeSoto%20%26%20Roediger%20%282014%29.pdf"><i class="fa fa-file-o"></i></a> for one look at this issue.</p>
-
-<p><a href="https://dl.dropbox.com/s/wrwndf5ili4rat3/Logistic%20Figure%20-%20Full%20Data.xlsx">Here's the data (and the formulae) used to make the figures above, if you're interested</a>.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">03/03/14; 03:48:59 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="updatedLogisticRegressionAnalyses.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Thu, Mar 20, 2014 at 11:47 AM</p>
-					<script>var disqus_identifier = "Mon, 03 Mar 2014 21:48:59 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Monday, March  3, 2014 at  3:48 PM</span>.</div>
 					</div>
 				</div>
 			</div>
+		<div class="divFargoStreamFooter">
+			<div>&copy; 2014 Andy DeSoto.</div>
+			<div>Last update: Thu, Mar 20, 2014 at  2:22 PM.</div>
+			<div><i>Everything's an interaction.</i></div>
+			<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kadesoto" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/kadesoto" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://technimentis.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
+			</div>
 		<script>
+			startup ();
 			startupFargoPlatform ();
 			</script>
 		</body>
