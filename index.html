@@ -23,8 +23,8 @@
     "opmlOwnerProfile": "http://www.andydesoto.com",
     "opmlOwnerName": "Andy DeSoto",
     "opmlOwnerEmail": "desoto@wustl.edu",
-    "opmlDateModified": "Mon, 24 Mar 2014 17:11:09 GMT",
-    "opmlExpansionState": "1,2,3,4,30",
+    "opmlDateModified": "Mon, 24 Mar 2014 20:01:13 GMT",
+    "opmlExpansionState": "1,2,3,4,33,51",
     "opmlFeed": "http://technimentis.com/rss.xml",
     "opmlFlEncrypted": "false",
     "opmlLongTitle": "Andy's Research Notes",
@@ -42,9 +42,9 @@
     "domain": "technimentis.com",
     "bootstrapTheme": "spruce",
     "type": "bloghome",
-    "slogan": "What a long strange trip it's been.",
+    "slogan": "Reallll soooon now...",
     "disqusGroupName": "kadesoto",
-    "siteTimeZone": "-6",
+    "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
     "flIndexPage": false,
     "flDisqusComments": "false",
@@ -66,7 +66,7 @@
     "flFixedMenu": "false",
     "maxStreamDays": "14",
     "text": "Andy DeSoto's Research Notes",
-    "created": "Mon, 24 Mar 2014 17:11:09 GMT",
+    "created": "Mon, 24 Mar 2014 20:01:13 GMT",
     "description": "Andy is a memory researcher in the Washington University in St. Louis Memory Lab. These are his research notes and other recordings.",
     "path": "",
     "subheadColor": "white",
@@ -79,7 +79,7 @@
     "flHideByline": "false",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css",
     "menuTitle": "Andy's Research Notes",
-    "now": "Mon Mar 24 2014 12:11:10 GMT-0500 (CDT)",
+    "now": "Mon Mar 24 2014 15:01:14 GMT-0500 (CDT)",
     "copyright": "&copy; 2014 Andy DeSoto.",
     "url": "http://technimentis.com/.html"
 }; //12/12/13 by DW
@@ -166,10 +166,36 @@
 					</div>
 				<div class="divFargoBlogHome">
 	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/03/24/exploringIssuesOfEmptyCells.html">Exploring issues of empty cells</a></div>
+		<p>In our confidence-accuracy relationship research, one analysis we're interested in is called the <i>between-events</i> confidence-accuracy correlation. This between-events analysis describes the extent to which events or items (e.g., words) that are responded to with greater confidence are also more likely to be responded to correctly. My dissertation research aims to obtain between-events correlations (as well as correlations of other types) for items responded to with <i>remember</i>, <i>know</i>, or <i>guess</i> after an "old" recognition decision (read up on the <i>remember/know</i> procedure for some background here).<i> </i></p>
+
+<p>To get this particular confidence-accuracy correlation, we take each item and get an average confidence and average accuracy for each, then plot the trendline.</p>
+
+<p>The problem, though, is that there are some items which only receive a recognition decision of "old" a small number of times in the study. The objective in this analysis was to exclude those items for which only a few "old" responses were given and see if the resulting confidence-accuracy correlations differ dramatically.</p>
+
+<p>To do this, I filtered out items for which there were fewer than 2, 6, or 11 observations and recomputed the confidence-accuracy correlations.</p>
+
+<p>Here are the results:</p>
+
+<p><img src ="https://dl.dropbox.com/s/7p0stqqr6nj2k7n/Screenshot%202014-03-24%2014.46.02.png"></p>
+
+<p>The good news is that there are no big changes. Most items get at least 10 <i>remember</i> responses and most also get 5 <i>know</i> responses. Most items also get 1 <i>guess</i> response. Regardless of the number of items which are taken out, too, the confidence-accuracy relationships are remaining steady.</p>
+
+<p>Here's the SPSS matrix when we leave everything in, for future reference:</p>
+
+<p><img src ="https://dl.dropbox.com/s/dhlzla80gfqyhph/Screenshot%202014-03-24%2014.25.19.png"></p>
+
+<p>(Just ignore the crosstabs for the comparisons that aren't relevant. Focus on the diagonals.)</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">03/24/14; 02:52:25 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/03/24/exploringIssuesOfEmptyCells.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
 		<div class="divBlogHomeItemTitle"><a href="2014/03/24/lightReadingsInTheApartment.html">Light readings in the apartment</a></div>
 		<p>Another little side project: I rigged together an Arduino, an Ethernet Shield, and a photometer in the apartment. You can take a look at the code -- mostly spliced together through different tutorials -- <a href="https://github.com/kadesoto/Arduino-Ethernet-Project">on my Github</a>. It takes a reading of the light in the apartment every 15 seconds and uploads it to Xively, which handles the visualization. Here's what it looks like over the last three days:</p>
 
-<p><img src = "https://dl.dropbox.com/s/uwohs4u1g8b5b6z/Screenshot%202014-03-24%2012.01.48.png"></p>
+<p><img src="https://dl.dropbox.com/s/uwohs4u1g8b5b6z/Screenshot%202014-03-24%2012.01.48.png"></p>
 
 <p>We see a neat, regular pattern. I'm not exactly sure what the general patterns indicate -- this is all hypothesis at this point -- but we see a peak in the morning when I get ready for work or the day with the lights on and maximum brightness. In fact, I think you can even tell the unit's in a room with eastward facing windows -- a big blast of sun as it rises, followed by a general decrease in light over the day. I think some of the noise is due to different lights that are being turned on and off in the room, but also cloudiness. The third day worth of data is much smoother. I wonder if this means the day was sunnier (i.e., less cloudy) and I messed around less with the lights.</p>
 
@@ -177,7 +203,7 @@
 
 <p>Any thoughts on this? Agree or disagree with my informal analysis?</p>
 		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">03/24/14; 11:02:38 AM</span>
+			<span class="spFargoStoryDate">03/24/14; 12:02:38 PM</span>
 			<div class="divFargoStoryLink" style="float: left;"><a href="2014/03/24/lightReadingsInTheApartment.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
@@ -207,7 +233,7 @@
 
 <p>Unfortunately, I don't think I can keep this project up much longer -- it's a little too disruptive to do and I don't like the switch you have to flip to go to bed at the end of the day (I keep forgetting to toggle it, so get polled during sleeping hours by accident). It was a neat project while it lasted, though!</p>
 		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">03/21/14; 10:42:36 AM</span>
+			<span class="spFargoStoryDate">03/21/14; 11:42:36 AM</span>
 			<div class="divFargoStoryLink" style="float: left;"><a href="2014/03/21/experienceSamplingData.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
@@ -221,7 +247,7 @@
 
 <p>Sure enough, my findings support the discoveries of Ingram and colleagues. <i>Know</i> judgments made with high (i.e., 76-100) confidence are more likely to be correct than <i>remember</i> judgments made with lower (i.e., 26-50) confidence.</p>
 		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">03/20/14; 02:45:27 PM</span>
+			<span class="spFargoStoryDate">03/20/14; 03:45:27 PM</span>
 			<div class="divFargoStoryLink" style="float: left;"><a href="2014/03/20/anotherNeatFinding.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
@@ -243,7 +269,7 @@
 
 <p>P.S.: I utilize a feature of Fargo, my outlining system, for the first time in this post. Above, I link to Murdock's paper but, like so many other academic works, it's behind a paywall. In order to indicate this, I enter a little tag I invented myself -- [ paywall ] -- and Fargo renders a dollar sign icon. Later today I'll link the icon to some information about paywalls.   </p>
 		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">03/20/14; 10:05:52 AM</span>
+			<span class="spFargoStoryDate">03/20/14; 11:05:52 AM</span>
 			<div class="divFargoStoryLink" style="float: left;"><a href="2014/03/20/redoingAFigure.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
@@ -259,7 +285,7 @@
 
 <p>What are the implications? More to come.</p>
 		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">03/19/14; 11:30:43 AM</span>
+			<span class="spFargoStoryDate">03/19/14; 12:30:43 PM</span>
 			<div class="divFargoStoryLink" style="float: left;"><a href="2014/03/19/gammaCorrelationsContinued.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
@@ -279,7 +305,7 @@
 
 <p>One unrelated note: <a href="https://www.newschallenge.org/challenge/2014/submissions/outliners-as-a-tool-for-open-science">I submitted a Knight News Challenge fellowship proposal for a project using Fargo</a>. You can take a look at the proposal here. I speak about the idea casually (note that a lot of the verbiage was copied and pasted into the fellowship proposal -- shh, don't tell) <a href="http://technimentis.com/2014/02/27/fargoForOpenScienceDocumentation.html">in an earlier blog post here</a>. </p>
 		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">03/18/14; 03:42:15 PM</span>
+			<span class="spFargoStoryDate">03/18/14; 04:42:15 PM</span>
 			<div class="divFargoStoryLink" style="float: left;"><a href="2014/03/18/gammaCorrelationsForDissertationWorkOtherNotes.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
@@ -297,7 +323,7 @@
 
 <p>(Last note -- you might have noticed that this site is now hosted on my <a href="http://technimentis.com/">Technimentis</a> domain. I've always felt this is the right place for documenting and writing about my research.) </p>
 		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">03/17/14; 12:16:33 PM</span>
+			<span class="spFargoStoryDate">03/17/14; 01:16:33 PM</span>
 			<div class="divFargoStoryLink" style="float: left;"><a href="2014/03/17/catchingUp.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
@@ -319,7 +345,7 @@
 
 <p>The bottom line: The Jawbone UP24 is a comfortable, fashion conscious wristband that provides a (relatively) inexpensive way to start collecting personal data. I'm happy with mine and love taking it on runs, and am hugely grateful that the device connects to so many other devices and services that I love. When something comes out with more and more accurate sensors and a screen (like some of Samsung's new offerings, perhaps), it might be time to upgrade. But for now, I don't foresee taking this thing off for the rest of the year at least.</p>
 		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">03/13/14; 08:52:25 AM</span>
+			<span class="spFargoStoryDate">03/13/14; 09:52:25 AM</span>
 			<div class="divFargoStoryLink" style="float: left;"><a href="2014/03/13/reviewOfTheJawboneUp24AboutFourMonthsIn.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
@@ -335,28 +361,16 @@
 
 <p>The implication, then, is that there's a lot of variability within subjects in this procedure. My opinion is that an aggregated logistic regression equation, although valid for characterizing the overall relationship between confidence and accuracy as a function of <i>remember</i>, <i>know</i>, and <i>guess</i>, won't prove too useful on an individual level.</p>
 		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">03/06/14; 11:01:50 AM</span>
+			<span class="spFargoStoryDate">03/06/14; 12:01:50 PM</span>
 			<div class="divFargoStoryLink" style="float: left;"><a href="2014/03/06/individualLogisticRegressionPlots.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="2014/03/06/whatsTheMeaningOfANonlinearRelationship.html">What's the meaning of a nonlinear relationship?</a></div>
-		<p>Here's an interesting finding from this morning's fiddling. I correlated performance on a task in the <a href="http://psych.wustl.edu/memory">Memory Lab</a> with performance on a task elsewhere (sorry, I'm being deliberately ambiguous for the moment). The correlation was significant and sizable at <i>r</i> = .93. Of course, any good researcher knows <i>always plot your data</i>, so here's how they look:</p>
-
-<p><img src="https://dl.dropbox.com/s/blhwu4ushtgibvi/Screenshot%202014-03-06%2009.30.06.png"></p>
-
-<p>As you can see, the relationship looks somewhat logarithmic (or otherwise curvilinear). What causes that kind of relation? I'm pondering.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">03/06/14; 09:34:48 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="2014/03/06/whatsTheMeaningOfANonlinearRelationship.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
 
 				<div class="divFooterText">
 					<hr>
-					<p style="float: right;">Last built: Mon, Mar 24, 2014 at 11:11 AM</p>
+					<p style="float: right;">Last built: Mon, Mar 24, 2014 at  3:01 PM</p>
 					
-					<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Monday, March 24, 2014 at 11:11 AM</span>.</div>
+					<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Monday, March 24, 2014 at  3:01 PM</span>.</div>
 					</div>
 				</div>
 			</div>
