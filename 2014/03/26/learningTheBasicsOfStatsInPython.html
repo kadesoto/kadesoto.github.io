@@ -1,94 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Experiment List</title>
+		<title>Learning the basics of stats in Python</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://technimentis.com/rss.xml" />
 		<script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-3970063-10']); _gaq.push(['_setDomainName', 'technimentis.com']); _gaq.push(['_trackPageview']); (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
-		<!-- useBootstrap -->
-	<link href="http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css" rel="stylesheet" />
-	<script src="http://static.smallpicture.com/bootstrap/js/jquery-1.9.1.min.js"></script>
-	<script src="http://static.smallpicture.com/bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.0.3/css/font-awesome.min.css">
-		<!-- useSmallPictStyles -->
-	<link href="http://fargo.io/cms/platform.css?v=0.48" rel="stylesheet">
-	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
-	<script>
-		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/ngji6xlo30bssbo/andyDesotosOutline.opml",
-    "opmlTitle": "Andy DeSoto's Outline",
-    "opmlLink": "http://technimentis.com/",
-    "opmlLinkHosting": "https://dl.dropbox.com/s/hesck461g3cjusj/andyDesotosOutline.pack",
-    "opmlOwnerProfile": "http://www.andydesoto.com",
-    "opmlOwnerName": "Andy DeSoto",
-    "opmlOwnerEmail": "desoto@wustl.edu",
-    "opmlDateModified": "Wed, 26 Mar 2014 19:04:42 GMT",
-    "opmlExpansionState": "8,18,19,20,25,30,31,44,45",
-    "opmlFeed": "http://technimentis.com/rss.xml",
-    "opmlFlEncrypted": "false",
-    "opmlLongTitle": "Andy's Research Notes",
-    "opmlFont": "",
-    "opmlFontSize": "",
-    "opmlLineHeight": "",
-    "opmlFlCmsRender": "true",
-    "opmlFlCmsRenderInBackground": "false",
-    "opmlDescription": "Andy is a memory researcher in the Washington University in St. Louis Memory Lab. These are his research notes and other recordings.",
-    "opmlTypeInsertedNode": "",
-    "opmlDateCreated": "",
-    "opmlOwnerId": "",
-    "menuname": "andyMenu",
-    "googleAnalyticsID": "UA-3970063-10",
-    "domain": "technimentis.com",
-    "bootstrapTheme": "spruce",
-    "type": "index",
-    "slogan": "Pay no attention to the man behind the curtain.",
-    "disqusGroupName": "kadesoto",
-    "siteTimeZone": "-5",
-    "dateFormat": "%A, %B %e, %Y at %l:%M %p",
-    "flIndexPage": true,
-    "flDisqusComments": "false",
-    "flStoryTextOnIndexPage": false,
-    "flNonDocHeadsOnIndexPage": true,
-    "flStoryDateOnIndexPage": false,
-    "storyDateFormat": "%D; %r",
-    "maxStoriesOnIndexPage": 25,
-    "maxStoryList": 25,
-    "authorTwitterAccount": "kadesoto",
-    "authorFacebookAccount": "kadesoto",
-    "authorProfileUrl": "http://www.andydesoto.com",
-    "titleColor": "white",
-    "siteFolder": "kadesoto.github.io/",
-    "flProfile": false,
-    "ctLevelsOnIndexPage": 1,
-    "blogHomeItemCount": "10",
-    "flPgfPermaLinks": false,
-    "flFixedMenu": "false",
-    "maxStreamDays": "14",
-    "text": "Experiment List",
-    "created": "Tue, 25 Jun 2013 21:20:11 GMT",
-    "description": "Andy is a memory researcher in the Washington University in St. Louis Memory Lab. These are his research notes and other recordings.",
-    "path": "experimentList",
-    "subheadColor": "white",
-    "flMapHeader": "false",
-    "mapLatitude": "40.774295",
-    "mapLongitude": "-73.970833",
-    "mapType": "roadmap",
-    "mapZoom": "14",
-    "flSnapEnabled": "true",
-    "flHideByline": "false",
-    "authorGithubAccount": "kadesoto",
-    "authorLinkedInAccount": "kadesoto",
-    "name": "experimentList",
-    "icon": "cogs",
-    "menuName": "andyMenu",
-    "cssUrl": "http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css",
-    "menuTitle": "Andy's Research Notes",
-    "now": "Wed Mar 26 2014 14:04:56 GMT-0500 (CDT)",
-    "copyright": "&copy; 2014 Andy DeSoto.",
-    "url": "http://technimentis.com/experimentList.html"
-}; //12/12/13 by DW
-		</script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"> 
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> 
 		<style>
 			@media only screen 
 			and (min-device-width : 320px) 
@@ -117,6 +37,7 @@
 					}
 				.divPrevNext {
 					font-size: 1.2em;
+					float: none;
 					}
 				.divBreadcrumbs {
 					display: none;
@@ -137,14 +58,12 @@
 				width: 100%;
 				position: absolute;
 				right: 0;
-				
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
-				
 				z-index: -1;
 				opacity: 1;
 				}
@@ -160,12 +79,13 @@
 			</style>
 		<!-- customStylesScripts -->
 		
+		<script src="https://dl.dropboxusercontent.com/u/3695301/Chart.min.js">
+			</script>
 		<script>
 			function startupOutlineTemplate () {
 				if (pagetable.backgroundImage != undefined) {
 					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
 					textInFront.className = "divTextInFrontOfImage";
-					
 					var outlineImage = document.getElementById ("idOutlineImage"); 
 					outlineImage.className = "divOutlineImage";
 					outlineImage.style.backgroundImage = "url(\"" + pagetable.backgroundImage + "\")";
@@ -209,25 +129,37 @@
 					<div id="idTextInFrontOfImage">
 						<div class="divHeadlineUnit" id="idHeadlineUnit">
 							<div class="divPrevNext">
-								<div class="divPrevNextLinks"><a href="http://technimentis.com/researchOverview.html" title="Research Overview" ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<a href="http://technimentis.com/meetingNotes.html" title="Meeting Notes" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
+								<div class="divPrevNextLinks"><i class="fa fa-arrow-left" style="color: silver"></i>&nbsp;&nbsp;<a href="http://technimentis.com/2014/03/24/examiningItemCharacteristics.html" title="Examining item characteristics" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
 								</div>
 							<div class="divBreadcrumbs" id="idBreadcrumbs">
-								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a></li></ul>
+								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a><span class="divider">/</span><li><a href="http://technimentis.com/2014">2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/03">March 2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/03/26">March 26</a></li></ul>
 								</div>
-							<h2>Experiment List</h2>
+							<h2>Learning the basics of stats in Python</h2>
 							</div>
-						<div class="divFargoIndex">
-	<ul>
-		<li class="liSmallTitleOnIndexPage" ><a  class="aDocSmallTitleOnIndexPage"  href="currentResearchLines/">Current Research Lines</a></li>
-		<li class="liSmallTitleOnIndexPage" ><a  class="aDocSmallTitleOnIndexPage"  href="archive/">Archive</a></li>
-		</ul>
-	</div>
+						<div class="divFargoMarkdown" id="idFargoMarkdown"><p>I have a few free minutes today, so I've been spending some time learning how to use Python for statistical programming. It is not a friendly learning curve so far. <a href="https://store.continuum.io/cshop/anaconda/">I started by installing Anaconda</a>, a package that includes, as far as I can tell, everything you need to get started. <a href="http://ipython.org/">Once I did that I got IPython running</a>, which is -- again, as far as I can tell -- a browser-based client for doing stats in Python.</p>
 
+<p>Then I mostly followed a tutorial that assumed I knew <i>way</i> more than I actually did.</p>
+
+<p>A neat feature I discovered is that <a href="http://ipython.org/">you can use the IPython Notebook Viewer to share your statistics with others</a>. <a href="http://nbviewer.ipython.org/urls/dl.dropboxusercontent.com/u/3695301/Basics.ipynb.json?create=1">Click on this link here to see the stats that I ran</a>.</p>
+
+<p>You can see that I conducted a t-test, and a one-way ANOVA! On what, that's a good question, but at least I executed those steps.</p>
+
+<p>So clearly, here's what I need to learn in order to get useful at this:</p>
+
+<ul>
+<li><ol><li>How to take data off of my webservers and get them into IPython</li></ol></li>
+<li><ol><li>Run basic t-tests and ANOVAs with said data</li></ol></li>
+<li><ol><li>Do correlation and regression analyses with said data</li></ol></li>
+</ul>
+
+<p>None of these things sound <i>too</i> difficult -- rather, it's the conditional analyzing, etc. (e.g., averaging across subjects -- how does one do this?) -- that'll be challenging to learn.</p>
+
+<p>If anyone has any tips, tricks, or good places to get started, feel free to share them.</p></div>
 						<div class="divFooterText">
 							<hr>
-							<p style="float: right;">Last built: Wed, Mar 26, 2014 at  2:04 PM</p>
-							
-							<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Tuesday, June 25, 2013 at  4:20 PM</span>.  <span class="spSlogan" style="float: right;"><i>Everything's an interaction.</i></span></div>
+							<p style="float: right;">Last built: Wed, Mar 26, 2014 at  2:53 PM</p>
+							<script>var disqus_identifier = "https://dl.dropbox.com/s/ngji6xlo30bssbo/andyDesotosOutline.opmlWed, 26 Mar 2014 19:47:38 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
+							<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Wednesday, March 26, 2014 at  2:47 PM</span>.  <span class="spSlogan" style="float: right;"><i>Everything's an interaction.</i></span></div>
 							</div>
 						</div>
 						</div>
