@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>April 9</title>
+		<title>Having trouble with my Github setup</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://technimentis.com/rss.xml" />
@@ -41,8 +41,8 @@
     "googleAnalyticsID": "UA-3970063-10",
     "domain": "",
     "bootstrapTheme": "spruce",
-    "type": "bloghome",
-    "slogan": "Ask not what the Internet can do for you...",
+    "type": "outline",
+    "slogan": "What a long strange trip it's been.",
     "disqusGroupName": "kadesoto",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -65,10 +65,10 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
-    "text": "April 9",
-    "created": "Wed, 09 Apr 2014 20:02:44 GMT",
+    "text": "Having trouble with my Github setup",
+    "created": "Wed, 09 Apr 2014 20:52:26 GMT",
     "description": "Andy is a memory researcher in the Washington University in St. Louis Memory Lab. These are his research notes and other recordings.",
-    "path": "2014/04/09",
+    "path": "2014/04/09/havingTroubleWithMyGithubSetup",
     "subheadColor": "white",
     "flMapHeader": "false",
     "mapLatitude": "40.774295",
@@ -80,13 +80,14 @@
     "backgroundImage": "",
     "authorGithubAccount": "kadesoto",
     "authorLinkedInAccount": "kadesoto",
-    "name": "09",
+    "name": "havingTroubleWithMyGithubSetup",
     "icon": "calendar",
+    "isFeedItem": "true",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css",
     "menuTitle": "Andy's Research Notes",
     "now": "Wed Apr 09 2014 15:52:50 GMT-0500 (CDT)",
     "copyright": "&copy; 2014 Andy DeSoto.",
-    "url": "http://technimentis.com/2014/04/09.html"
+    "url": "http://technimentis.com/2014/04/09/havingTroubleWithMyGithubSetup.html"
 }; //12/12/13 by DW
 		</script>
 		<style>
@@ -116,7 +117,7 @@
 					margin-bottom: 5px;
 					}
 				.divPrevNext {
-					float: none;
+					font-size: 1.2em;
 					}
 				.divBreadcrumbs {
 					display: none;
@@ -131,8 +132,47 @@
 					}
 				}
 			</style>
+		<style>
+			.divOutlineImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divTextInFrontOfImage {
+				background-color: white; 
+				opacity: .90;
+				padding: 1.5em;
+				border:2px solid whitesmoke;
+				}
+			.spSlogan {
+				display: none;
+				}
+			</style>
 		<!-- customStylesScripts -->
 		
+		<script>
+			function startupOutlineTemplate () {
+				if ((pagetable.backgroundImage != undefined) && (pagetable.backgroundImage.length > 0)) {
+					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
+					textInFront.className = "divTextInFrontOfImage";
+					
+					var outlineImage = document.getElementById ("idOutlineImage"); 
+					outlineImage.className = "divOutlineImage";
+					outlineImage.style.backgroundImage = "url(\"" + pagetable.backgroundImage + "\")";
+					}
+				}
+			</script>
 		</head>
 	<body>
 		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kadesoto" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
@@ -165,55 +205,32 @@
 	</div>
 
 		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a><span class="divider">/</span><li><a href="http://technimentis.com/2014">2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/04">April 2014</a></li></ul>
+			<div id="idOutlineImage">
+				<div id="idOutlineContainer" class="container">
+					<div id="idTextInFrontOfImage">
+						<div class="divHeadlineUnit" id="idHeadlineUnit">
+							<div class="divPrevNext">
+								<div class="divPrevNextLinks"><i class="fa fa-arrow-left" style="color: silver"></i>&nbsp;&nbsp;<a href="http://technimentis.com/2014/04/09/wisdomOfTheCrowdsPeerReviewEdition.html" title="Wisdom of the crowds: Peer review edition" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
+								</div>
+							<div class="divBreadcrumbs" id="idBreadcrumbs">
+								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a><span class="divider">/</span><li><a href="http://technimentis.com/2014">2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/04">April 2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/04/09">April 9</a></li></ul>
+								</div>
+							<h2>Having trouble with my Github setup</h2>
+							</div>
+						<div class="divFargoMarkdown" id="idFargoMarkdown"><p>Just a note that I'm having some sudden trouble with my Github Page. Here's hoping things start operating smoothly soon.</p></div>
+						<div class="divFooterText">
+							<hr>
+							<p style="float: right;">Last built: Wed, Apr  9, 2014 at  3:52 PM</p>
+							<script>var disqus_identifier = "https://dl.dropbox.com/s/ngji6xlo30bssbo/andyDesotosOutline.opmlWed, 09 Apr 2014 20:52:26 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
+							<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Wednesday, April  9, 2014 at  3:52 PM</span>.  <span class="spSlogan" style="float: right;"><i>Everything's an interaction.</i></span></div>
+							</div>
 						</div>
-					<h2 id="idBlogHomePageTitle">April 9</h2>
-					</div>
-				<div class="divFargoBlogHome">
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="havingTroubleWithMyGithubSetup.html">Having trouble with my Github setup</a></div>
-		<p>Just a note that I'm having some sudden trouble with my Github Page. Here's hoping things start operating smoothly soon.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">04/09/14; 03:52:26 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="havingTroubleWithMyGithubSetup.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="wisdomOfTheCrowdsPeerReviewEdition.html">Wisdom of the crowds: Peer review edition</a></div>
-		<p>My acquaintance <a href="http://fivethirtyeight.com/contributors/walt-hickey/">Walter Hickey</a>, from FiveThirtyEight, made an interesting comment that I wanted to address in over 140 characters.</p>
-
-<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/becky_koenig">@becky_koenig</a> <a href="https://twitter.com/kadesoto">@kadesoto</a> also, readers, commenters and other publications are almost certainly more grilling than a peer review.</p>&mdash; Walter Hickey (@WaltHickey) <a href="https://twitter.com/WaltHickey/statuses/453984414687821826">April 9, 2014</a></blockquote>
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<p>It's an interesting idea to think about. At face value the idea makes sense -- a million people out there, any number of which have the time, energy, and expertise to evaluate your writing critically. But I'm not sure the evidence is out there suggesting that people actually do that. When I read critiques of news articles, they seem partisan or opinion based -- "I think this article is wrong because I disagree with you." Peer review, at its best, does more than this. Readers and commenters will be quick to pick up on and take down obvious flaws and logical fallacies. But can you count on them to investigate statistical analyses, interpretations of scientific theory? Do your readers know how to bootstrap, score psychological measures, or do a shift of benchwork?</p>
-
-<p>A few of them do, but it's irresponsible to assume that those people are out there and are willing and motivated to clean up any mistakes you made. Scientific peer review, despite its faults, ensures that at least some wise brains have the professional responsibility to evaluate your arguments. Ideally, it matches up subject matter experts -- people who <i>can</i> bootstrap and evaluate theory, to continue the example -- to papers that require it.</p>
-
-<p>Test</p>
-
-<p>Data journalists would be wise to seek out impartial reviewers instead of assuming that readers, commenters, and other publications will do the job of ensuring accuracy for them.</p>
-
-<p><i><a href="http://www.brianckeegan.com/2014/04/the-need-for-openness-in-data-journalism/">Click here for related reading by Brian Keegan.</a></i></p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">04/09/14; 03:02:44 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="wisdomOfTheCrowdsPeerReviewEdition.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Wed, Apr  9, 2014 at  3:52 PM</p>
-					<script>var disqus_identifier = "https://dl.dropbox.com/s/ngji6xlo30bssbo/andyDesotosOutline.opmlWed, 09 Apr 2014 20:02:44 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Wednesday, April  9, 2014 at  3:02 PM</span>.</div>
-					</div>
+						</div>
 				</div>
 			</div>
 		<script>
 			startupFargoPlatform ();
+			startupOutlineTemplate ();
 			</script>
 		</body>
 	</html>
