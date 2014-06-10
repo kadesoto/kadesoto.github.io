@@ -23,8 +23,8 @@
     "opmlOwnerProfile": "http://www.andydesoto.com",
     "opmlOwnerName": "Andy DeSoto",
     "opmlOwnerEmail": "desoto@wustl.edu",
-    "opmlDateModified": "Fri, 23 May 2014 14:06:06 GMT",
-    "opmlExpansionState": "1,2,3,4,9,10",
+    "opmlDateModified": "Tue, 10 Jun 2014 15:20:54 GMT",
+    "opmlExpansionState": "1,2,3,4,8,9,11",
     "opmlFeed": "http://technimentis.com/rss.xml",
     "opmlFlEncrypted": "false",
     "opmlLongTitle": "Andy's Research Notes",
@@ -42,7 +42,7 @@
     "domain": "",
     "bootstrapTheme": "spruce",
     "type": "bloghome",
-    "slogan": "Only steal from the best.",
+    "slogan": "So, it has come to this.",
     "disqusGroupName": "kadesoto",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -81,13 +81,14 @@
     "streamHighlightColor": "yellow",
     "streamTextFrameColor": "whitesmoke",
     "streamVersion": "2",
+    "flEmojify": "true",
     "authorGithubAccount": "kadesoto",
     "authorLinkedInAccount": "kadesoto",
     "name": "2014",
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css",
     "menuTitle": "Andy's Research Notes",
-    "now": "Fri May 23 2014 09:06:07 GMT-0500 (CDT)",
+    "now": "Tue Jun 10 2014 10:20:54 GMT-0500 (CDT)",
     "copyright": "&copy; 2014 Andy DeSoto.",
     "url": "http://technimentis.com/2014.html"
 }; //12/12/13 by DW
@@ -177,10 +178,22 @@
 					</div>
 				<div class="divFargoBlogHome">
 	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="06/10/completeDatasetFor18.html">Complete dataset for 18</a></div>
+		<p>Good news -- <i>N </i>= 599 subjects have been collected for my latest project (a cross-sectional study), which means we have a complete dataset. This is great news. New challenges arise, though. In particular, I am faced with issues regarding how to score the dataset. When I programmed the study, I implemented a pattern matching algorithm to score the data automatically. Unfortunately, it seems to be mishandling a few items selectively, leaving the options of (1) going with the data as scored, (2) hand-checking the troublesome items, or (3) re-matching all the data (which would be technically time-consuming -- I might need to do it in another programming language). Instead, I am leaning towards using an Excel matching that I've also programmed. Even though this algorithm is stricter, it carries the benefit that I know what it's doing -- it's completely transparent. This is really important.</p>
+
+<p>There's one disadvantage with the Excel algorithm -- currently, the way it assigns credit is a little off, and it's something I'll need to change for the final version. This will require retooling the spreadsheet I currently use to score the data. Another disadvantage of Excel is that it's not the most sophisticated data management system I could be using. A few high-profile scientific errors involving Excel have popped up in the last few years, <a href="http://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CCIQFjAA&amp;url=http%3A%2F%2Fwww.businessweek.com%2Farticles%2F2013-04-18%2Ffaq-reinhart-rogoff-and-the-excel-error-that-changed-history&amp;ei=uSGXU5uMGYieyATe_YG4Aw&amp;usg=AFQjCNFFE8XCx8XwwYRnX_RHiToQMByMHA&amp;sig2=02eQIuGzyyzrda-ywJS2fQ&amp;bvm=bv.68445247,d.aWw">like this one</a>. We clearly want to avoid those. Of course, I'll be publishing the raw data as soon as the paper's out so that others can confirm the results.</p>
+
+<p>So the rest of the morning will be spent retooling this spreadsheet and going with the Excel scoring. I'm reasonably confident in this decision.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">06/10/14; 10:09:06 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="06/10/completeDatasetFor18.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
 		<div class="divBlogHomeItemTitle"><a href="05/23/nextPhaseOfProjectContinued.html">Next phase of project, continued</a></div>
 		<p>Data collection is going well. There's no longer a need for 50-59 year olds, as you can see from the figure below:</p>
 
-<p><img src="https://dl.dropbox.com/s/9fv1pq6bt8irh89/Screenshot%202014-05-23%2008.59.39.png" alt="Subject counts" width="" height="" border="" align="" /> </p>
+<p><img src="https://dl.dropbox.com/s/9fv1pq6bt8irh89/Screenshot%202014-05-23%2008.59.39.png" alt="Subject counts" width="" height="" border="" align=""> </p>
 
 <p>Now, the slow wait for those 60 and up begins. We are getting about seven a day, assuming the rate between the 21st and today remains constant, so I expect this step should take a little over a week. </p>
 
@@ -314,26 +327,10 @@
 			<div class="divFargoStoryLink" style="float: left;"><a href="04/08/thinkingAboutObservationCountsAgain.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="04/04/solvingALittlePuzzle.html">Solving a little puzzle</a></div>
-		<p>My dissertation research is turning out to be somewhat timely -- a colleague of mine in the Behavior, Brain, and Cognition program recently gave a brief talk for the department reporting that she wasn't able to find some of the results reported in another paper (one relevant to my dissertation). I suppose it's not quite my place to talk about it here, so I'll just attach the figure, for my own reference, that adds to the discussion:</p>
-
-<p><img src="https://dl.dropbox.com/s/b1bo9lhq8jxng0y/Screenshot%202014-04-03%2012.59.40.png" alt="Replication of Ingram, Mickes, and Wixted (2012)" width="" height="" border="" align=""> </p>
-
-<p>If you want to know more, you can e-mail me directly.</p>
-
-<p>This interesting issue raises a larger point that I have been concerned about for a few weeks now. To what extent is a fellow researcher authorized to discuss research presented in department talks and colloquia? What is the best way to cover topics discussed in these sessions? Traditionally, researchers discuss data that are in progress or have not been finalized, published, or sometimes even double-checked. At the same time, though, it's rare to hear a presenter warn, "Please don't tell others about this research until it has been published." So what is the appropriate way to share an interesting talk you've heard? Do you only discuss work that has been published, as a ground rule? Do you speak about unpublished research, but in a vague way? Do you assume that if the research has been presented in a public talk, it's fair game? Is there a difference when research is presented in a lab meeting versus a brown bag versus a department talk?</p>
-
-<p>Perhaps someone older and wiser than me can share their opinions.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">04/04/14; 11:53:26 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="04/04/solvingALittlePuzzle.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
 
 				<div class="divFooterText">
 					<hr>
-					<p style="float: right;">Last built: Fri, May 23, 2014 at  9:06 AM</p>
+					<p style="float: right;">Last built: Tue, Jun 10, 2014 at 10:20 AM</p>
 					<script>var disqus_identifier = "https://dl.dropbox.com/s/ngji6xlo30bssbo/andyDesotosOutline.opmlThu, 09 Jan 2014 18:23:13 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
 					<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Thursday, January  9, 2014 at  1:23 PM</span>.</div>
 					</div>
