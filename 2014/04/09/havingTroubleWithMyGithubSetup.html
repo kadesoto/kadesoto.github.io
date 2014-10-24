@@ -10,21 +10,21 @@
 	<link href="http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css" rel="stylesheet" />
 	<script src="http://static.smallpicture.com/bootstrap/js/jquery-1.9.1.min.js"></script>
 	<script src="http://static.smallpicture.com/bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.0.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.1.0/css/font-awesome.min.css">
 		<!-- useSmallPictStyles -->
 	<link href="http://fargo.io/cms/platform.css?v=0.48" rel="stylesheet">
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/ngji6xlo30bssbo/andyDesotosOutline.opml",
+    "opmlUrl": "https://dl.dropbox.com/s/ngji6xlo30bssbo/andyDesotosOutline.opml?dl=0",
     "opmlTitle": "Andy DeSoto's Outline",
     "opmlLink": "http://technimentis.com/",
     "opmlLinkHosting": "https://dl.dropbox.com/s/hesck461g3cjusj/andyDesotosOutline.pack",
     "opmlOwnerProfile": "http://www.andydesoto.com",
     "opmlOwnerName": "Andy DeSoto",
     "opmlOwnerEmail": "desoto@wustl.edu",
-    "opmlDateModified": "Wed, 09 Apr 2014 20:52:50 GMT",
-    "opmlExpansionState": "1,2,3,4,6,26,36,38,39,51,52",
+    "opmlDateModified": "Fri, 19 Sep 2014 16:57:55 GMT",
+    "opmlExpansionState": "1,2,3,4,6,7,8",
     "opmlFeed": "http://technimentis.com/rss.xml",
     "opmlFlEncrypted": "false",
     "opmlLongTitle": "Andy's Research Notes",
@@ -35,6 +35,7 @@
     "opmlFlCmsRenderInBackground": "false",
     "opmlDescription": "Andy is a memory researcher in the Washington University in St. Louis Memory Lab. These are his research notes and other recordings.",
     "opmlTypeInsertedNode": "",
+    "opmlLastCursor": "0",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "andyMenu",
@@ -65,6 +66,8 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
+    "flMarkdown": true,
+    "leftIndent": 0,
     "text": "Having trouble with my Github setup",
     "created": "Wed, 09 Apr 2014 20:52:26 GMT",
     "description": "Andy is a memory researcher in the Washington University in St. Louis Memory Lab. These are his research notes and other recordings.",
@@ -78,6 +81,10 @@
     "flSnapEnabled": "true",
     "flHideByline": "false",
     "backgroundImage": "",
+    "streamHighlightColor": "yellow",
+    "streamTextFrameColor": "whitesmoke",
+    "streamVersion": "2",
+    "flEmojify": "true",
     "authorGithubAccount": "kadesoto",
     "authorLinkedInAccount": "kadesoto",
     "name": "havingTroubleWithMyGithubSetup",
@@ -85,7 +92,7 @@
     "isFeedItem": "true",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css",
     "menuTitle": "Andy's Research Notes",
-    "now": "Wed Apr 09 2014 15:52:50 GMT-0500 (CDT)",
+    "now": "Fri Sep 19 2014 11:57:56 GMT-0500 (CDT)",
     "copyright": "&copy; 2014 Andy DeSoto.",
     "url": "http://technimentis.com/2014/04/09/havingTroubleWithMyGithubSetup.html"
 }; //12/12/13 by DW
@@ -159,9 +166,84 @@
 				display: none;
 				}
 			</style>
+		<style>
+			.divOutlineNoMarkdown {
+				font-size: 20px;
+				line-height: 150%;
+				}
+			.divOutlineNoMarkdown li {
+				line-height: 150%;
+				}
+			.divOutlineNoMarkdown li {
+				}
+			.divOutlineNoMarkdown .ulOutlineList {
+				padding: 0;
+				margin: 0;
+				}
+			.divOutlineNoMarkdown .liOutline {
+				list-style-type: none;
+				margin-bottom: .5em;
+				}
+			.divOutlineNoMarkdown .divOutlineHead {
+				font-weight: bold;
+				margin-top: 13px;
+				margin-bottom: 13px;
+				}
+			.divOutlineNoMarkdown .liHasSubs ul {
+				}
+			.divOutlineNoMarkdown .liNoSubs {
+				}
+			.divOutlineNoMarkdown .spOutlineIcon {
+				margin-right: -11px;
+				}
+			.divOutlineNoMarkdown .aOutlineWedgeLink {
+				color: black;
+				}
+			.divOutlineNoMarkdown .aOutlineWedgeLink i {
+				color: black;
+				cursor: pointer;
+				position: relative;
+				width: .5em;
+				left: -1em;
+				}
+			.divOutlineNoMarkdown .aOutlineTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.divOutlineNoMarkdown .spPermalink {
+				}
+			.divOutlineNoMarkdown .spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 10px;
+				font-weight: normal;
+				vertical-align: top;
+				margin-left: 3px;
+				}
+			.divOutlineNoMarkdown code {
+				display: inline;
+				border: none;
+				color: black;
+				font-size: .85em;
+				}
+			</style>
 		<!-- customStylesScripts -->
 		
 		<script>
+			function ecOutline (idnum) { //7/12/14 by DW
+				var c = document.getElementById ("idOutlineWedge" + idnum), idUL = "#idOutlineLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					c.style.color = "black";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					c.style.color = "silver";
+					$(idUL).slideDown (75);
+					}
+				}
 			function startupOutlineTemplate () {
 				if ((pagetable.backgroundImage != undefined) && (pagetable.backgroundImage.length > 0)) {
 					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
@@ -210,7 +292,7 @@
 					<div id="idTextInFrontOfImage">
 						<div class="divHeadlineUnit" id="idHeadlineUnit">
 							<div class="divPrevNext">
-								<div class="divPrevNextLinks"><i class="fa fa-arrow-left" style="color: silver"></i>&nbsp;&nbsp;<a href="http://technimentis.com/2014/04/09/wisdomOfTheCrowdsPeerReviewEdition.html" title="Wisdom of the crowds: Peer review edition" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
+								<div class="divPrevNextLinks"><a href="http://technimentis.com/2014/04/18/photoOrganizationIGiveUpPleaseHelpMe.html" title="Photo organization: I give up. Please help me." ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<a href="http://technimentis.com/2014/04/09/wisdomOfTheCrowdsPeerReviewEdition.html" title="Wisdom of the crowds: Peer review edition" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
 								</div>
 							<div class="divBreadcrumbs" id="idBreadcrumbs">
 								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a><span class="divider">/</span><li><a href="http://technimentis.com/2014">2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/04">April 2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/04/09">April 9</a></li></ul>
@@ -220,8 +302,8 @@
 						<div class="divFargoMarkdown" id="idFargoMarkdown"><p>Just a note that I'm having some sudden trouble with my Github Page. Here's hoping things start operating smoothly soon.</p></div>
 						<div class="divFooterText">
 							<hr>
-							<p style="float: right;">Last built: Wed, Apr  9, 2014 at  3:52 PM</p>
-							<script>var disqus_identifier = "https://dl.dropbox.com/s/ngji6xlo30bssbo/andyDesotosOutline.opmlWed, 09 Apr 2014 20:52:26 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
+							<p style="float: right;">Last built: Fri, Sep 19, 2014 at 11:57 AM</p>
+							<script>var disqus_identifier = "https://dl.dropbox.com/s/ngji6xlo30bssbo/andyDesotosOutline.opml?dl=0Wed, 09 Apr 2014 20:52:26 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
 							<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Wednesday, April  9, 2014 at  3:52 PM</span>.  <span class="spSlogan" style="float: right;"><i>Everything's an interaction.</i></span></div>
 							</div>
 						</div>

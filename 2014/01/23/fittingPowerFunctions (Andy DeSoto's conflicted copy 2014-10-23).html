@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fitting power functions</title>
+		<meta charset='utf-8'> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://technimentis.com/rss.xml" />
+		
+		<!-- useBootstrap -->
+	<link href="http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css" rel="stylesheet" />
+	<script src="http://static.smallpicture.com/bootstrap/js/jquery-1.9.1.min.js"></script>
+	<script src="http://static.smallpicture.com/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.0.3/css/font-awesome.min.css">
+		<!-- useSmallPictStyles -->
+	<link href="http://fargo.io/cms/platform.css?v=0.48" rel="stylesheet">
+	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
+	<script>
+		var pagetable = {
+    "opmlUrl": "",
+    "opmlTitle": "Andy DeSoto's Outline",
+    "opmlLink": "http://technimentis.com/",
+    "opmlLinkHosting": "https://dl.dropbox.com/s/hesck461g3cjusj/andyDesotosOutline.pack",
+    "opmlOwnerProfile": "http://www.andydesoto.com",
+    "opmlOwnerName": "Andy DeSoto",
+    "opmlOwnerEmail": "desoto@wustl.edu",
+    "opmlDateModified": "Wed, 26 Mar 2014 20:16:59 GMT",
+    "opmlExpansionState": "8,28",
+    "opmlFeed": "http://technimentis.com/rss.xml",
+    "opmlFlEncrypted": "false",
+    "opmlLongTitle": "Andy's Research Notes",
+    "opmlFont": "",
+    "opmlFontSize": "",
+    "opmlLineHeight": "",
+    "opmlFlCmsRender": "true",
+    "opmlFlCmsRenderInBackground": "false",
+    "opmlDescription": "Andy is a memory researcher in the Washington University in St. Louis Memory Lab. These are his research notes and other recordings.",
+    "opmlTypeInsertedNode": "",
+    "opmlDateCreated": "",
+    "opmlOwnerId": "",
+    "menuname": "andyMenu",
+    "googleAnalyticsID": "UA-3970063-10",
+    "domain": "",
+    "bootstrapTheme": "spruce",
+    "type": "outline",
+    "slogan": "Still diggin!",
+    "disqusGroupName": "kadesoto",
+    "siteTimeZone": "-5",
+    "dateFormat": "%A, %B %e, %Y at %l:%M %p",
+    "flIndexPage": false,
+    "flDisqusComments": "true",
+    "flStoryTextOnIndexPage": false,
+    "flNonDocHeadsOnIndexPage": true,
+    "flStoryDateOnIndexPage": false,
+    "storyDateFormat": "%D; %r",
+    "maxStoriesOnIndexPage": 25,
+    "maxStoryList": 25,
+    "authorTwitterAccount": "kadesoto",
+    "authorFacebookAccount": "kadesoto",
+    "authorProfileUrl": "http://www.andydesoto.com",
+    "titleColor": "white",
+    "siteFolder": "kadesoto.github.io/",
+    "flProfile": false,
+    "ctLevelsOnIndexPage": 1,
+    "blogHomeItemCount": "10",
+    "flPgfPermaLinks": false,
+    "flFixedMenu": "false",
+    "maxStreamDays": "14",
+    "text": "Fitting power functions",
+    "created": "Thu, 23 Jan 2014 20:20:38 GMT",
+    "description": "Andy is a memory researcher in the Washington University in St. Louis Memory Lab. These are his research notes and other recordings.",
+    "path": "2014/01/23/fittingPowerFunctions",
+    "subheadColor": "white",
+    "flMapHeader": "false",
+    "mapLatitude": "40.774295",
+    "mapLongitude": "-73.970833",
+    "mapType": "roadmap",
+    "mapZoom": "14",
+    "flSnapEnabled": "true",
+    "flHideByline": "false",
+    "authorGithubAccount": "kadesoto",
+    "authorLinkedInAccount": "kadesoto",
+    "name": "fittingPowerFunctions",
+    "icon": "calendar",
+    "isFeedItem": "true",
+    "cssUrl": "http://static.smallpicture.com/bootswatch/spruce/bootstrap.min.css",
+    "menuTitle": "Andy's Research Notes",
+    "now": "Wed Mar 26 2014 15:17:06 GMT-0500 (CDT)",
+    "copyright": "&copy; 2014 Andy DeSoto.",
+    "url": "http://technimentis.com/2014/01/23/fittingPowerFunctions.html"
+}; //12/12/13 by DW
+		</script>
+		<style>
+			@media only screen 
+			and (min-device-width : 320px) 
+			and (max-device-width : 480px) {
+				.navbar .nav>li {
+					display: none;
+					height: 0;
+					}
+				.divFargoSocialMediaLinks {
+					display: none;
+					}
+				.container {
+					margin-top: 10px;
+					width: 90%;
+					}
+				.divFargoMarkdown p {
+					font-size: 17px;
+					line-height: 140%;
+					}
+				h2 {
+					font-size: 24px;
+					line-height: 140%;
+					}
+				.divHeadlineUnit {
+					margin-bottom: 5px;
+					}
+				.divPrevNext {
+					font-size: 1.2em;
+					float: none;
+					}
+				.divBreadcrumbs {
+					display: none;
+					font-size: 15px;
+					}
+				.breadcrumb>li>.divider {
+					padding: 0;
+					padding-left: 1px;
+					}
+				.spSlogan {
+					display: none;
+					}
+				}
+			</style>
+		<style>
+			.divOutlineImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				z-index: -1;
+				opacity: 1;
+				}
+			.divTextInFrontOfImage {
+				background-color: white; 
+				opacity: .90;
+				padding: 1.5em;
+				border:2px solid whitesmoke;
+				}
+			.spSlogan {
+				display: none;
+				}
+			</style>
+		<!-- customStylesScripts -->
+		
+		<script>
+			function startupOutlineTemplate () {
+				if (pagetable.backgroundImage != undefined) {
+					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
+					textInFront.className = "divTextInFrontOfImage";
+					var outlineImage = document.getElementById ("idOutlineImage"); 
+					outlineImage.className = "divOutlineImage";
+					outlineImage.style.backgroundImage = "url(\"" + pagetable.backgroundImage + "\")";
+					}
+				}
+			</script>
+		</head>
+	<body>
+		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kadesoto" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/kadesoto" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/kadesoto" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idLinkedInLink" href="http://www.linkedin.com/in/kadesoto" target="_blank"><i class="fa fa-linkedin" style="color: #069; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://technimentis.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
+		
+<div class="navbar navbar-static-top" id="idFargoNavbar">
+	<div class="navbar-inner">
+		<div class="navbar-container">
+			<a class="brand" href="http://technimentis.com/">Technimentis</a>
+			<ul class="nav">
+				<li><a href="http://technimentis.com/biographicalSketch.html" target="_blank">Andy</a></li>
+				<li><a href="http://technimentis.com/researchOverview.html" target="_blank">Research</a></li>
+				<li><a href="http://technimentis.com/curriculumVitae.html" target="_blank">Vita</a></li>
+				<li><a href="http://psych.wustl.edu/memory" target="_blank">Memory Lab</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Projects&nbsp;<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://technimentis.com/personalAnalytics/" target="_blank">Personal Analytics</a></li>
+						<li><a href="http://technimentis.com/skulving/" target="_blank">Skulving</a></li>
+						<li><a href="https://medium.com/@kadesoto" target="_blank">Other Writing</a></li>
+						<li><a href="http://fargo.io/docs/whatIsFargo.html" target="_blank">About This Site</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+		<div class="divFargoOutlineBody">
+			<div id="idOutlineImage">
+				<div id="idOutlineContainer" class="container">
+					<div id="idTextInFrontOfImage">
+						<div class="divHeadlineUnit" id="idHeadlineUnit">
+							<div class="divPrevNext">
+								<div class="divPrevNextLinks"><a href="http://technimentis.com/2014/01/24/labMeeting.html" title="Lab meeting" ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<a href="http://technimentis.com/2014/01/22/orderedGoogleGlass.html" title="Ordered Google Glass -- any potential for research?" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
+								</div>
+							<div class="divBreadcrumbs" id="idBreadcrumbs">
+								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a><span class="divider">/</span><li><a href="http://technimentis.com/2014">2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/01">January 2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/01/23">January 23</a></li></ul>
+								</div>
+							<h2>Fitting power functions</h2>
+							</div>
+						<div class="divFargoMarkdown" id="idFargoMarkdown"><p>I've spent most of my time and energy today trying to fit forgetting functions to one of my datasets. Research (e.g., <a href="http://www.jstor.org/stable/40062717">Wixted &amp; Ebbesen, 1991</a>) suggests that the power function (i.e., <i>y </i>= <i>at^-b</i>) best describes forgetting from memory. I am not experienced in fitting these functions, though, so I had Excel draw power function trendlines through my data and just copied the resulting numbers. I am not super confident that I'm getting the right ones, though, so I really need to take things to a statistical package. Problem is, I don't know which one is right for the job.</p>
+
+<p>Plus, Adam brought up a good point when we spoke today: The data that I am trying to fit might involve a special case in which the power function (or really any function that drops off steeply after <i>t</i> = 0) might not best describe the underlying psychological mechanism I am exploring.</p>
+
+<p>It's really neat taking a look at forgetting for different items, though. Here's a vague, unlabeled figure so you can get a sense of what I'm talking about! I hope to be able to discuss some of these details with you soon.</p>
+
+<p><img src="https://dl.dropbox.com/s/cv87uarykw29ats/Screenshot%202014-01-23%2014.26.24.png"></p>
+
+<p>Time for me to take a break and focus on some other work, I think.</p></div>
+						<div class="divFooterText">
+							<hr>
+							<p style="float: right;">Last built: Wed, Mar 26, 2014 at  3:17 PM</p>
+							<script>var disqus_identifier = "Thu, 23 Jan 2014 20:20:38 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
+							<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Thursday, January 23, 2014 at  3:20 PM</span>.  <span class="spSlogan" style="float: right;"><i>Everything's an interaction.</i></span></div>
+							</div>
+						</div>
+						</div>
+				</div>
+			</div>
+		<script>
+			startupFargoPlatform ();
+			startupOutlineTemplate ();
+			</script>
+		</body>
+	</html>
