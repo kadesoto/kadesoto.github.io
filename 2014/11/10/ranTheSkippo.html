@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>November 10</title>
+		<title>Ran the Skippo</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://technimentis.com/rss.xml" />
@@ -42,8 +42,8 @@
     "googleAnalyticsID": "UA-3970063-10",
     "domain": "",
     "bootstrapTheme": "united",
-    "type": "bloghome",
-    "slogan": "Still diggin!",
+    "type": "outline",
+    "slogan": "Ask not what the Internet can do for you...",
     "disqusGroupName": "kadesoto",
     "siteTimeZone": "-6",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -68,10 +68,10 @@
     "maxStreamDays": "14",
     "flMarkdown": true,
     "leftIndent": 0,
-    "text": "November 10",
-    "created": "Mon, 10 Nov 2014 22:28:09 GMT",
+    "text": "Ran the Skippo",
+    "created": "Mon, 10 Nov 2014 22:46:41 GMT",
     "description": "Andy is a memory researcher in the Washington University in St. Louis Memory Lab. These are his research notes and other recordings.",
-    "path": "2014/11/10",
+    "path": "2014/11/10/ranTheSkippo",
     "subheadColor": "white",
     "flMapHeader": "false",
     "mapLatitude": "40.774295",
@@ -87,13 +87,13 @@
     "flEmojify": "true",
     "authorGithubAccount": "kadesoto",
     "authorLinkedInAccount": "kadesoto",
-    "name": "10",
+    "name": "ranTheSkippo",
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/united/bootstrap.min.css",
     "menuTitle": "Andy's Research Notes",
     "now": "Mon Nov 10 2014 16:50:28 GMT-0600 (CST)",
     "copyright": "&copy; 2014 Andy DeSoto.",
-    "url": "http://technimentis.com/2014/11/10.html"
+    "url": "http://technimentis.com/2014/11/10/ranTheSkippo.html"
 }; //12/12/13 by DW
 		</script>
 		<style>
@@ -123,7 +123,7 @@
 					margin-bottom: 5px;
 					}
 				.divPrevNext {
-					float: none;
+					font-size: 1.2em;
 					}
 				.divBreadcrumbs {
 					display: none;
@@ -138,8 +138,122 @@
 					}
 				}
 			</style>
+		<style>
+			.divOutlineImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divTextInFrontOfImage {
+				background-color: white; 
+				opacity: .90;
+				padding: 1.5em;
+				border:2px solid whitesmoke;
+				}
+			.spSlogan {
+				display: none;
+				}
+			</style>
+		<style>
+			.divOutlineNoMarkdown {
+				font-size: 20px;
+				line-height: 150%;
+				}
+			.divOutlineNoMarkdown li {
+				line-height: 150%;
+				}
+			.divOutlineNoMarkdown li {
+				}
+			.divOutlineNoMarkdown .ulOutlineList {
+				padding: 0;
+				margin: 0;
+				}
+			.divOutlineNoMarkdown .liOutline {
+				list-style-type: none;
+				margin-bottom: .5em;
+				}
+			.divOutlineNoMarkdown .divOutlineHead {
+				font-weight: bold;
+				margin-top: 13px;
+				margin-bottom: 13px;
+				}
+			.divOutlineNoMarkdown .liHasSubs ul {
+				}
+			.divOutlineNoMarkdown .liNoSubs {
+				}
+			.divOutlineNoMarkdown .spOutlineIcon {
+				margin-right: -11px;
+				}
+			.divOutlineNoMarkdown .aOutlineWedgeLink {
+				color: black;
+				}
+			.divOutlineNoMarkdown .aOutlineWedgeLink i {
+				color: black;
+				cursor: pointer;
+				position: relative;
+				width: .5em;
+				left: -1em;
+				}
+			.divOutlineNoMarkdown .aOutlineTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.divOutlineNoMarkdown .spPermalink {
+				}
+			.divOutlineNoMarkdown .spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 10px;
+				font-weight: normal;
+				vertical-align: top;
+				margin-left: 3px;
+				}
+			.divOutlineNoMarkdown code {
+				display: inline;
+				border: none;
+				color: black;
+				font-size: .85em;
+				}
+			</style>
 		<!-- customStylesScripts -->
 		
+		<script>
+			function ecOutline (idnum) { //7/12/14 by DW
+				var c = document.getElementById ("idOutlineWedge" + idnum), idUL = "#idOutlineLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					c.style.color = "black";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					c.style.color = "silver";
+					$(idUL).slideDown (75);
+					}
+				}
+			function startupOutlineTemplate () {
+				if ((pagetable.backgroundImage != undefined) && (pagetable.backgroundImage.length > 0)) {
+					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
+					textInFront.className = "divTextInFrontOfImage";
+					
+					var outlineImage = document.getElementById ("idOutlineImage"); 
+					outlineImage.className = "divOutlineImage";
+					outlineImage.style.backgroundImage = "url(\"" + pagetable.backgroundImage + "\")";
+					}
+				}
+			</script>
 		</head>
 	<body>
 		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kadesoto" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
@@ -163,55 +277,36 @@
 	</div>
 
 		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a><span class="divider">/</span><li><a href="http://technimentis.com/2014">2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/11">November 2014</a></li></ul>
-						</div>
-					<h2 id="idBlogHomePageTitle">November 10</h2>
-					</div>
-				<div class="divFargoBlogHome">
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="ranTheSkippo.html">Ran the Skippo</a></div>
-		<p>Yesterday, I ran the <a href="http://theskippo.com/">Skippo</a>, a 20K trail race at Castlewood State Park. It was my first time at Castlewood and my first trail race. I finished!</p>
+			<div id="idOutlineImage">
+				<div id="idOutlineContainer" class="container">
+					<div id="idTextInFrontOfImage">
+						<div class="divHeadlineUnit" id="idHeadlineUnit">
+							<div class="divPrevNext">
+								<div class="divPrevNextLinks"><i class="fa fa-arrow-left" style="color: silver"></i>&nbsp;&nbsp;<a href="http://technimentis.com/2014/11/10/assortedLabDuties.html" title="Assorted lab duties" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
+								</div>
+							<div class="divBreadcrumbs" id="idBreadcrumbs">
+								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://technimentis.com">Home</a><span class="divider">/</span><li><a href="http://technimentis.com/2014">2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/11">November 2014</a><span class="divider">/</span><li><a href="http://technimentis.com/2014/11/10">November 10</a></li></ul>
+								</div>
+							<h2>Ran the Skippo</h2>
+							</div>
+						<div class="divFargoMarkdown" id="idFargoMarkdown"><p>Yesterday, I ran the <a href="http://theskippo.com/">Skippo</a>, a 20K trail race at Castlewood State Park. It was my first time at Castlewood and my first trail race. I finished!</p>
 
 <p>A picture from afterwards:</p>
 
-<p><img src ="https://dl.dropbox.com/s/5ae6lwon6wor77t/Screenshot%202014-11-10%2016.46.10.png?dl=0"></p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">11/10/14; 04:46:41 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="ranTheSkippo.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="assortedLabDuties.html">Assorted lab duties</a></div>
-		<p>A few accomplishments today:</p>
-
-<ul>
-<li><p>Looked over Adam's paper draft that he'll be resubmitting in a few hours. It's looking pretty good. Will try and link to it once it's published.</p></li>
-<li><p>The majority of the day was spent working on proofreading and editing the <i>Science </i>paper, and other rigamarole associated with getting the publication out the door. The page proofs are looking really nice and it'll be exciting to share it with readers here before the end of the year.</p></li>
-<li><p>Also spent some time working on a few professional development issues.</p></li>
-<li><p>Deniz is running seven (or so) subjects as we speak.</p></li>
-<li><p>And lastly, the day was capped off by a pleasant surprise visit by <a href="http://people.duke.edu/~ab259/">Andrew Butler</a>, Assistant Professor at the University of Texas at Austin. He's a fabulous researcher who is bound to continue a great career in the land of beef brisket.</p></li>
-</ul>
-
-<p>P.S. Made arrangements for another meeting with <a href="http://neonelectrons.webs.com/">the Neon Electrons</a> this Friday.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">11/10/14; 04:28:09 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="assortedLabDuties.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Mon, Nov 10, 2014 at  4:50 PM</p>
-					<script>var disqus_identifier = "https://dl.dropbox.com/s/ngji6xlo30bssbo/andyDesotosOutline.opml?dl=0Mon, 10 Nov 2014 22:28:09 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Monday, November 10, 2014 at  4:28 PM</span>.</div>
-					</div>
+<p><img src ="https://dl.dropbox.com/s/5ae6lwon6wor77t/Screenshot%202014-11-10%2016.46.10.png?dl=0"></p></div>
+						<div class="divFooterText">
+							<hr>
+							<p style="float: right;">Last built: Mon, Nov 10, 2014 at  4:50 PM</p>
+							<script>var disqus_identifier = "https://dl.dropbox.com/s/ngji6xlo30bssbo/andyDesotosOutline.opml?dl=0Mon, 10 Nov 2014 22:46:41 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/kadesoto/embed.js"></script></div>
+							<div class="divByline" id="idByline">By <a href="http://www.andydesoto.com" target="_blank">Andy DeSoto</a>, <span id="idWhenCreated">Monday, November 10, 2014 at  4:46 PM</span>.  <span class="spSlogan" style="float: right;"><i>Everything's an interaction.</i></span></div>
+							</div>
+						</div>
+						</div>
 				</div>
 			</div>
 		<script>
 			startupFargoPlatform ();
+			startupOutlineTemplate ();
 			</script>
 		</body>
 	</html>
